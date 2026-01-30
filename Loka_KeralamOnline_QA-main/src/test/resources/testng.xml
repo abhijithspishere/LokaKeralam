@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="EndToEndSuite">
+    <test name="RegistrationAndLoginFlow">
+        <classes>
+            <class name="Tests.RegistrationPage_Test"/>
+            <class name="Tests.LoginPage_Test"/>
+        </classes>
+    </test>
+</suite>

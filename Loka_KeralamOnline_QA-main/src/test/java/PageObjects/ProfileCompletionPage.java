@@ -66,7 +66,7 @@ public class ProfileCompletionPage extends BasePage {
     @FindBy(xpath = "//li[normalize-space()='Employee Id Card']") private WebElement dropDwnEmployeeIDCard;
     @FindBy(xpath = "//input[@name='documentNo']") private WebElement txtDocumentNo;
     @FindBy(xpath = "//span[text()='Date of Issue']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input") private WebElement txtDateOfIssue;
-    @FindBy(xpath = "//div[@aria-label='Choose Thursday, January 1st, 2026']") private WebElement datePickerJan01_2026;
+    @FindBy(xpath = "//div[@aria-label='Choose Sunday, February 1st, 2026']") private WebElement datePickerJan01_2026;
     @FindBy(xpath = "//input[@id='proof-of-residence-file' and @type='file']") private WebElement residenceFileInput;
     @FindBy(xpath = "(//button[normalize-space()='Update'])[6]") private WebElement btnUpdate06;
 
@@ -76,6 +76,7 @@ public class ProfileCompletionPage extends BasePage {
     @FindBy(xpath = "//input[@name='instagramUrl']") private WebElement txtInstagramUrl;
     @FindBy(xpath = "(//button[normalize-space()='Update'])[7]") private WebElement btnUpdate07;
     @FindBy(xpath = "//button[normalize-space()='Do It Later']") private WebElement btnDoItLater;
+    @FindBy(xpath = "//button[normalize-space()='Preview & Submit for Verification & Approval']")private WebElement btnSubmitVerification;
 
     public ProfileCompletionPage(WebDriver driver) {
         super(driver);
@@ -291,7 +292,11 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate07));
         click(btnUpdate07);
 
-        waitForPageReload(); // Added Reload Wait
+        waitForPageReload();
+
+        wait.until(ExpectedConditions.elementToBeClickable(btnSubmitVerification));
+        click(btnSubmitVerification);
+
     }
 
     /// ///////////////////////////////////////////////////////////////////////////////

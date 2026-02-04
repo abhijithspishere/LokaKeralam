@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 
-public class LoginPage_Test extends Hook {
+public class LoginPage_Test002 extends Hook {
 
     @Test(
             priority = 1,

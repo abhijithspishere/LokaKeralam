@@ -10,7 +10,7 @@ import org.testng.annotations.DataProvider;
 import java.io.IOException;
 import Utils.ExcelUtils;
 
-public class RegistrationPage_Test extends Hook {
+public class RegistrationPage_Test001 extends Hook {
 
     @DataProvider(name = "registrationData")
     public Object[][] getRegistrationData() throws IOException {

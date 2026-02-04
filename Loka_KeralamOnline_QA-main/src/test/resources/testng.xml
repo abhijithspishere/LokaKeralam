@@ -2,8 +2,10 @@
 <suite name="EndToEndSuite">
     <test name="RegistrationAndLoginFlow">
         <classes>
-            <class name="Tests.RegistrationPage_Test"/>
-            <class name="Tests.LoginPage_Test"/>
+            <class name="Tests.RegistrationPage_Test001"/>
+            <class name="Tests.LoginPage_Test002"/>
+            <class name="Tests.ProfileCompletionTest003"/>
+
         </classes>
     </test>
 </suite>

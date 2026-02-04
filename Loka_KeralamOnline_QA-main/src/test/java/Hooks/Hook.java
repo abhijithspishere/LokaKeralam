@@ -19,6 +19,8 @@ import java.lang.reflect.Method;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Hook {
     protected WebDriver driver;
@@ -104,6 +106,12 @@ public class Hook {
             case "chrome":
                 WebDriverManager.chromedriver().setup();
                 ChromeOptions options = new ChromeOptions();
+                Map<String, Object> prefs = new HashMap<String, Object>();
+                prefs.put("profile.default_content_setting_values.media_stream_camera", 1); // 1 = Allow, 2 = Block
+                prefs.put("profile.default_content_setting_values.geolocation", 1);
+                options.setExperimentalOption("prefs", prefs);
+
+                options.addArguments("--use-fake-ui-for-media-stream");
                 options.addArguments("--start-maximized");
                 options.addArguments("--disable-notifications");
                 driver = new ChromeDriver(options);
@@ -126,7 +134,8 @@ public class Hook {
         }
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+        driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
     }
 
     @AfterMethod
@@ -145,7 +154,7 @@ public class Hook {
         }
 
         if (driver != null) {
-            driver.quit();
+//            driver.quit();
         }
     }
 

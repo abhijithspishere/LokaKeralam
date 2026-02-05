@@ -72,7 +72,7 @@ public class LoginPage extends BasePage {
 
             logger.info("No network error popup appeared. Proceeding...");
         }
-        click(btnSignIn);
+
     }
 
     public boolean isLoginSuccessful() {

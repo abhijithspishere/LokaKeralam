@@ -44,7 +44,7 @@ public class ProfileCompletionTest003 extends Hook {
         if (email == null || password == null) {
             logger.warn("Credentials not found in memory. Using fallback test credentials.");
 
-            email = "abhijithlok6224@yopmail.com";
+            email = "abhijithlok5823@yopmail.com";
             password = "Test@123";
         }
 

@@ -78,6 +78,10 @@ public class ProfileCompletionPage extends BasePage {
     @FindBy(xpath = "//button[normalize-space()='Do It Later']") private WebElement btnDoItLater;
     @FindBy(xpath = "//button[normalize-space()='Preview & Submit for Verification & Approval']")private WebElement btnSubmitVerification;
     @FindBy(xpath = "//button[contains(normalize-space(.),'Submit') and contains(normalize-space(.),'Approval')]") private  WebElement btnSubmitApproval;
+    @FindBy(xpath = "//span[normalize-space()='I agree']/ancestor::label//input[@type='checkbox']") private WebElement chkAgreeTerms;
+    @FindBy(xpath = "//button[normalize-space()='Proceed']") private WebElement btnSubmitProceeding;
+    @FindBy(xpath = "(//button[normalize-space()='Close'])[2]") private WebElement btnSubmissionClose;
+
     public ProfileCompletionPage(WebDriver driver) {
         super(driver);
         logger.info("ProfileCompletionPage initialized");
@@ -86,13 +90,8 @@ public class ProfileCompletionPage extends BasePage {
     // --- CRITICAL FIX: Wait for Page Reload ---
     private void waitForPageReload() {
         try {
-            // Wait for 2 seconds to allow the page reload to START
-            Thread.sleep(3000);
-
-            // Wait for the URL to stabilize or a key element to be visible again
-            // Assuming 'btnCompleteProfile' or 'editIcon' is always present on the profile page
+            Thread.sleep(2000);
             wait.until(ExpectedConditions.visibilityOf(editIcon));
-
             logger.info("Page reload completed.");
         } catch (Exception e) {
             logger.warn("Page reload wait timed out or failed.");
@@ -120,9 +119,10 @@ public class ProfileCompletionPage extends BasePage {
         handleNetworkError();
     }
 
-    public void navigateToProfile() {
+    public void navigateToProfile() throws InterruptedException {
         wait.until(ExpectedConditions.elementToBeClickable(btnCompleteProfile));
         click(btnCompleteProfile);
+        Thread.sleep(1000);
         handleLocationChange();
     }
 
@@ -144,10 +144,11 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnSave));
         click(btnSave);
 
-        waitForPageReload(); // Added Reload Wait
+         // Added Reload Wait
     }
 
     public void updateBasicInfo(String aboutMe) {
+        waitForPageReload();
         wait.until(ExpectedConditions.visibilityOf(txtAboutMe));
         scrollToCenter(txtAboutMe);
         txtAboutMe.clear();
@@ -162,10 +163,10 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate01));
         click(btnUpdate01);
 
-        waitForPageReload(); // Added Reload Wait
     }
 
     public void updateNRKAddress(String address) {
+        waitForPageReload();
         wait.until(ExpectedConditions.visibilityOf(txtAddressLine1));
         scrollToCenter(txtAddressLine1);
         sendKeys(txtAddressLine1, address);
@@ -173,10 +174,11 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate02));
         click(btnUpdate02);
 
-        waitForPageReload(); // Added Reload Wait
+        //waitForPageReload(); // Added Reload Wait
     }
 
     public void updateKeralaAddress(String pincode, String houseNo, String district) {
+        waitForPageReload();
         wait.until(ExpectedConditions.visibilityOf(txtPincode));
         click(txtPincode);
         scrollToCenter(txtPincode);
@@ -200,10 +202,11 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate03));
         click(btnUpdate03);
 
-        waitForPageReload(); // Added Reload Wait
+        //waitForPageReload(); // Added Reload Wait
     }
 
     public void updateProfessionalInfo(String companyName) throws InterruptedException {
+        waitForPageReload();
         wait.until(ExpectedConditions.elementToBeClickable(dropDwnJobSegment));
         scrollToCenter(dropDwnJobSegment);
         click(dropDwnJobSegment);
@@ -221,7 +224,7 @@ public class ProfileCompletionPage extends BasePage {
             //newchange
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", selectCompanyName);
         }
-
+        Thread.sleep(2000);
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate04));
         click(btnUpdate04);
         Thread.sleep(1000);
@@ -230,6 +233,7 @@ public class ProfileCompletionPage extends BasePage {
 
     public void updatePassportDetails(String passportNo, String passportPath) {
 
+        //waitForPageReload();
         wait.until(ExpectedConditions.visibilityOf(txtPassportNo));
         scrollToCenter(txtPassportNo);
         txtPassportNo.clear();
@@ -246,12 +250,13 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate05));
         click(btnUpdate05);
 
-        waitForPageReload();
+        //waitForPageReload();
     }
 
 
     public void updateResidenceProof(String documentNo, String residencePath) {
 
+        waitForPageReload();
         wait.until(ExpectedConditions.elementToBeClickable(dropDwnResidenceStatus));
         scrollToCenter(dropDwnResidenceStatus);
         click(dropDwnResidenceStatus);
@@ -280,11 +285,13 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate06));
         click(btnUpdate06);
 
-        waitForPageReload();
+        //waitForPageReload();
     }
 
 
-    public void updateSocialLinks(String facebookUrl, String linkedinUrl, String instagramUrl) {
+    public void updateSocialLinks(String facebookUrl, String linkedinUrl, String instagramUrl) throws InterruptedException {
+
+        waitForPageReload();
         wait.until(ExpectedConditions.visibilityOf(txtFacebookUrl));
         scrollToCenter(txtFacebookUrl);
         sendKeys(txtFacebookUrl, facebookUrl);
@@ -303,9 +310,23 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnSubmitVerification));
         click(btnSubmitVerification);
 
+        Thread.sleep(1000);
+
         wait.until(ExpectedConditions.elementToBeClickable(btnSubmitApproval));
         click(btnSubmitApproval);
 
+        Thread.sleep(1000);
+
+
+        wait.until(ExpectedConditions.elementToBeClickable(chkAgreeTerms));
+        click(chkAgreeTerms);
+        System.out.println("clicked on agree terms checkbox");
+
+        wait.until(ExpectedConditions.elementToBeClickable(btnSubmitProceeding));
+        click(btnSubmitProceeding);
+
+        wait.until(ExpectedConditions.elementToBeClickable(btnSubmissionClose));
+        click(btnSubmissionClose);
     }
 
     public boolean isProfileCompletionSuccessful() {
@@ -319,9 +340,9 @@ public class ProfileCompletionPage extends BasePage {
     }
 
 
-    /// ///////////////////////////////////////////////////////////////////////////////
-    // Error Handling Methods
-    /// ///////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
+    // Error Handling Methods ///////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////////////
     public void handleNetworkError() {
         try {
             WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(3));
@@ -354,10 +375,8 @@ public class ProfileCompletionPage extends BasePage {
             // Make hidden input visible (important for MUI)
             ((JavascriptExecutor) driver)
                     .executeScript("arguments[0].style.display='block';", fileInput);
-
             // Upload file
             fileInput.sendKeys(filePath);
-
             logger.info("File uploaded successfully: " + filePath);
 
         } catch (Exception e) {

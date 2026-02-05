@@ -85,5 +85,23 @@ public class ProfileCompletionTest003 extends Hook {
             test.log(Status.FAIL, e.getMessage());
             Assert.fail(e.getMessage());
         }
+        try {
+            boolean isSuccess = profilePage.isProfileCompletionSuccessful();
+
+            logger.info("Profile submission success status: " + isSuccess);
+            test.log(Status.INFO, "Verifying dashboard redirection after login");
+
+            Assert.assertTrue(
+                    isSuccess,
+                    "Profile Completion Failed Profile URL did not load."
+            );
+
+            test.log(Status.PASS, "Profile Completion successful");
+
+        } catch (Exception e) {
+            logger.error("Profile Completion test exception", e);
+            test.log(Status.FAIL, "Exception during login: " + e.getMessage());
+            Assert.fail("Exception occurred during login: " + e.getMessage());
+        }
     }
 }

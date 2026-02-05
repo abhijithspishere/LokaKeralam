@@ -77,7 +77,7 @@ public class ProfileCompletionPage extends BasePage {
     @FindBy(xpath = "(//button[normalize-space()='Update'])[7]") private WebElement btnUpdate07;
     @FindBy(xpath = "//button[normalize-space()='Do It Later']") private WebElement btnDoItLater;
     @FindBy(xpath = "//button[normalize-space()='Preview & Submit for Verification & Approval']")private WebElement btnSubmitVerification;
-
+    @FindBy(xpath = "//button[contains(normalize-space(.),'Submit') and contains(normalize-space(.),'Approval')]") private  WebElement btnSubmitApproval;
     public ProfileCompletionPage(WebDriver driver) {
         super(driver);
         logger.info("ProfileCompletionPage initialized");
@@ -87,7 +87,7 @@ public class ProfileCompletionPage extends BasePage {
     private void waitForPageReload() {
         try {
             // Wait for 2 seconds to allow the page reload to START
-            Thread.sleep(2000);
+            Thread.sleep(3000);
 
             // Wait for the URL to stabilize or a key element to be visible again
             // Assuming 'btnCompleteProfile' or 'editIcon' is always present on the profile page
@@ -127,17 +127,20 @@ public class ProfileCompletionPage extends BasePage {
     }
 
     public void captureImage() throws InterruptedException {
-        wait.until(ExpectedConditions.visibilityOf(editIcon));
+        wait.until(ExpectedConditions.elementToBeClickable(editIcon));
         scrollToCenter(editIcon);
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(editIcon));
             editIcon.click();
         } catch (Exception e) {
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", editIcon);
         }
-        Thread.sleep(2000);
+        Thread.sleep(1000);
+
+        wait.until(ExpectedConditions.visibilityOf(btnCapture));
         wait.until(ExpectedConditions.elementToBeClickable(btnCapture));
         click(btnCapture);
+
+        wait.until(ExpectedConditions.visibilityOf(btnSave));
         wait.until(ExpectedConditions.elementToBeClickable(btnSave));
         click(btnSave);
 
@@ -200,7 +203,7 @@ public class ProfileCompletionPage extends BasePage {
         waitForPageReload(); // Added Reload Wait
     }
 
-    public void updateProfessionalInfo(String companyName) {
+    public void updateProfessionalInfo(String companyName) throws InterruptedException {
         wait.until(ExpectedConditions.elementToBeClickable(dropDwnJobSegment));
         scrollToCenter(dropDwnJobSegment);
         click(dropDwnJobSegment);
@@ -214,11 +217,14 @@ public class ProfileCompletionPage extends BasePage {
         try {
             wait.until(ExpectedConditions.elementToBeClickable(selectCompanyName));
             click(selectCompanyName);
-        } catch (Exception e) {}
+        } catch (Exception e) {
+            //newchange
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", selectCompanyName);
+        }
 
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate04));
         click(btnUpdate04);
-
+        Thread.sleep(1000);
         waitForPageReload(); // Added Reload Wait
     }
 
@@ -297,7 +303,21 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnSubmitVerification));
         click(btnSubmitVerification);
 
+        wait.until(ExpectedConditions.elementToBeClickable(btnSubmitApproval));
+        click(btnSubmitApproval);
+
     }
+
+    public boolean isProfileCompletionSuccessful() {
+        try {
+            wait.until(ExpectedConditions.urlContains("/my-profile"));
+            return true;
+        } catch (Exception e) {
+            logger.error("Profile completion failed. Current URL: " + driver.getCurrentUrl());
+            return false;
+        }
+    }
+
 
     /// ///////////////////////////////////////////////////////////////////////////////
     // Error Handling Methods

@@ -143,7 +143,7 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(btnSave));
         wait.until(ExpectedConditions.elementToBeClickable(btnSave));
         click(btnSave);
-
+        waitForPageReload();
          // Added Reload Wait
     }
 
@@ -162,7 +162,7 @@ public class ProfileCompletionPage extends BasePage {
 
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate01));
         click(btnUpdate01);
-
+        waitForPageReload();
     }
 
     public void updateNRKAddress(String address) {
@@ -174,7 +174,7 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate02));
         click(btnUpdate02);
 
-        //waitForPageReload(); // Added Reload Wait
+        waitForPageReload(); // Added Reload Wait
     }
 
     public void updateKeralaAddress(String pincode, String houseNo, String district) {
@@ -202,7 +202,7 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate03));
         click(btnUpdate03);
 
-        //waitForPageReload(); // Added Reload Wait
+        waitForPageReload(); // Added Reload Wait
     }
 
     public void updateProfessionalInfo(String companyName) throws InterruptedException {
@@ -233,7 +233,7 @@ public class ProfileCompletionPage extends BasePage {
 
     public void updatePassportDetails(String passportNo, String passportPath) {
 
-        //waitForPageReload();
+        waitForPageReload();
         wait.until(ExpectedConditions.visibilityOf(txtPassportNo));
         scrollToCenter(txtPassportNo);
         txtPassportNo.clear();
@@ -250,7 +250,7 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate05));
         click(btnUpdate05);
 
-        //waitForPageReload();
+        waitForPageReload();
     }
 
 
@@ -285,7 +285,7 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate06));
         click(btnUpdate06);
 
-        //waitForPageReload();
+        waitForPageReload();
     }
 
 
@@ -318,15 +318,23 @@ public class ProfileCompletionPage extends BasePage {
         Thread.sleep(1000);
 
 
-        wait.until(ExpectedConditions.elementToBeClickable(chkAgreeTerms));
-        click(chkAgreeTerms);
-        System.out.println("clicked on agree terms checkbox");
 
+
+        jsClick(chkAgreeTerms);
+        System.out.println("Clicked on Agree Terms checkbox");
+
+        jsClick(btnSubmitProceeding);
+        System.out.println("Clicked on Submit / Proceed button");
+
+        jsClick(btnSubmissionClose);
+        System.out.println("Clicked on Submission Close button");
+
+
+/*
         wait.until(ExpectedConditions.elementToBeClickable(btnSubmitProceeding));
-        click(btnSubmitProceeding);
+        click(btnSubmitProceeding);*/
 
-        wait.until(ExpectedConditions.elementToBeClickable(btnSubmissionClose));
-        click(btnSubmissionClose);
+
     }
 
     public boolean isProfileCompletionSuccessful() {
@@ -356,13 +364,18 @@ public class ProfileCompletionPage extends BasePage {
 
     public void handleLocationChange() {
         try {
-            WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(3));
+            WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(1));
             WebElement doItLaterBtn = shortWait.until(ExpectedConditions.visibilityOf(btnDoItLater));
             if (doItLaterBtn.isDisplayed()) {
                 doItLaterBtn.click();
                 click(btnCompleteProfile);
             }
         } catch (Exception e) {}
+    }
+
+    public void jsClick(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView({block:'center'}); arguments[0].click();", element);
     }
 
     private void uploadFile(WebElement fileInput, String filePath) {

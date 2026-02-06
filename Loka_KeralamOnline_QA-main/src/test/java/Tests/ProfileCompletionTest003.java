@@ -44,7 +44,7 @@ public class ProfileCompletionTest003 extends Hook {
         if (email == null || password == null) {
             logger.warn("Credentials not found in memory. Using fallback test credentials.");
 
-            email = "abhijithlok5823@yopmail.com";
+            email = "asp7878@yopmail.com";
             password = "Test@123";
         }
 
@@ -58,13 +58,9 @@ public class ProfileCompletionTest003 extends Hook {
             test.log(Status.INFO, "Image capture completed");
 
             profilePage.updateBasicInfo(aboutMe);
-
             profilePage.updateNRKAddress(address);
-
             profilePage.updateKeralaAddress(pincode, houseNo, district);
-
             profilePage.updateProfessionalInfo(companyName);
-
             profilePage.updatePassportDetails(
                     passportNo,
                     FileConstants.PASSPORT

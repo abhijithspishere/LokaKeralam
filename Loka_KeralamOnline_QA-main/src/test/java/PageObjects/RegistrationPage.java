@@ -171,7 +171,7 @@ public class RegistrationPage extends BasePage {
         click(btnSendOtp);
 
         System.out.println("Waiting for OTP email...");
-        Thread.sleep(10000);
+        Thread.sleep(4000);
 
         String otp = otpFetcher.fetchOTPWithRetry(yopmailUsername, 3,5);
 

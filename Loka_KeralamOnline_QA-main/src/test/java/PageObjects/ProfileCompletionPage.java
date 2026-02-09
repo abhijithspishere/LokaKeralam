@@ -15,72 +15,123 @@ public class ProfileCompletionPage extends BasePage {
     private static final Logger logger = LogManager.getLogger(ProfileCompletionPage.class);
 
     // --- Locators (Keep your existing Locators) ---
-    @FindBy(xpath = "//button[normalize-space()='Close']") private WebElement btnWelcomeClose;
-    @FindBy(xpath = "//button[normalize-space()='CLOSE']") private WebElement btnErrorClose;
-    @FindBy(xpath = "//button[normalize-space()='Click to Explore']") private WebElement btnExplore;
-    @FindBy(xpath = "//fieldset[.//span[text()='Email']]/preceding-sibling::input") private WebElement txtEmail;
-    @FindBy(xpath = "//fieldset[.//span[text()='Password']]/preceding-sibling::input") private WebElement txtPassword;
-    @FindBy(xpath = "//button[normalize-space()='Sign In']") private WebElement btnSignIn;
+    @FindBy(xpath = "//button[normalize-space()='Close']")
+    private WebElement btnWelcomeClose;
+    @FindBy(xpath = "//button[normalize-space()='CLOSE']")
+    private WebElement btnErrorClose;
+    @FindBy(xpath = "//button[normalize-space()='Click to Explore']")
+    private WebElement btnExplore;
+    @FindBy(xpath = "//fieldset[.//span[text()='Email']]/preceding-sibling::input")
+    private WebElement txtEmail;
+    @FindBy(xpath = "//fieldset[.//span[text()='Password']]/preceding-sibling::input")
+    private WebElement txtPassword;
+    @FindBy(xpath = "//button[normalize-space()='Sign In']")
+    private WebElement btnSignIn;
 
-    @FindBy(xpath = "//button[@type='button' and contains(., 'Complete Profile')]") private WebElement btnCompleteProfile;
-    @FindBy(xpath = "//*[local-name()='svg' and @data-testid='EditIcon']") private WebElement editIcon;
-    @FindBy(xpath = "//button[normalize-space()='Capture']") private WebElement btnCapture;
-    @FindBy(xpath = "//button[normalize-space()='Save']") private WebElement btnSave;
+    @FindBy(xpath = "//button[@type='button' and contains(., 'Complete Profile')]")
+    private WebElement btnCompleteProfile;
+    @FindBy(xpath = "//*[local-name()='svg' and @data-testid='EditIcon']")
+    private WebElement editIcon;
+    @FindBy(xpath = "//button[normalize-space()='Capture']")
+    private WebElement btnCapture;
+    @FindBy(xpath = "//button[normalize-space()='Save']")
+    private WebElement btnSave;
 
     // Basic Info
-    @FindBy(xpath = "//textarea[@name='aboutMe']") private WebElement txtAboutMe;
-    @FindBy(xpath = "//input[@name='salutation']/preceding-sibling::div[@role='combobox']") private WebElement dropDwnSalutation;
-    @FindBy(xpath = "//li[normalize-space()='Mr.']") private WebElement dropDwnSelection;
-    @FindBy(xpath = "(//button[normalize-space()='Update'])[1]") private WebElement btnUpdate01;
+    @FindBy(xpath = "//textarea[@name='aboutMe']")
+    private WebElement txtAboutMe;
+    @FindBy(xpath = "//input[@name='salutation']/preceding-sibling::div[@role='combobox']")
+    private WebElement dropDwnSalutation;
+    @FindBy(xpath = "//li[normalize-space()='Mr.']")
+    private WebElement dropDwnSelection;
+    @FindBy(xpath = "(//button[normalize-space()='Update'])[1]")
+    private WebElement btnUpdate01;
 
     // NRK Address
-    @FindBy(xpath = "//textarea[@name='addressLine1']") private WebElement txtAddressLine1;
-    @FindBy(xpath = "(//button[normalize-space()='Update'])[2]") private WebElement btnUpdate02;
+    @FindBy(xpath = "//textarea[@name='addressLine1']")
+    private WebElement txtAddressLine1;
+    @FindBy(xpath = "(//button[normalize-space()='Update'])[2]")
+    private WebElement btnUpdate02;
 
     // Kerala Address
-    @FindBy(xpath = "//input[@name='pincode']") private WebElement txtPincode;
-    @FindBy(xpath = "//input[@name='postOffice']/preceding-sibling::div[@role='combobox']") private WebElement dropDwnPostOffice;
-    @FindBy(xpath = "//li[normalize-space()='Kaudiar Square SO']") private WebElement dropDwnKaudiarSquare;
-    @FindBy(xpath = "//input[@name='houseNo']") private WebElement dropDwnHouseNo;
-    @FindBy(name = "district") private WebElement districtInput;
-    @FindBy(xpath = "(//button[normalize-space()='Update'])[3]") private WebElement btnUpdate03;
+    @FindBy(xpath = "//input[@name='pincode']")
+    private WebElement txtPincode;
+    @FindBy(xpath = "//input[@name='postOffice']/preceding-sibling::div[@role='combobox']")
+    private WebElement dropDwnPostOffice;
+    @FindBy(xpath = "//li[normalize-space()='Kaudiar Square SO']")
+    private WebElement dropDwnKaudiarSquare;
+    @FindBy(xpath = "//input[@name='houseNo']")
+    private WebElement dropDwnHouseNo;
+    @FindBy(name = "district")
+    private WebElement districtInput;
+    @FindBy(xpath = "(//button[normalize-space()='Update'])[3]")
+    private WebElement btnUpdate03;
 
     // Professional Info
-    @FindBy(xpath = "//input[@name='occupation']/preceding-sibling::div[@role='combobox']") private WebElement dropDwnJobSegment;
-    @FindBy(xpath = "//li[normalize-space()='IT/ITES Professionals']") private WebElement dropDwnITProfessionals;
-    @FindBy(xpath = "//input[@id='professionalInfo-input']") private WebElement txtCompanyName;
-    @FindBy(xpath = "//li[@role='option' and normalize-space()='Appa Kadai Restaurant - 16th Street - Dubai - United Arab Emirates']") private WebElement selectCompanyName;
-    @FindBy(xpath = "(//button[normalize-space()='Update'])[4]") private WebElement btnUpdate04;
+    @FindBy(xpath = "//input[@name='occupation']/preceding-sibling::div[@role='combobox']")
+    private WebElement dropDwnJobSegment;
+    @FindBy(xpath = "//li[normalize-space()='IT/ITES Professionals']")
+    private WebElement dropDwnITProfessionals;
+    @FindBy(xpath = "//input[@id='professionalInfo-input']")
+    private WebElement txtCompanyName;
+    @FindBy(xpath = "//li[@role='option' and normalize-space()='Appa Kadai Restaurant - 16th Street - Dubai - United Arab Emirates']")
+    private WebElement selectCompanyName;
+    @FindBy(xpath = "(//button[normalize-space()='Update'])[4]")
+    private WebElement btnUpdate04;
 
     // Passport
-    @FindBy(xpath = "//input[@name='passportNo']") private WebElement txtPassportNo;
-    @FindBy(xpath = "//span[text()='Passport Expiry Date']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input") private WebElement txtPassportExpiryDate;
-    @FindBy(xpath = "//div[@aria-label='Choose Saturday, February 7th, 2026']") private WebElement datePickerFeb07_2026;
-    @FindBy(xpath = "//input[@id='passport-file' and @type='file']") private WebElement passportFileInput;
-    @FindBy(xpath = "(//button[normalize-space()='Update'])[5]") private WebElement btnUpdate05;
+    @FindBy(xpath = "//input[@name='passportNo']")
+    private WebElement txtPassportNo;
+    @FindBy(xpath = "//span[text()='Passport Expiry Date']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input")
+    private WebElement txtPassportExpiryDate;
+    @FindBy(xpath = "//div[@aria-label='Choose Saturday, February 7th, 2026']")
+    private WebElement datePickerFeb07_2026;
+    @FindBy(xpath = "//input[@id='passport-file' and @type='file']")
+    private WebElement passportFileInput;
+    @FindBy(xpath = "(//button[normalize-space()='Update'])[5]")
+    private WebElement btnUpdate05;
 
     // Residence
-    @FindBy(xpath = "//input[@name='residenceStatus']/preceding-sibling::div[@role='combobox']") private WebElement dropDwnResidenceStatus;
-    @FindBy(xpath = "//li[normalize-space()='NRI']") private WebElement dropDwnNRI;
-    @FindBy(xpath = "//input[@name='docType']/preceding-sibling::div[@role='combobox']") private WebElement dropDwnDocumentType;
-    @FindBy(xpath = "//li[normalize-space()='Employee Id Card']") private WebElement dropDwnEmployeeIDCard;
-    @FindBy(xpath = "//input[@name='documentNo']") private WebElement txtDocumentNo;
-    @FindBy(xpath = "//span[text()='Date of Issue']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input") private WebElement txtDateOfIssue;
-    @FindBy(xpath = "//div[@aria-label='Choose Sunday, February 1st, 2026']") private WebElement datePickerJan01_2026;
-    @FindBy(xpath = "//input[@id='proof-of-residence-file' and @type='file']") private WebElement residenceFileInput;
-    @FindBy(xpath = "(//button[normalize-space()='Update'])[6]") private WebElement btnUpdate06;
+    @FindBy(xpath = "//input[@name='residenceStatus']/preceding-sibling::div[@role='combobox']")
+    private WebElement dropDwnResidenceStatus;
+    @FindBy(xpath = "//li[normalize-space()='NRI']")
+    private WebElement dropDwnNRI;
+    @FindBy(xpath = "//input[@name='docType']/preceding-sibling::div[@role='combobox']")
+    private WebElement dropDwnDocumentType;
+    @FindBy(xpath = "//li[normalize-space()='Employee Id Card']")
+    private WebElement dropDwnEmployeeIDCard;
+    @FindBy(xpath = "//input[@name='documentNo']")
+    private WebElement txtDocumentNo;
+    @FindBy(xpath = "//span[text()='Date of Issue']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input")
+    private WebElement txtDateOfIssue;
+    @FindBy(xpath = "//div[@aria-label='Choose Sunday, February 1st, 2026']")
+    private WebElement datePickerJan01_2026;
+    @FindBy(xpath = "//input[@id='proof-of-residence-file' and @type='file']")
+    private WebElement residenceFileInput;
+    @FindBy(xpath = "(//button[normalize-space()='Update'])[6]")
+    private WebElement btnUpdate06;
 
     // Social Links
-    @FindBy(xpath = "//input[@name='facebookUrl']") private WebElement txtFacebookUrl;
-    @FindBy(xpath = "//input[@name='linkedinUrl']") private WebElement txtLinkedinUrl;
-    @FindBy(xpath = "//input[@name='instagramUrl']") private WebElement txtInstagramUrl;
-    @FindBy(xpath = "(//button[normalize-space()='Update'])[7]") private WebElement btnUpdate07;
-    @FindBy(xpath = "//button[normalize-space()='Do It Later']") private WebElement btnDoItLater;
-    @FindBy(xpath = "//button[normalize-space()='Preview & Submit for Verification & Approval']")private WebElement btnSubmitVerification;
-    @FindBy(xpath = "//button[contains(normalize-space(.),'Submit') and contains(normalize-space(.),'Approval')]") private  WebElement btnSubmitApproval;
-    @FindBy(xpath = "//span[normalize-space()='I agree']/ancestor::label//input[@type='checkbox']") private WebElement chkAgreeTerms;
-    @FindBy(xpath = "//button[normalize-space()='Proceed']") private WebElement btnSubmitProceeding;
-    @FindBy(xpath = "(//button[normalize-space()='Close'])[2]") private WebElement btnSubmissionClose;
+    @FindBy(xpath = "//input[@name='facebookUrl']")
+    private WebElement txtFacebookUrl;
+    @FindBy(xpath = "//input[@name='linkedinUrl']")
+    private WebElement txtLinkedinUrl;
+    @FindBy(xpath = "//input[@name='instagramUrl']")
+    private WebElement txtInstagramUrl;
+    @FindBy(xpath = "(//button[normalize-space()='Update'])[7]")
+    private WebElement btnUpdate07;
+    @FindBy(xpath = "//button[normalize-space()='Do It Later']")
+    private WebElement btnDoItLater;
+    @FindBy(xpath = "//button[normalize-space()='Preview & Submit for Verification & Approval']")
+    private WebElement btnSubmitVerification;
+    @FindBy(xpath = "//button[contains(normalize-space(.),'Submit') and contains(normalize-space(.),'Approval')]")
+    private  WebElement btnSubmitApproval;
+    @FindBy(xpath = "//span[normalize-space()='I agree']/ancestor::label//input[@type='checkbox']")
+    private WebElement chkAgreeTerms;
+    @FindBy(xpath = "//button[normalize-space()='Proceed']")
+    private WebElement btnSubmitProceeding;
+    @FindBy(xpath = "(//button[normalize-space()='Close'])[2]")
+    private WebElement btnSubmissionClose;
 
     public ProfileCompletionPage(WebDriver driver) {
         super(driver);

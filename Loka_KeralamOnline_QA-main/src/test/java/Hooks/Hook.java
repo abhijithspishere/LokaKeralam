@@ -72,9 +72,12 @@ public class Hook {
 
 
     @BeforeMethod
-    @Parameters({"browser", "environment"})
-    public void setup(Method method, @Optional("chrome") String browser,
-                      @Optional("qa") String env) {
+    @Parameters({"browser", "environment","portal"})
+    public void setup(Method method,
+                      @Optional("chrome") String browser,
+                      @Optional("qa") String env,
+                      @Optional("user") String portal)
+    {
         // Initialize logger
         logger = new Logs(method.getName());
 
@@ -91,7 +94,10 @@ public class Hook {
         initializeDriver(browser);
 
         // Navigate to application
-        String url = ConfigReader.getProperty("app.url");
+        String url = portal.equals("admin")
+                ? ConfigReader.getProperty("admin.url")
+                : ConfigReader.getProperty("app.url");
+
         driver.get(url);
 
         logger.info("Navigated to URL: " + url);

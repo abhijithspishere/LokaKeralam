@@ -1,11 +1,23 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="EndToEndSuite">
-    <test name="RegistrationAndLoginFlow">
+
+    <!-- USER PORTAL TESTS -->
+    <test name="UserPortalTests">
+        <parameter name="portal" value="user"/>
         <classes>
             <class name="Tests.RegistrationPage_Test001"/>
             <class name="Tests.LoginPage_Test002"/>
             <class name="Tests.ProfileCompletionTest003"/>
-
         </classes>
     </test>
+
+    <!-- ADMIN PORTAL TESTS -->
+    <test name="AdminPortalTests">
+        <parameter name="portal" value="admin"/>
+        <classes>
+            <class name="Tests.AdminLoginTest"/>
+            <!-- Add more admin tests here -->
+        </classes>
+    </test>
+
 </suite>

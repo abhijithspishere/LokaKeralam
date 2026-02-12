@@ -21,13 +21,17 @@ public class AdminLoginPage extends BasePage {
 
     public AdminLoginPage(WebDriver driver) {
         super(driver);
-        logger.info("AdminLoginPage initialized");
     }
-    public void navigateToAdminPortal() {
-        String adminUrl = ConfigReader.getProperty("admin.url");
-        logger.info("Navigating to Admin Portal: " + adminUrl);
-        driver.get(adminUrl);
+
+    public void loginAsAdmin(String email, String password) {
+        sendKeys(txtAdminEmail, email);
+        sendKeys(txtAdminPassword, password);
+        click(btnAdminLogin);
         waitForPageLoad();
+    }
+    public boolean isDashboardDisplayed() {
+        return driver.getCurrentUrl().contains("/dashboard") ||
+                driver.getCurrentUrl().contains("admin");
     }
 
 

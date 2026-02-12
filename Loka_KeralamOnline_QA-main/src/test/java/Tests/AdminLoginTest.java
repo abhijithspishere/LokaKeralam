@@ -16,5 +16,14 @@ public class AdminLoginTest extends Hook {
     )
     public void admin_login_test() {
         logger.info("========== ADMIN LOGIN TEST STARTED ==========");
+        AdminLoginPage adminPage = new AdminLoginPage(driver);
+
+        adminPage.loginAsAdmin(
+                ConfigReader.getProperty("admin.username"),
+                ConfigReader.getProperty("admin.password")
+        );
+
+        Assert.assertTrue(adminPage.isDashboardDisplayed(),
+                "Admin login failed - Dashboard not displayed");
     }
     }

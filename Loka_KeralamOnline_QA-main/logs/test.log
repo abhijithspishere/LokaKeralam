@@ -7168,3 +7168,63 @@ Session ID: 09a01b198d213925d54985cbae956e0b
 2026-02-06 12:23:43.842 [main] INFO  profile_completion_test - Profile submission success status: true
 2026-02-06 12:23:43.849 [main] INFO  profile_completion_test - Test PASSED: profile_completion_test
 2026-02-06 12:23:44.596 [main] INFO  registration_test - Test suite execution completed
+2026-02-13 10:56:27.298 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-02-13 10:56:27.301 [main] INFO  admin_login_test - Browser: CHROME
+2026-02-13 10:56:27.301 [main] INFO  admin_login_test - Environment: QA
+2026-02-13 10:56:27.306 [main] INFO  admin_login_test - ========== ADMIN LOGIN TEST STARTED ==========
+2026-02-13 10:56:27.991 [main] ERROR admin_login_test - Test FAILED: admin_login_test
+2026-02-13 10:56:28.439 [main] INFO  admin_login_test - Test suite execution completed
+2026-02-13 12:13:32.304 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-02-13 12:13:32.306 [main] INFO  admin_login_test - Browser: CHROME
+2026-02-13 12:13:32.307 [main] INFO  admin_login_test - Environment: QA
+2026-02-13 12:13:32.311 [main] INFO  admin_login_test - ========== ADMIN LOGIN TEST STARTED ==========
+2026-02-13 12:13:32.946 [main] INFO  admin_login_test - Test PASSED: admin_login_test
+2026-02-13 12:13:33.559 [main] INFO  admin_login_test - Test suite execution completed
+2026-02-13 12:14:31.158 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-02-13 12:14:31.160 [main] INFO  admin_login_test - Browser: CHROME
+2026-02-13 12:14:31.161 [main] INFO  admin_login_test - Environment: QA
+2026-02-13 12:14:31.165 [main] INFO  admin_login_test - ========== ADMIN LOGIN TEST STARTED ==========
+2026-02-13 12:14:31.760 [main] INFO  admin_login_test - Test PASSED: admin_login_test
+2026-02-13 12:14:32.208 [main] INFO  admin_login_test - Test suite execution completed
+2026-02-13 12:16:01.498 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-02-13 12:16:01.503 [main] INFO  admin_login_test - Browser: CHROME
+2026-02-13 12:16:01.504 [main] INFO  admin_login_test - Environment: QA
+2026-02-13 12:16:01.509 [main] INFO  admin_login_test - ========== ADMIN LOGIN TEST STARTED ==========
+2026-02-13 12:16:02.270 [main] INFO  admin_login_test - Test PASSED: admin_login_test
+2026-02-13 12:16:02.779 [main] INFO  admin_login_test - Test suite execution completed
+2026-02-13 12:17:32.456 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-02-13 12:17:32.460 [main] INFO  admin_login_test - Browser: CHROME
+2026-02-13 12:17:32.461 [main] INFO  admin_login_test - Environment: QA
+2026-02-13 12:17:32.467 [main] INFO  admin_login_test - ========== ADMIN LOGIN TEST STARTED ==========
+2026-02-13 12:17:33.295 [main] INFO  admin_login_test - Test PASSED: admin_login_test
+2026-02-13 12:17:33.759 [main] INFO  admin_login_test - Test suite execution completed
+2026-02-13 12:25:36.752 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-02-13 12:25:36.755 [main] INFO  admin_login_test - Browser: CHROME
+2026-02-13 12:25:36.755 [main] INFO  admin_login_test - Environment: QA
+2026-02-13 12:25:36.764 [main] INFO  admin_login_test - ========== ADMIN LOGIN TEST STARTED ==========
+2026-02-13 12:25:50.663 [main] ERROR admin_login_test - Test FAILED: admin_login_test
+2026-02-13 12:25:51.154 [main] INFO  admin_login_test - Test suite execution completed
+2026-02-13 12:28:42.549 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-02-13 12:28:42.551 [main] INFO  admin_login_test - Browser: CHROME
+2026-02-13 12:28:42.551 [main] INFO  admin_login_test - Environment: QA
+2026-02-13 12:28:42.558 [main] INFO  admin_login_test - ========== ADMIN LOGIN TEST STARTED ==========
+2026-02-13 12:28:47.382 [main] ERROR admin_login_test - Test FAILED: admin_login_test
+2026-02-13 12:28:47.848 [main] INFO  admin_login_test - Test suite execution completed
+2026-02-13 12:30:12.502 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-02-13 12:30:12.507 [main] INFO  admin_login_test - Browser: CHROME
+2026-02-13 12:30:12.507 [main] INFO  admin_login_test - Environment: QA
+2026-02-13 12:30:12.519 [main] INFO  admin_login_test - ========== ADMIN LOGIN TEST STARTED ==========
+2026-02-13 12:30:13.361 [main] ERROR admin_login_test - Test FAILED: admin_login_test
+2026-02-13 12:30:13.842 [main] INFO  admin_login_test - Test suite execution completed
+2026-02-13 12:32:41.237 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-02-13 12:32:41.240 [main] INFO  admin_login_test - Browser: CHROME
+2026-02-13 12:32:41.240 [main] INFO  admin_login_test - Environment: QA
+2026-02-13 12:32:41.246 [main] INFO  admin_login_test - ========== ADMIN LOGIN TEST STARTED ==========
+2026-02-13 12:32:41.892 [main] ERROR admin_login_test - Test FAILED: admin_login_test
+2026-02-13 12:32:42.351 [main] INFO  admin_login_test - Test suite execution completed
+2026-02-13 12:34:45.795 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-02-13 12:34:45.798 [main] INFO  admin_login_test - Browser: CHROME
+2026-02-13 12:34:45.799 [main] INFO  admin_login_test - Environment: QA
+2026-02-13 12:34:45.804 [main] INFO  admin_login_test - ========== ADMIN LOGIN TEST STARTED ==========
+2026-02-13 12:34:49.192 [main] INFO  admin_login_test - Test PASSED: admin_login_test
+2026-02-13 12:34:49.776 [main] INFO  admin_login_test - Test suite execution completed

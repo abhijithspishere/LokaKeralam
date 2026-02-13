@@ -14,7 +14,7 @@ public class AdminLoginTest extends Hook {
             testName = "CLKOI-AT-GCCDW-03_Admin_Login_Test",
             description = "Verify Official Admin Login functionality"
     )
-    public void admin_login_test() {
+    public void admin_login_test() throws InterruptedException {
         logger.info("========== ADMIN LOGIN TEST STARTED ==========");
         AdminLoginPage adminPage = new AdminLoginPage(driver);
 
@@ -22,6 +22,7 @@ public class AdminLoginTest extends Hook {
                 ConfigReader.getProperty("admin.username"),
                 ConfigReader.getProperty("admin.password")
         );
+        adminPage.isDashboardDisplayed();
 
         Assert.assertTrue(adminPage.isDashboardDisplayed(),
                 "Admin login failed - Dashboard not displayed");

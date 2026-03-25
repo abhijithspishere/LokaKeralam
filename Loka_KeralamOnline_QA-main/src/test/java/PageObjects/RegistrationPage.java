@@ -99,7 +99,7 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//select[contains(@class,'react-datepicker__year-select')]/option[@value='1994']")
     private WebElement selectYear1994;
 
-    @FindBy(xpath = "//div[@aria-label='Choose Wednesday, February 16th, 1994']")
+    @FindBy(xpath = "//div[@aria-label='Choose Thursday, March 31st, 1994']")
     private WebElement datePicker;
 
     @FindBy(xpath = "//span[normalize-space()='Male']")

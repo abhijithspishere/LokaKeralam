@@ -51,9 +51,10 @@ public class LoginPage extends BasePage {
         txtPassword.clear();
         txtPassword.sendKeys(password);
 
-        click(btnSignIn);
+
 
         handleNetworkError();
+        click(btnSignIn);
     }
 
     public void handleNetworkError() {

@@ -2,22 +2,24 @@
 <suite name="EndToEndSuite">
 
     <!-- USER PORTAL TESTS -->
- <!--   <test name="UserPortalTests">
+<!--
+    <test name="UserPortalTests">
         <parameter name="portal" value="user"/>
         <classes>
             <class name="Tests.RegistrationPage_Test001"/>
             <class name="Tests.LoginPage_Test002"/>
             <class name="Tests.ProfileCompletionTest003"/>
         </classes>
-    </test>-->
+    </test>
+-->
 
-    <!-- ADMIN PORTAL TESTS -->
+    <!--ADMIN PORTAL TESTS -->
     <test name="AdminPortalTests">
         <parameter name="portal" value="admin"/>
         <classes>
-            <class name="Tests.AdminLoginTest"/>
-            <!-- Add more admin tests here -->
+            <class name="Tests.AdminLogin_Test004"/>
         </classes>
     </test>
+
 
 </suite>

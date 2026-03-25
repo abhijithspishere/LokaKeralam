@@ -28,7 +28,7 @@ public class ProfileCompletionPage extends BasePage {
     @FindBy(xpath = "//button[normalize-space()='Sign In']")
     private WebElement btnSignIn;
 
-    @FindBy(xpath = "//button[@type='button' and contains(., 'Complete Profile')]")
+    @FindBy(xpath = "//button[contains(normalize-space(), 'Complete Profile')]")
     private WebElement btnCompleteProfile;
     @FindBy(xpath = "//*[local-name()='svg' and @data-testid='EditIcon']")
     private WebElement editIcon;
@@ -84,7 +84,7 @@ public class ProfileCompletionPage extends BasePage {
     private WebElement txtPassportNo;
     @FindBy(xpath = "//span[text()='Passport Expiry Date']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input")
     private WebElement txtPassportExpiryDate;
-    @FindBy(xpath = "//div[@aria-label='Choose Saturday, February 7th, 2026']")
+    @FindBy(xpath = "//div[contains(@class,'react-datepicker__day') and text()='30']")
     private WebElement datePickerFeb07_2026;
     @FindBy(xpath = "//input[@id='passport-file' and @type='file']")
     private WebElement passportFileInput;
@@ -104,7 +104,7 @@ public class ProfileCompletionPage extends BasePage {
     private WebElement txtDocumentNo;
     @FindBy(xpath = "//span[text()='Date of Issue']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input")
     private WebElement txtDateOfIssue;
-    @FindBy(xpath = "//div[@aria-label='Choose Sunday, February 1st, 2026']")
+    @FindBy(xpath = "//div[contains(@class,'react-datepicker__day') and text()='28']")
     private WebElement datePickerJan01_2026;
     @FindBy(xpath = "//input[@id='proof-of-residence-file' and @type='file']")
     private WebElement residenceFileInput;
@@ -141,7 +141,7 @@ public class ProfileCompletionPage extends BasePage {
     // --- CRITICAL FIX: Wait for Page Reload ---
     private void waitForPageReload() {
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
             wait.until(ExpectedConditions.visibilityOf(editIcon));
             logger.info("Page reload completed.");
         } catch (Exception e) {
@@ -195,7 +195,7 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnSave));
         click(btnSave);
         waitForPageReload();
-         // Added Reload Wait
+        // Added Reload Wait
     }
 
     public void updateBasicInfo(String aboutMe) {
@@ -305,7 +305,7 @@ public class ProfileCompletionPage extends BasePage {
     }
 
 
-    public void updateResidenceProof(String documentNo, String residencePath) {
+    public void updateResidenceProof(String documentNo, String residencePath) throws InterruptedException {
 
         waitForPageReload();
         wait.until(ExpectedConditions.elementToBeClickable(dropDwnResidenceStatus));
@@ -325,6 +325,7 @@ public class ProfileCompletionPage extends BasePage {
         txtDocumentNo.clear();
         txtDocumentNo.sendKeys(documentNo);
 
+        Thread.sleep(2000);
         wait.until(ExpectedConditions.elementToBeClickable(txtDateOfIssue));
         click(txtDateOfIssue);
 
@@ -336,7 +337,7 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate06));
         click(btnUpdate06);
 
-        waitForPageReload();
+        Thread.sleep(2000);
     }
 
 
@@ -450,3 +451,4 @@ public class ProfileCompletionPage extends BasePage {
     }
 
 }
+

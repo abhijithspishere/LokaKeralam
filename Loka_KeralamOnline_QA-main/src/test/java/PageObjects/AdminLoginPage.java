@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import Utils.ConfigReader;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
@@ -30,29 +29,48 @@ public class AdminLoginPage extends BasePage {
     @FindBy(xpath = "//table//tbody/tr")
     private List<WebElement> userRows;
 
+    @FindBy(xpath = "//button[normalize-space()='Approve']")
+    private WebElement btnApprove;
 
+    @FindBy(xpath = "//p[contains(text(),'LKO ID')]")
+    private WebElement lkoIdText;
 
     public AdminLoginPage(WebDriver driver) {
         super(driver);
     }
+    public void loginAsAdmin(String email, String password) throws InterruptedException {
 
-            public void loginAsAdmin(String email, String password) throws InterruptedException {
+    sendKeys(txtAdminEmail, email);
+    sendKeys(txtAdminPassword, password);
 
-            sendKeys(txtAdminEmail, email);
-            sendKeys(txtAdminPassword, password);
+    wait.until(ExpectedConditions.elementToBeClickable(btnAdminLogin));
 
-            wait.until(ExpectedConditions.elementToBeClickable(btnAdminLogin));
-            Thread.sleep(2000);
+    int attempts = 0;
+    Thread .sleep(2000); // Brief pause to allow any potential UI changes
+    while (attempts < 2) {
+        try {
             btnAdminLogin.click();
-            System.out.println("clicked login button");
-
-            wait.until(ExpectedConditions.or(
-                    ExpectedConditions.urlContains("ApproverDashboard"),
-                    ExpectedConditions.urlContains("admin")
-            ));
-
-            logger.info("Login successful, navigated to: " + driver.getCurrentUrl());
+            logger.info("Clicked login button");
+            break;
+        } catch (Exception e) {
+            logger.warn("Normal click failed, retrying with JS click...");
+            try {
+                ((JavascriptExecutor) driver)
+                        .executeScript("arguments[0].click();", btnAdminLogin);
+                break;
+            } catch (Exception ex) {
+                attempts++;
+            }
         }
+    }
+
+    wait.until(ExpectedConditions.or(
+            ExpectedConditions.urlContains("ApproverDashboard"),
+            ExpectedConditions.urlContains("admin")
+    ));
+
+    logger.info("Login successful, navigated to: " + driver.getCurrentUrl());
+}
     public boolean isDashboardDisplayed() {
         try {
             wait.until(ExpectedConditions.or(
@@ -67,24 +85,25 @@ public class AdminLoginPage extends BasePage {
     }
 
     public void clickFirstRowViewButton() {
-        wait.until(ExpectedConditions.visibilityOfAllElements(userRows));
+        btnViewUserList.click();
 
-        if (!userRows.isEmpty()) {
-            WebElement firstRow = userRows.get(0);
+        By firstRowViewBtn = By.xpath("(//table//tbody/tr)[1]//td[last()]//button");
 
-            WebElement viewBtn = firstRow.findElement(
-                    By.xpath(".//td[last()]//button")
-            );
+        wait.until(ExpectedConditions.elementToBeClickable(firstRowViewBtn));
+        driver.findElement(firstRowViewBtn).click();
 
-            wait.until(ExpectedConditions.elementToBeClickable(viewBtn));
-            viewBtn.click();
-
-            logger.info("Clicked View button of first row");
-        } else {
-            logger.error("No rows found in user table");
-            throw new RuntimeException("User table is empty");
-        }
+        logger.info("Clicked View button of first row");
     }
-
+    public void aprroveUser() {
+        wait.until(ExpectedConditions.elementToBeClickable(btnApprove));
+        btnApprove.click();
+        logger.info("Clicked Approve button");
+    }
+    public String fetchLKO_ID() {
+        wait.until(ExpectedConditions.visibilityOf(lkoIdText));
+        String LKO_ID = getText(lkoIdText).replace("LKO ID: ", "").trim();
+        logger.info("Fetched LKO ID: " + LKO_ID);
+        return LKO_ID;
+    }
 
 }

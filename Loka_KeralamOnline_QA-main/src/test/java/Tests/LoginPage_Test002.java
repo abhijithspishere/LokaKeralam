@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class LoginPage_Test002 extends Hook {
 
     @Test(
-            priority = 1,
+            priority = 2,
             testName = "CLKOI-AT-GCCDW-02_Login_With_Registered_User",
             description = "Verify login using credentials created in Registration Test"
     )

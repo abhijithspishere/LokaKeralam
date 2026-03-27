@@ -24,7 +24,6 @@ public class RegistrationPage_Test001 extends Hook {
             testName = "CLKOI-AT-GCCDW-01_Complete_Registration_Flow",
             description = "Verify complete end-to-end registration flow using OTP",
             dataProvider = "registrationData"
-
     )
     public void registration_test(
             String yopmailUsername,
@@ -36,7 +35,6 @@ public class RegistrationPage_Test001 extends Hook {
     ) {
         int experienceYears = 5;
 
-
         logger.info("========== TEST STARTED ==========");
         logger.info("User: " + firstName + " " + lastName);
         logger.info("Yopmail Username: " + yopmailUsername);
@@ -47,32 +45,38 @@ public class RegistrationPage_Test001 extends Hook {
         test.log(Status.INFO, "Yopmail Username: " + yopmailUsername);
         test.log(Status.INFO, "Phone: " + phoneNumber);
 
-        RegistrationPage welcomePage = new RegistrationPage(driver);
+        RegistrationPage registrationPage = new RegistrationPage(driver);
 
         try {
             logger.info("STEP 1: Closing popup and exploring");
-            welcomePage.clickCloseButton();
-            welcomePage.clickExploreButton();
+            registrationPage.clickCloseButton();
+            registrationPage.clickExploreButton();
 
             logger.info("STEP 2: Registering with Yopmail: " + yopmailUsername);
-            welcomePage.registerWithYopmail(yopmailUsername);
+            registrationPage.registerWithYopmail(yopmailUsername);
 
             logger.info("STEP 3: Selecting country and city");
-            welcomePage.selectCountryAndCity();
+            registrationPage.selectCountryAndCity();
 
             logger.info("STEP 4: Filling personal details");
-            welcomePage.fillPersonalDetails(
+            // Updated to match the actual method signature - only 4 parameters
+            registrationPage.fillPersonalDetails(
                     firstName,
                     middleName,
                     lastName,
-                    phoneNumber,
-                    password,
-                    experienceYears
+                    phoneNumber
             );
 
+            // Step 4.5: Select user description (Employee)
+            logger.info("STEP 4.5: Selecting user description");
+            registrationPage.selectEmployee();
+
+            // Step 4.6: Set experience and submit with password
+            logger.info("STEP 4.6: Setting experience and submitting registration");
+            registrationPage.setExperienceAndSubmit(password, experienceYears);
 
             logger.info("STEP 5: Validating registration");
-            boolean isRegistered = welcomePage.isRegistrationSuccessful();
+            boolean isRegistered = registrationPage.isRegistrationSuccessful();
 
             Assert.assertTrue(
                     isRegistered,
@@ -81,7 +85,7 @@ public class RegistrationPage_Test001 extends Hook {
 
             String email = yopmailUsername + "@yopmail.com";
 
-            //Credential passing to Login test
+            // Credential passing to Login test
             CredentialsStorage.storeCredentials(email, password);
 
             logger.info("Credentials stored for login test:");
@@ -91,18 +95,17 @@ public class RegistrationPage_Test001 extends Hook {
             logger.info("Registration validation successful");
             test.log(Status.PASS, "Registration verified successfully");
 
-
             logger.info("STEP 6: Logging out registered user");
-            welcomePage.logoutRegisteredUser();
+            registrationPage.logoutRegisteredUser();
             logger.info("User logged out successfully");
 
             test.log(Status.PASS, "End-to-end registration flow completed successfully");
             logger.info("========== TEST PASSED ==========");
-
 
         } catch (Exception e) {
             logger.error("Test failed: ", e);
             test.log(Status.FAIL, "Test failed: " + e.getMessage());
             Assert.fail("Test failed: " + e.getMessage());
         }
-}}
+    }
+}

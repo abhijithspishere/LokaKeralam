@@ -21,7 +21,7 @@ public class ProfileCompletionTest003 extends Hook {
     }
 
     @Test(
-            priority = 1,
+            priority = 3,
             testName = "CLKOI-AT-GCCDW-02_Profile_Completion",
             description = "Verify profile completion with data from Excel",
             dataProvider = "profileData"
@@ -34,7 +34,9 @@ public class ProfileCompletionTest003 extends Hook {
             String passportNo,
             String docNo,
             String fbUrl, String liUrl, String instaUrl
-    ) {
+    )
+            throws InterruptedException {
+
         ProfileCompletionPage profilePage = new ProfileCompletionPage(driver);
 
 
@@ -99,5 +101,14 @@ public class ProfileCompletionTest003 extends Hook {
             test.log(Status.FAIL, "Exception during login: " + e.getMessage());
             Assert.fail("Exception occurred during login: " + e.getMessage());
         }
+    }
+    public void fetchApprovedLKOID() throws InterruptedException {
+        ProfileCompletionPage profilePage = new ProfileCompletionPage(driver);
+
+        String email = CredentialsStorage.getRegisteredEmail();
+        String password = CredentialsStorage.getRegisteredPassword();
+
+        test.log(Status.INFO, "Test User: " + email);
+        profilePage.loginWithCredentials(email, password);
     }
 }

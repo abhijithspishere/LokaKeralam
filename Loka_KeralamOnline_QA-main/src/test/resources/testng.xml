@@ -2,7 +2,6 @@
 <suite name="EndToEndSuite">
 
     <!-- USER PORTAL TESTS -->
-<!--
     <test name="UserPortalTests">
         <parameter name="portal" value="user"/>
         <classes>
@@ -11,9 +10,8 @@
             <class name="Tests.ProfileCompletionTest003"/>
         </classes>
     </test>
--->
 
-    <!--ADMIN PORTAL TESTS -->
+    <!-- ADMIN PORTAL TESTS -->
     <test name="AdminPortalTests">
         <parameter name="portal" value="admin"/>
         <classes>
@@ -21,5 +19,12 @@
         </classes>
     </test>
 
+    <!-- LKO ID VERIFICATION TEST -->
+    <test name="LKOIdVerificationTest">
+        <parameter name="portal" value="verification"/>
+        <classes>
+            <class name="Tests.IdenticalLKO_Test005"/>
+        </classes>
+    </test>
 
 </suite>

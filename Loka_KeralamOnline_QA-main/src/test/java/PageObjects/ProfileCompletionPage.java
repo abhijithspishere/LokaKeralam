@@ -132,6 +132,12 @@ public class ProfileCompletionPage extends BasePage {
     private WebElement btnSubmitProceeding;
     @FindBy(xpath = "(//button[normalize-space()='Close'])[2]")
     private WebElement btnSubmissionClose;
+    @FindBy(xpath="//p[contains(text(),'Hi')]//following::img[@alt='Profile'][2]")
+    private WebElement btnProfileLko;
+    @FindBy(xpath = "//span[normalize-space()='My Profile']")
+    private WebElement btnMyProfile;
+    @FindBy(xpath = "//p[contains(text(),'LKO ID')]")
+    private WebElement lkoIdText;
 
     public ProfileCompletionPage(WebDriver driver) {
         super(driver);
@@ -153,7 +159,7 @@ public class ProfileCompletionPage extends BasePage {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
     }
 
-    public void loginWithCredentials(String email, String password) {
+    public void loginWithCredentials(String email, String password) throws InterruptedException {
         try { click(btnWelcomeClose); } catch (Exception e) {}
         try { click(btnExplore); } catch (Exception e) {}
 
@@ -167,6 +173,8 @@ public class ProfileCompletionPage extends BasePage {
 
         wait.until(ExpectedConditions.elementToBeClickable(btnSignIn));
         click(btnSignIn);
+        handleNetworkError();
+        Thread.sleep(2000);
         handleNetworkError();
     }
 
@@ -218,9 +226,16 @@ public class ProfileCompletionPage extends BasePage {
 
     public void updateNRKAddress(String address) {
         waitForPageReload();
-        wait.until(ExpectedConditions.visibilityOf(txtAddressLine1));
-        scrollToCenter(txtAddressLine1);
-        sendKeys(txtAddressLine1, address);
+        By addressLocator = By.xpath("//textarea[@name='addressLine1']");
+
+        WebElement addressField = wait.until(
+                ExpectedConditions.refreshed(
+                        ExpectedConditions.visibilityOfElementLocated(addressLocator)
+                )
+        );
+        scrollToCenter(addressField);
+        addressField.clear();
+        addressField.sendKeys(address);
 
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate02));
         click(btnUpdate02);
@@ -325,7 +340,7 @@ public class ProfileCompletionPage extends BasePage {
         txtDocumentNo.clear();
         txtDocumentNo.sendKeys(documentNo);
 
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         wait.until(ExpectedConditions.elementToBeClickable(txtDateOfIssue));
         click(txtDateOfIssue);
 
@@ -381,13 +396,23 @@ public class ProfileCompletionPage extends BasePage {
         jsClick(btnSubmissionClose);
         System.out.println("Clicked on Submission Close button");
 
-
 /*
         wait.until(ExpectedConditions.elementToBeClickable(btnSubmitProceeding));
         click(btnSubmitProceeding);*/
 
-
     }
+
+    public String getUserLkoId(){
+        wait.until(ExpectedConditions.visibilityOf(btnProfileLko));
+        click(btnProfileLko);
+        wait.until(ExpectedConditions.visibilityOf(btnMyProfile));
+        click(btnMyProfile);
+        wait.until(ExpectedConditions.visibilityOf(lkoIdText));
+        return getText(lkoIdText).replace("LKO ID: ", "").trim();
+    }
+
+
+
 
     public boolean isProfileCompletionSuccessful() {
         try {

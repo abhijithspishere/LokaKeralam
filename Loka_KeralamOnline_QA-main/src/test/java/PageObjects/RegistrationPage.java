@@ -123,6 +123,10 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//button[normalize-space()='Register']")
     private WebElement btnRegister;
 
+///////////Selection of Employer/Entrepreneur/Businnes
+    @FindBy(xpath="//span[normalize-space()='Employer / Entrepreneur / Business']")
+    private WebElement selectEmployer;
+/////////////////////////////////////////////////////////
     private final YopmailOTPFetcher otpFetcher;
 
     public RegistrationPage(WebDriver driver) {
@@ -249,9 +253,8 @@ public class RegistrationPage extends BasePage {
     public void fillPersonalDetails
             (String firstName, String middleName,
              String lastName,
-             String phoneNumber,
-             String password, int experienceYears)
-    {
+             String phoneNumber
+             ) {
         sendKeys(txtfirstName, firstName);
         sendKeys(txtMiddleName, middleName);
         sendKeys(txtLastName, lastName);
@@ -262,8 +265,18 @@ public class RegistrationPage extends BasePage {
         click(chkboxMale);
         sendKeys(txtPhoneNumber, phoneNumber);
         click(dropdownUserDescription);
-        click(selectUserDescription);
+    }
+    public void selectEmployee(){
+        click(selectUserDescription);}
 
+
+    //Emploer/Entrepreneur/Business////////////////
+    public void selectEmployer(){
+        click(selectEmployer);
+    }
+/// //////////////////////////////////////
+
+    public void setExperienceAndSubmit(String password, int experienceYears){
         setExperienceSlider(experienceYears);
         logger.debug("Experience set to {} years", experienceYears);
 

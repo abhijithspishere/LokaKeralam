@@ -11,7 +11,7 @@ public class AdminLogin_Test004 extends Hook {
 
     @Test(
             priority = 4, // Run after user registration and login tests
-            testName = "CLKOI-AT-GCCDW-03_Admin_Login_Test",
+            testName = "CLKOI-AT-GCCDW-04_Admin_Login_Test",
             description = "Verify Official Admin Login functionality"
     )
     public void admin_login_test() throws InterruptedException {

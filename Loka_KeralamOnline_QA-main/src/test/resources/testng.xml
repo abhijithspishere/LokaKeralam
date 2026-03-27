@@ -4,6 +4,8 @@
     <!-- USER PORTAL TESTS -->
     <test name="UserPortalTests">
         <parameter name="portal" value="user"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="environment" value="qa"/>
         <classes>
             <class name="Tests.RegistrationPage_Test001"/>
             <class name="Tests.LoginPage_Test002"/>
@@ -14,6 +16,8 @@
     <!-- ADMIN PORTAL TESTS -->
     <test name="AdminPortalTests">
         <parameter name="portal" value="admin"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="environment" value="qa"/>
         <classes>
             <class name="Tests.AdminLogin_Test004"/>
         </classes>
@@ -22,8 +26,30 @@
     <!-- LKO ID VERIFICATION TEST -->
     <test name="LKOIdVerificationTest">
         <parameter name="portal" value="verification"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="environment" value="qa"/>
         <classes>
             <class name="Tests.IdenticalLKO_Test005"/>
+        </classes>
+    </test>
+
+    <!-- EMPLOYER SIGNUP TEST -->
+    <test name="EmployerSignupTest">
+        <parameter name="portal" value="employer"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="environment" value="qa"/>
+        <classes>
+            <class name="Tests.Employer_Signup_Test006"/>
+        </classes>
+    </test>
+
+    <!-- EMPLOYER PROFILE COMPLETION TEST -->
+    <test name="EmployerProfileCompletionTest">
+        <parameter name="portal" value="employer"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="environment" value="qa"/>
+        <classes>
+            <class name="Tests.EmployerProfileComp_Test007"/>
         </classes>
     </test>
 

@@ -33,6 +33,7 @@ public class RegistrationPage_Test001 extends Hook {
             String phoneNumber,
             String password
     ) {
+        CredentialsStorage.clearCredentials();
         int experienceYears = 5;
 
         logger.info("========== TEST STARTED ==========");
@@ -59,7 +60,6 @@ public class RegistrationPage_Test001 extends Hook {
             registrationPage.selectCountryAndCity();
 
             logger.info("STEP 4: Filling personal details");
-            // Updated to match the actual method signature - only 4 parameters
             registrationPage.fillPersonalDetails(
                     firstName,
                     middleName,
@@ -67,9 +67,9 @@ public class RegistrationPage_Test001 extends Hook {
                     phoneNumber
             );
 
-            // Step 4.5: Select user description (Employee)
-            logger.info("STEP 4.5: Selecting user description");
-            registrationPage.selectEmployee();
+            // Step 4.5: Select user description (Employer)
+            logger.info("STEP 4.5: Selecting user description as Employer");
+            registrationPage.selectEmployee();  // Assuming you have this method
 
             // Step 4.6: Set experience and submit with password
             logger.info("STEP 4.6: Setting experience and submitting registration");
@@ -85,12 +85,12 @@ public class RegistrationPage_Test001 extends Hook {
 
             String email = yopmailUsername + "@yopmail.com";
 
-            // Credential passing to Login test
+            // Store as EMPLOYER credentials instead of employee
             CredentialsStorage.storeCredentials(email, password);
 
-            logger.info("Credentials stored for login test:");
-            logger.info("Email: " + email);
-            logger.info("Password: " + password);
+            logger.info("Employer credentials stored for profile completion test:");
+            logger.info("Employer Email: " + email);
+            logger.info("Employer Password: " + password);
 
             logger.info("Registration validation successful");
             test.log(Status.PASS, "Registration verified successfully");

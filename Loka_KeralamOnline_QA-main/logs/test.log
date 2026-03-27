@@ -9735,3 +9735,1236 @@ Session ID: 07e75e87e85340b6caccae7b5bcc5eb9
 2026-03-27 11:41:40.709 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
 2026-03-27 11:42:22.492 [main] INFO  verifyIdenticalLKOId - Test PASSED: verifyIdenticalLKOId
 2026-03-27 11:42:23.577 [main] INFO  verifyIdenticalLKOId - Test suite execution completed
+2026-03-27 13:57:06.547 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 13:57:06.551 [main] INFO  employer_signup_test - Browser: CHROME
+2026-03-27 13:57:06.551 [main] INFO  employer_signup_test - Environment: QA
+2026-03-27 13:57:06.608 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 13:57:09.943 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 13:57:10.129 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 13:57:10.437 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 13:57:10.565 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 13:57:10.787 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 13:57:10.944 [main] INFO  PageObjects.RegistrationPage - Entering email: asp442@***
+2026-03-27 13:57:11.165 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 13:57:20.434 [main] ERROR employer_signup_test - Test FAILED: employer_signup_test
+2026-03-27 13:57:20.841 [main] INFO  employer_signup_test - Test suite execution completed
+2026-03-27 13:58:09.803 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 13:58:09.807 [main] INFO  employer_signup_test - Browser: CHROME
+2026-03-27 13:58:09.807 [main] INFO  employer_signup_test - Environment: QA
+2026-03-27 13:58:09.841 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 13:58:13.237 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 13:58:13.417 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 13:58:13.734 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 13:58:13.863 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 13:58:14.071 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 13:58:14.244 [main] INFO  PageObjects.RegistrationPage - Entering email: asp432@***
+2026-03-27 13:58:14.585 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 13:58:35.344 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 13:58:35.344 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 13:58:35.432 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 13:58:41.804 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 13:58:41.804 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 13:58:46.816 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 13:58:46.925 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-03-27 13:58:47.356 [main] INFO  employer_signup_test - Test suite execution completed
+2026-03-27 14:42:51.656 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 14:42:51.661 [main] INFO  employer_signup_test - Browser: CHROME
+2026-03-27 14:42:51.662 [main] INFO  employer_signup_test - Environment: QA
+2026-03-27 14:42:51.745 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 14:42:59.101 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 14:42:59.401 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 14:42:59.710 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 14:42:59.948 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 14:43:00.252 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 14:43:00.553 [main] INFO  PageObjects.RegistrationPage - Entering email: asp433@***
+2026-03-27 14:43:00.922 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 14:43:34.467 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 14:43:34.468 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 14:43:34.695 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 14:43:45.209 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 14:43:45.210 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 14:44:05.596 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 14:44:05.779 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-03-27 14:44:47.544 [main] INFO  profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 14:44:47.545 [main] INFO  profile_completion_test - Browser: CHROME
+2026-03-27 14:44:47.545 [main] INFO  profile_completion_test - Environment: QA
+2026-03-27 14:44:47.620 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 14:45:42.414 [main] ERROR profile_completion_test - Test FAILED: profile_completion_test
+2026-03-27 14:45:43.265 [main] INFO  profile_completion_test - Test suite execution completed
+2026-03-27 15:14:08.312 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:14:08.320 [main] INFO  employer_signup_test - Browser: CHROME
+2026-03-27 15:14:08.320 [main] INFO  employer_signup_test - Environment: QA
+2026-03-27 15:14:08.398 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 15:14:10.429 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 15:14:13.863 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 15:14:14.269 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 15:14:14.538 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 15:14:14.906 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 15:14:15.162 [main] INFO  PageObjects.RegistrationPage - Entering email: asp435@***
+2026-03-27 15:14:15.558 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 15:14:53.065 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 15:14:53.066 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 15:14:53.566 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 15:15:05.876 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 15:15:05.880 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 15:15:25.493 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 15:15:25.735 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-03-27 15:16:23.322 [main] INFO  employer_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:16:23.324 [main] INFO  employer_profile_completion_test - Browser: CHROME
+2026-03-27 15:16:23.324 [main] INFO  employer_profile_completion_test - Environment: QA
+2026-03-27 15:16:23.342 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 15:17:03.017 [main] ERROR employer_profile_completion_test - Test FAILED: employer_profile_completion_test
+2026-03-27 15:17:03.329 [main] INFO  employer_profile_completion_test - Test suite execution completed
+2026-03-27 15:27:32.769 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:27:32.798 [main] INFO  employer_signup_test - Browser: CHROME
+2026-03-27 15:27:32.798 [main] INFO  employer_signup_test - Environment: QA
+2026-03-27 15:27:32.867 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 15:27:38.154 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 15:27:38.458 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 15:27:38.821 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 15:27:39.108 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 15:27:39.501 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 15:27:39.771 [main] INFO  PageObjects.RegistrationPage - Entering email: asp436@***
+2026-03-27 15:27:40.192 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 15:28:15.897 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 15:28:15.901 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 15:28:16.146 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 15:28:24.684 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 15:28:27.689 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 15:28:46.487 [main] INFO  employer_signup_test - ✓ EMPLOYER CREDENTIALS STORED:
+2026-03-27 15:28:46.487 [main] INFO  employer_signup_test -   Email: asp436@yopmail.com
+2026-03-27 15:28:46.488 [main] INFO  employer_signup_test -   Password: Test@123
+2026-03-27 15:28:46.488 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 15:28:46.694 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-03-27 15:29:24.870 [main] INFO  employer_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:29:24.873 [main] INFO  employer_profile_completion_test - Browser: CHROME
+2026-03-27 15:29:24.873 [main] INFO  employer_profile_completion_test - Environment: QA
+2026-03-27 15:29:24.894 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 15:30:42.449 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:30:43.498 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:30:49.833 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:30:50.885 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:31:01.957 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:31:03.005 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:31:08.478 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:31:10.537 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:31:13.210 [main] ERROR employer_profile_completion_test - Test FAILED: employer_profile_completion_test
+2026-03-27 15:31:14.007 [main] INFO  employer_profile_completion_test - Test suite execution completed
+2026-03-27 15:36:29.858 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:36:29.868 [main] INFO  employer_signup_test - Browser: CHROME
+2026-03-27 15:36:29.869 [main] INFO  employer_signup_test - Environment: QA
+2026-03-27 15:36:29.959 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 15:36:34.095 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 15:36:34.423 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 15:36:34.785 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 15:36:35.084 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 15:36:35.460 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 15:36:35.722 [main] INFO  PageObjects.RegistrationPage - Entering email: asp437@***
+2026-03-27 15:36:36.163 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 15:37:04.562 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 15:37:04.565 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 15:37:04.832 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 15:37:14.202 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 15:37:17.209 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 15:37:30.284 [main] INFO  employer_signup_test - ✓ EMPLOYER CREDENTIALS STORED:
+2026-03-27 15:37:30.285 [main] INFO  employer_signup_test -   Email: asp437@yopmail.com
+2026-03-27 15:37:30.285 [main] INFO  employer_signup_test -   Password: Test@123
+2026-03-27 15:37:30.286 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 15:37:30.468 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-03-27 15:37:51.655 [main] INFO  employer_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:37:51.655 [main] INFO  employer_profile_completion_test - Browser: CHROME
+2026-03-27 15:37:51.655 [main] INFO  employer_profile_completion_test - Environment: QA
+2026-03-27 15:37:51.741 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 15:39:02.521 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:39:03.580 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:39:09.800 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:39:12.576 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:39:16.086 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:39:17.963 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:39:23.216 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:39:25.245 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:39:26.954 [main] INFO  PageObjects.ProfileCompletionPage - Closed dropdown by clicking outside
+2026-03-27 15:39:27.213 [main] ERROR employer_profile_completion_test - Test FAILED: employer_profile_completion_test
+2026-03-27 15:39:28.000 [main] INFO  employer_profile_completion_test - Test suite execution completed
+2026-03-27 15:41:48.659 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:41:48.665 [main] INFO  employer_signup_test - Browser: CHROME
+2026-03-27 15:41:48.666 [main] INFO  employer_signup_test - Environment: QA
+2026-03-27 15:41:48.736 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 15:41:52.257 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 15:41:52.625 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 15:41:52.985 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 15:41:53.243 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 15:41:53.682 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 15:41:53.920 [main] INFO  PageObjects.RegistrationPage - Entering email: asp438@***
+2026-03-27 15:41:54.335 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 15:42:19.219 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 15:42:19.224 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 15:42:19.503 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 15:42:28.499 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 15:42:31.505 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 15:42:40.383 [main] INFO  employer_signup_test - ✓ EMPLOYER CREDENTIALS STORED:
+2026-03-27 15:42:40.385 [main] INFO  employer_signup_test -   Email: asp438@yopmail.com
+2026-03-27 15:42:40.386 [main] INFO  employer_signup_test -   Password: Test@123
+2026-03-27 15:42:40.387 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 15:42:40.574 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-03-27 15:42:42.215 [main] INFO  employer_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:42:42.215 [main] INFO  employer_profile_completion_test - Browser: CHROME
+2026-03-27 15:42:42.217 [main] INFO  employer_profile_completion_test - Environment: QA
+2026-03-27 15:42:42.300 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 15:43:50.847 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:43:51.888 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:43:58.159 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:00.034 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:03.818 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:06.030 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:11.467 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:13.546 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:15.375 [main] INFO  PageObjects.ProfileCompletionPage - Pressed Escape key
+2026-03-27 15:44:22.909 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:24.034 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:25.608 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/passportSample.jpg
+2026-03-27 15:44:27.091 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:28.143 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:32.350 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/aadhar.jpg
+2026-03-27 15:44:35.746 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:43.512 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:44:49.491 [main] ERROR employer_profile_completion_test - Test FAILED: employer_profile_completion_test
+2026-03-27 15:44:50.413 [main] INFO  employer_profile_completion_test - Test suite execution completed
+2026-03-27 15:49:15.726 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:49:15.729 [main] INFO  employer_signup_test - Browser: CHROME
+2026-03-27 15:49:15.729 [main] INFO  employer_signup_test - Environment: QA
+2026-03-27 15:49:15.771 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 15:49:19.256 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 15:49:19.406 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 15:49:19.760 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 15:49:19.895 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 15:49:20.106 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 15:49:20.266 [main] INFO  PageObjects.RegistrationPage - Entering email: asp439@***
+2026-03-27 15:49:20.493 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 15:49:39.909 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 15:49:39.909 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 15:49:40.015 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 15:49:45.399 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 15:49:48.409 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 15:49:50.190 [main] INFO  employer_signup_test - ✓ EMPLOYER CREDENTIALS STORED:
+2026-03-27 15:49:50.190 [main] INFO  employer_signup_test -   Email: asp439@yopmail.com
+2026-03-27 15:49:50.191 [main] INFO  employer_signup_test -   Password: Test@123
+2026-03-27 15:49:50.191 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 15:49:50.278 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-03-27 15:50:03.969 [main] INFO  employer_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:50:03.970 [main] INFO  employer_profile_completion_test - Browser: CHROME
+2026-03-27 15:50:03.971 [main] INFO  employer_profile_completion_test - Environment: QA
+2026-03-27 15:50:03.982 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 15:50:43.152 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:50:44.192 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:50:48.644 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:50:50.384 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:50:52.903 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:50:54.366 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:50:58.192 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:50:59.748 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:51:01.292 [main] INFO  PageObjects.ProfileCompletionPage - Pressed Escape key
+2026-03-27 15:51:07.854 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:51:08.885 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:51:09.793 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/passportSample.jpg
+2026-03-27 15:51:10.995 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:51:12.021 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:51:14.963 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/aadhar.jpg
+2026-03-27 15:51:18.214 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:51:23.147 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 15:51:25.817 [main] INFO  employer_profile_completion_test - Test PASSED: employer_profile_completion_test
+2026-03-27 15:51:26.273 [main] INFO  employer_profile_completion_test - Test suite execution completed
+2026-03-27 15:53:04.643 [main] INFO  registration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:53:04.647 [main] INFO  registration_test - Browser: CHROME
+2026-03-27 15:53:04.647 [main] INFO  registration_test - Environment: QA
+2026-03-27 15:53:04.653 [main] INFO  registration_test - ========== TEST STARTED ==========
+2026-03-27 15:53:04.654 [main] INFO  registration_test - User: Akhil Satheesh
+2026-03-27 15:53:04.654 [main] INFO  registration_test - Yopmail Username: asp427
+2026-03-27 15:53:04.654 [main] INFO  registration_test - Phone: 2147483647
+2026-03-27 15:53:04.686 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 15:53:04.686 [main] INFO  registration_test - STEP 1: Closing popup and exploring
+2026-03-27 15:53:04.687 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 15:53:04.857 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 15:53:05.169 [main] INFO  registration_test - STEP 2: Registering with Yopmail: asp427
+2026-03-27 15:53:05.169 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 15:53:05.321 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 15:53:05.502 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 15:53:05.625 [main] INFO  PageObjects.RegistrationPage - Entering email: asp427@***
+2026-03-27 15:53:05.871 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 15:53:26.738 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 15:53:26.738 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 15:53:26.838 [main] INFO  registration_test - STEP 3: Selecting country and city
+2026-03-27 15:53:26.838 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 15:53:29.388 [main] INFO  registration_test - STEP 4: Filling personal details
+2026-03-27 15:53:31.250 [main] INFO  registration_test - STEP 4.5: Selecting user description as Employer
+2026-03-27 15:53:31.393 [main] INFO  registration_test - STEP 4.6: Setting experience and submitting registration
+2026-03-27 15:53:32.555 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 15:53:32.555 [main] INFO  registration_test - STEP 5: Validating registration
+2026-03-27 15:53:32.555 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 15:53:37.161 [main] INFO  registration_test - Employer credentials stored for profile completion test:
+2026-03-27 15:53:37.161 [main] INFO  registration_test - Employer Email: asp427@yopmail.com
+2026-03-27 15:53:37.161 [main] INFO  registration_test - Employer Password: Test@123
+2026-03-27 15:53:37.161 [main] INFO  registration_test - Registration validation successful
+2026-03-27 15:53:37.162 [main] INFO  registration_test - STEP 6: Logging out registered user
+2026-03-27 15:53:37.162 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 15:53:37.256 [main] INFO  registration_test - User logged out successfully
+2026-03-27 15:53:37.256 [main] INFO  registration_test - ========== TEST PASSED ==========
+2026-03-27 15:53:37.259 [main] INFO  registration_test - Test PASSED: registration_test
+2026-03-27 15:53:47.742 [main] INFO  login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:53:47.743 [main] INFO  login_test - Browser: CHROME
+2026-03-27 15:53:47.743 [main] INFO  login_test - Environment: QA
+2026-03-27 15:53:47.744 [main] INFO  login_test - ========== LOGIN TEST STARTED ==========
+2026-03-27 15:53:47.745 [main] ERROR login_test - Credentials not found! Ensure Registration Test runs successfully before this test.
+2026-03-27 15:53:47.747 [main] WARN  login_test - Test SKIPPED: login_test
+2026-03-27 15:53:57.342 [main] INFO  employee_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:53:57.342 [main] INFO  employee_profile_completion_test - Browser: CHROME
+2026-03-27 15:53:57.343 [main] INFO  employee_profile_completion_test - Environment: QA
+2026-03-27 15:53:57.354 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 15:53:57.355 [main] WARN  employee_profile_completion_test - Employee credentials not found in memory. Using fallback test credentials.
+2026-03-27 15:54:24.488 [main] ERROR employee_profile_completion_test - Test Failed: 
+org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fac83380049d1dd2deac70a51cf2f3e7, findElement {value=//button[contains(normalize-space(), 'Complete Profile')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\DUK\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53140}, goog:processID: 23004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53140/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fac83380049d1dd2deac70a51cf2f3e7
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:662)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:658)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at PageObjects.ProfileCompletionPage.navigateToProfile(ProfileCompletionPage.java:189)
+	at Tests.ProfileCompletionTest003.employee_profile_completion_test(ProfileCompletionTest003.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2026-03-27 15:54:24.503 [main] ERROR employee_profile_completion_test - Test FAILED: employee_profile_completion_test
+2026-03-27 15:56:59.447 [main] INFO  registration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:56:59.450 [main] INFO  registration_test - Browser: CHROME
+2026-03-27 15:56:59.450 [main] INFO  registration_test - Environment: QA
+2026-03-27 15:56:59.456 [main] INFO  registration_test - ========== TEST STARTED ==========
+2026-03-27 15:56:59.458 [main] INFO  registration_test - User: Akhil Satheesh
+2026-03-27 15:56:59.458 [main] INFO  registration_test - Yopmail Username: asp428
+2026-03-27 15:56:59.458 [main] INFO  registration_test - Phone: 2147483647
+2026-03-27 15:56:59.494 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 15:56:59.494 [main] INFO  registration_test - STEP 1: Closing popup and exploring
+2026-03-27 15:56:59.494 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 15:56:59.668 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 15:56:59.970 [main] INFO  registration_test - STEP 2: Registering with Yopmail: asp428
+2026-03-27 15:56:59.971 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 15:57:00.133 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 15:57:00.332 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 15:57:00.474 [main] INFO  PageObjects.RegistrationPage - Entering email: asp428@***
+2026-03-27 15:57:00.697 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 15:57:19.757 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 15:57:19.757 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 15:57:19.857 [main] INFO  registration_test - STEP 3: Selecting country and city
+2026-03-27 15:57:19.858 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 15:57:22.538 [main] INFO  registration_test - STEP 4: Filling personal details
+2026-03-27 15:57:24.371 [main] INFO  registration_test - STEP 4.5: Selecting user description as Employer
+2026-03-27 15:57:24.537 [main] INFO  registration_test - STEP 4.6: Setting experience and submitting registration
+2026-03-27 15:57:25.748 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 15:57:25.748 [main] INFO  registration_test - STEP 5: Validating registration
+2026-03-27 15:57:25.748 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 15:57:41.232 [main] INFO  registration_test - Employer credentials stored for profile completion test:
+2026-03-27 15:57:41.234 [main] INFO  registration_test - Employer Email: asp428@yopmail.com
+2026-03-27 15:57:41.234 [main] INFO  registration_test - Employer Password: Test@123
+2026-03-27 15:57:41.234 [main] INFO  registration_test - Registration validation successful
+2026-03-27 15:57:41.235 [main] INFO  registration_test - STEP 6: Logging out registered user
+2026-03-27 15:57:41.235 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 15:57:41.363 [main] INFO  registration_test - User logged out successfully
+2026-03-27 15:57:41.364 [main] INFO  registration_test - ========== TEST PASSED ==========
+2026-03-27 15:57:41.370 [main] INFO  registration_test - Test PASSED: registration_test
+2026-03-27 15:57:53.293 [main] INFO  login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:57:53.293 [main] INFO  login_test - Browser: CHROME
+2026-03-27 15:57:53.293 [main] INFO  login_test - Environment: QA
+2026-03-27 15:57:53.295 [main] INFO  login_test - ========== LOGIN TEST STARTED ==========
+2026-03-27 15:57:53.296 [main] ERROR login_test - Credentials not found! Ensure Registration Test runs successfully before this test.
+2026-03-27 15:57:53.298 [main] WARN  login_test - Test SKIPPED: login_test
+2026-03-27 15:58:06.623 [main] INFO  employee_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 15:58:06.624 [main] INFO  employee_profile_completion_test - Browser: CHROME
+2026-03-27 15:58:06.625 [main] INFO  employee_profile_completion_test - Environment: QA
+2026-03-27 15:58:06.636 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 15:58:06.636 [main] WARN  employee_profile_completion_test - Employee credentials not found in memory. Using fallback test credentials.
+2026-03-27 16:08:06.757 [main] INFO  registration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 16:08:06.760 [main] INFO  registration_test - Browser: CHROME
+2026-03-27 16:08:06.760 [main] INFO  registration_test - Environment: QA
+2026-03-27 16:08:06.767 [main] INFO  registration_test - ========== TEST STARTED ==========
+2026-03-27 16:08:06.767 [main] INFO  registration_test - User: Akhil Satheesh
+2026-03-27 16:08:06.767 [main] INFO  registration_test - Yopmail Username: asp429
+2026-03-27 16:08:06.767 [main] INFO  registration_test - Phone: 2147483647
+2026-03-27 16:08:06.802 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 16:08:06.802 [main] INFO  registration_test - STEP 1: Closing popup and exploring
+2026-03-27 16:08:06.802 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 16:08:06.975 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 16:08:07.284 [main] INFO  registration_test - STEP 2: Registering with Yopmail: asp429
+2026-03-27 16:08:07.284 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 16:08:07.451 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 16:08:07.634 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 16:08:07.779 [main] INFO  PageObjects.RegistrationPage - Entering email: asp429@***
+2026-03-27 16:08:08.011 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 16:09:55.582 [main] ERROR registration_test - Test failed: 
+java.lang.RuntimeException: OTP not received from Yopmail after retries
+	at Utils.YopmailOTPFetcher.fetchOTPWithRetry(YopmailOTPFetcher.java:260)
+	at PageObjects.RegistrationPage.registerWithYopmail(RegistrationPage.java:180)
+	at Tests.RegistrationPage_Test001.registration_test(RegistrationPage_Test001.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2026-03-27 16:09:55.598 [main] ERROR registration_test - Test FAILED: registration_test
+2026-03-27 16:09:58.307 [main] INFO  login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 16:09:58.307 [main] INFO  login_test - Browser: CHROME
+2026-03-27 16:09:58.307 [main] INFO  login_test - Environment: QA
+2026-03-27 16:09:58.331 [main] INFO  login_test - ========== LOGIN TEST STARTED ==========
+2026-03-27 16:09:58.332 [main] ERROR login_test - Credentials not found! Ensure Registration Test runs successfully before this test.
+2026-03-27 16:09:58.334 [main] WARN  login_test - Test SKIPPED: login_test
+2026-03-27 16:10:00.230 [main] INFO  employee_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 16:10:00.231 [main] INFO  employee_profile_completion_test - Browser: CHROME
+2026-03-27 16:10:00.231 [main] INFO  employee_profile_completion_test - Environment: QA
+2026-03-27 16:10:00.251 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 16:10:00.251 [main] WARN  employee_profile_completion_test - Employee credentials not found in memory. Using fallback test credentials.
+2026-03-27 16:10:25.169 [main] INFO  registration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 16:10:25.173 [main] INFO  registration_test - Browser: CHROME
+2026-03-27 16:10:25.173 [main] INFO  registration_test - Environment: QA
+2026-03-27 16:10:25.181 [main] INFO  registration_test - ========== TEST STARTED ==========
+2026-03-27 16:10:25.181 [main] INFO  registration_test - User: Akhil Satheesh
+2026-03-27 16:10:25.182 [main] INFO  registration_test - Yopmail Username: asp429
+2026-03-27 16:10:25.182 [main] INFO  registration_test - Phone: 2147483647
+2026-03-27 16:10:25.211 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 16:10:25.211 [main] INFO  registration_test - STEP 1: Closing popup and exploring
+2026-03-27 16:10:25.211 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 16:10:25.355 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 16:10:25.670 [main] INFO  registration_test - STEP 2: Registering with Yopmail: asp429
+2026-03-27 16:10:25.671 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 16:10:25.794 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 16:10:25.992 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 16:10:26.134 [main] INFO  PageObjects.RegistrationPage - Entering email: asp429@***
+2026-03-27 16:10:26.344 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 16:10:48.763 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 16:10:48.763 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 16:10:48.860 [main] INFO  registration_test - STEP 3: Selecting country and city
+2026-03-27 16:10:48.860 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 16:10:51.568 [main] INFO  registration_test - STEP 4: Filling personal details
+2026-03-27 16:10:53.311 [main] INFO  registration_test - STEP 4.5: Selecting user description as Employer
+2026-03-27 16:10:53.442 [main] INFO  registration_test - STEP 4.6: Setting experience and submitting registration
+2026-03-27 16:10:54.586 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 16:10:54.586 [main] INFO  registration_test - STEP 5: Validating registration
+2026-03-27 16:10:54.586 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 16:11:15.170 [main] ERROR PageObjects.RegistrationPage - Registration verification failed
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//div[contains(@class,'MuiAvatar-root') and normalize-space()='AS'])[2] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at PageObjects.RegistrationPage.isRegistrationSuccessful(RegistrationPage.java:327)
+	at Tests.RegistrationPage_Test001.registration_test(RegistrationPage_Test001.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//div[contains(@class,'MuiAvatar-root') and normalize-space()='AS'])[2]"}
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc89514716d24cc6bbc926d41f5b0bc6, findElement {using=xpath, value=(//div[contains(@class,'MuiAvatar-root') and normalize-space()='AS'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\DUK\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56754}, goog:processID: 7504, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56754/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fc89514716d24cc6bbc926d41f5b0bc6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+2026-03-27 16:11:15.218 [main] ERROR registration_test - Test FAILED: registration_test
+2026-03-27 16:12:32.168 [main] INFO  registration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 16:12:32.171 [main] INFO  registration_test - Browser: CHROME
+2026-03-27 16:12:32.171 [main] INFO  registration_test - Environment: QA
+2026-03-27 16:12:32.178 [main] INFO  registration_test - ========== TEST STARTED ==========
+2026-03-27 16:12:32.178 [main] INFO  registration_test - User: Akhil Satheesh
+2026-03-27 16:12:32.178 [main] INFO  registration_test - Yopmail Username: asp729
+2026-03-27 16:12:32.178 [main] INFO  registration_test - Phone: 2147483647
+2026-03-27 16:12:32.207 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 16:12:32.207 [main] INFO  registration_test - STEP 1: Closing popup and exploring
+2026-03-27 16:12:32.208 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 16:12:32.383 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 16:12:32.683 [main] INFO  registration_test - STEP 2: Registering with Yopmail: asp729
+2026-03-27 16:12:32.683 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 16:12:32.844 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 16:12:33.093 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 16:12:33.268 [main] INFO  PageObjects.RegistrationPage - Entering email: asp729@***
+2026-03-27 16:12:33.501 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 16:12:59.142 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 16:12:59.142 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 16:12:59.228 [main] INFO  registration_test - STEP 3: Selecting country and city
+2026-03-27 16:12:59.229 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 16:13:03.896 [main] INFO  registration_test - STEP 4: Filling personal details
+2026-03-27 16:13:05.764 [main] INFO  registration_test - STEP 4.5: Selecting user description as Employer
+2026-03-27 16:13:05.934 [main] INFO  registration_test - STEP 4.6: Setting experience and submitting registration
+2026-03-27 16:13:07.110 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 16:13:07.110 [main] INFO  registration_test - STEP 5: Validating registration
+2026-03-27 16:13:07.111 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 16:13:15.503 [main] INFO  registration_test - Employer credentials stored for profile completion test:
+2026-03-27 16:13:15.503 [main] INFO  registration_test - Employer Email: asp729@yopmail.com
+2026-03-27 16:13:15.503 [main] INFO  registration_test - Employer Password: Test@123
+2026-03-27 16:13:15.504 [main] INFO  registration_test - Registration validation successful
+2026-03-27 16:13:15.504 [main] INFO  registration_test - STEP 6: Logging out registered user
+2026-03-27 16:13:15.504 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 16:13:15.630 [main] INFO  registration_test - User logged out successfully
+2026-03-27 16:13:15.631 [main] INFO  registration_test - ========== TEST PASSED ==========
+2026-03-27 16:13:15.637 [main] INFO  registration_test - Test PASSED: registration_test
+2026-03-27 16:13:25.125 [main] INFO  login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 16:13:25.125 [main] INFO  login_test - Browser: CHROME
+2026-03-27 16:13:25.125 [main] INFO  login_test - Environment: QA
+2026-03-27 16:13:25.126 [main] INFO  login_test - ========== LOGIN TEST STARTED ==========
+2026-03-27 16:13:25.126 [main] INFO  login_test - Fetching credentials from Storage...
+2026-03-27 16:13:25.127 [main] INFO  login_test - Email: asp729@yopmail.com
+2026-03-27 16:13:25.133 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-03-27 16:13:46.735 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-03-27 16:13:54.981 [main] INFO  login_test - Login success status: true
+2026-03-27 16:13:54.982 [main] INFO  login_test - Test PASSED: login_test
+2026-03-27 16:14:03.022 [main] INFO  employee_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 16:14:03.023 [main] INFO  employee_profile_completion_test - Browser: CHROME
+2026-03-27 16:14:03.023 [main] INFO  employee_profile_completion_test - Environment: QA
+2026-03-27 16:14:03.036 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 16:15:02.449 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 16:15:03.487 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 16:15:07.214 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 16:15:08.687 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 16:15:11.038 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 16:15:12.479 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 16:15:15.928 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 16:15:17.380 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 16:15:48.114 [main] ERROR employee_profile_completion_test - Test Failed: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@name='occupation']/preceding-sibling::div[@role='combobox']' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at PageObjects.ProfileCompletionPage.updateProfessionalInfo(ProfileCompletionPage.java:283)
+	at Tests.ProfileCompletionTest003.employee_profile_completion_test(ProfileCompletionTest003.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='occupation']/preceding-sibling::div[@role='combobox']"}
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [faaaef1b60fcf39aecf59ac7ddb14e44, findElement {value=//input[@name='occupation']/preceding-sibling::div[@role='combobox'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\DUK\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56376}, goog:processID: 17020, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56376/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: faaaef1b60fcf39aecf59ac7ddb14e44
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:662)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:658)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+2026-03-27 16:15:48.123 [main] ERROR employee_profile_completion_test - Test FAILED: employee_profile_completion_test
+2026-03-27 16:15:56.369 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-03-27 16:15:56.370 [main] INFO  admin_login_test - Browser: CHROME
+2026-03-27 16:15:56.370 [main] INFO  admin_login_test - Environment: QA
+2026-03-27 16:15:58.893 [main] WARN  PageObjects.AdminLoginPage - Normal click failed, retrying with JS click...
+2026-03-27 16:15:58.932 [main] WARN  PageObjects.AdminLoginPage - Normal click failed, retrying with JS click...
+2026-03-27 16:15:58.940 [main] ERROR admin_login_test - Test FAILED: admin_login_test
+2026-03-27 16:16:00.625 [main] INFO  verifyIdenticalLKOId - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 16:16:00.626 [main] INFO  verifyIdenticalLKOId - Browser: CHROME
+2026-03-27 16:16:00.626 [main] INFO  verifyIdenticalLKOId - Environment: QA
+2026-03-27 16:16:00.631 [main] ERROR verifyIdenticalLKOId - Test FAILED: verifyIdenticalLKOId
+2026-03-27 16:16:02.351 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 16:16:02.351 [main] INFO  employer_signup_test - Browser: CHROME
+2026-03-27 16:16:02.351 [main] INFO  employer_signup_test - Environment: QA
+2026-03-27 16:16:02.355 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 16:16:02.363 [main] ERROR employer_signup_test - Test FAILED: employer_signup_test
+2026-03-27 16:16:04.034 [main] INFO  employer_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 16:16:04.035 [main] INFO  employer_profile_completion_test - Browser: CHROME
+2026-03-27 16:16:04.035 [main] INFO  employer_profile_completion_test - Environment: QA
+2026-03-27 16:16:04.039 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 17:00:54.760 [main] INFO  registration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:00:54.763 [main] INFO  registration_test - Browser: CHROME
+2026-03-27 17:00:54.763 [main] INFO  registration_test - Environment: QA
+2026-03-27 17:00:54.788 [main] INFO  registration_test - ========== TEST STARTED ==========
+2026-03-27 17:00:54.788 [main] INFO  registration_test - User: Akhil Satheesh
+2026-03-27 17:00:54.789 [main] INFO  registration_test - Yopmail Username: asp721
+2026-03-27 17:00:54.789 [main] INFO  registration_test - Phone: 2147483647
+2026-03-27 17:00:54.822 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 17:00:54.823 [main] INFO  registration_test - STEP 1: Closing popup and exploring
+2026-03-27 17:00:54.823 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 17:00:55.001 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 17:00:55.287 [main] INFO  registration_test - STEP 2: Registering with Yopmail: asp721
+2026-03-27 17:00:55.287 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 17:00:55.422 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 17:00:55.698 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 17:00:55.836 [main] INFO  PageObjects.RegistrationPage - Entering email: asp721@***
+2026-03-27 17:00:56.047 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 17:01:16.523 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 17:01:16.525 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 17:01:16.617 [main] INFO  registration_test - STEP 3: Selecting country and city
+2026-03-27 17:01:16.617 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 17:01:19.580 [main] INFO  registration_test - STEP 4: Filling personal details
+2026-03-27 17:01:21.237 [main] INFO  registration_test - STEP 4.5: Selecting user description as Employer
+2026-03-27 17:01:21.368 [main] INFO  registration_test - STEP 4.6: Setting experience and submitting registration
+2026-03-27 17:01:22.528 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 17:01:22.528 [main] INFO  registration_test - STEP 5: Validating registration
+2026-03-27 17:01:22.528 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 17:01:42.907 [main] INFO  registration_test - Employer credentials stored for profile completion test:
+2026-03-27 17:01:42.907 [main] INFO  registration_test - Employer Email: asp721@yopmail.com
+2026-03-27 17:01:42.907 [main] INFO  registration_test - Employer Password: Test@123
+2026-03-27 17:01:42.908 [main] INFO  registration_test - Registration validation successful
+2026-03-27 17:01:42.908 [main] INFO  registration_test - STEP 6: Logging out registered user
+2026-03-27 17:01:42.909 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 17:01:43.054 [main] INFO  registration_test - User logged out successfully
+2026-03-27 17:01:43.054 [main] INFO  registration_test - ========== TEST PASSED ==========
+2026-03-27 17:01:43.060 [main] INFO  registration_test - Test PASSED: registration_test
+2026-03-27 17:02:00.838 [main] INFO  login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:02:00.839 [main] INFO  login_test - Browser: CHROME
+2026-03-27 17:02:00.839 [main] INFO  login_test - Environment: QA
+2026-03-27 17:02:00.840 [main] INFO  login_test - ========== LOGIN TEST STARTED ==========
+2026-03-27 17:02:00.841 [main] INFO  login_test - Fetching credentials from Storage...
+2026-03-27 17:02:00.841 [main] INFO  login_test - Email: asp721@yopmail.com
+2026-03-27 17:02:00.847 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-03-27 17:02:22.357 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-03-27 17:02:32.823 [main] INFO  login_test - Login success status: true
+2026-03-27 17:02:32.825 [main] INFO  login_test - Test PASSED: login_test
+2026-03-27 17:02:52.906 [main] INFO  employee_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:02:52.906 [main] INFO  employee_profile_completion_test - Browser: CHROME
+2026-03-27 17:02:52.906 [main] INFO  employee_profile_completion_test - Environment: QA
+2026-03-27 17:02:52.918 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 17:03:56.041 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:03:57.080 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:04:00.848 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:04:02.470 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:04:04.850 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:04:06.125 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:04:09.736 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:04:11.199 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:04:37.286 [main] ERROR employee_profile_completion_test - Test Failed: 
+org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: unable to send message to renderer
+  (Session info: chrome=146.0.7680.165)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [833bedc25958fdbb7d92dabf1db608db, findElement {using=xpath, value=//input[@name='occupation']/preceding-sibling::div[@role='combobox']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\DUK\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50770}, goog:processID: 22772, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50770/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 833bedc25958fdbb7d92dabf1db608db
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4454)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:675)
+	at java.base/java.lang.String.valueOf(String.java:4454)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at PageObjects.ProfileCompletionPage.updateProfessionalInfo(ProfileCompletionPage.java:283)
+	at Tests.ProfileCompletionTest003.employee_profile_completion_test(ProfileCompletionTest003.java:70)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2026-03-27 17:04:37.300 [main] ERROR employee_profile_completion_test - Test FAILED: employee_profile_completion_test
+2026-03-27 17:04:39.159 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-03-27 17:04:39.159 [main] INFO  admin_login_test - Browser: CHROME
+2026-03-27 17:04:39.159 [main] INFO  admin_login_test - Environment: QA
+2026-03-27 17:07:43.817 [main] INFO  registration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:07:43.820 [main] INFO  registration_test - Browser: CHROME
+2026-03-27 17:07:43.820 [main] INFO  registration_test - Environment: QA
+2026-03-27 17:07:43.828 [main] INFO  registration_test - ========== TEST STARTED ==========
+2026-03-27 17:07:43.828 [main] INFO  registration_test - User: Akhil Satheesh
+2026-03-27 17:07:43.829 [main] INFO  registration_test - Yopmail Username: abhi721
+2026-03-27 17:07:43.829 [main] INFO  registration_test - Phone: 2147483647
+2026-03-27 17:07:43.858 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 17:07:43.858 [main] INFO  registration_test - STEP 1: Closing popup and exploring
+2026-03-27 17:07:43.858 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 17:07:44.016 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 17:07:44.333 [main] INFO  registration_test - STEP 2: Registering with Yopmail: abhi721
+2026-03-27 17:07:44.333 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 17:07:44.466 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 17:07:44.659 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 17:07:44.803 [main] INFO  PageObjects.RegistrationPage - Entering email: abhi721@***
+2026-03-27 17:07:45.000 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 17:08:06.057 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 17:08:06.058 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 17:08:06.160 [main] INFO  registration_test - STEP 3: Selecting country and city
+2026-03-27 17:08:06.160 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 17:08:08.423 [main] INFO  registration_test - STEP 4: Filling personal details
+2026-03-27 17:08:10.128 [main] INFO  registration_test - STEP 4.5: Selecting user description as Employer
+2026-03-27 17:08:10.292 [main] INFO  registration_test - STEP 4.6: Setting experience and submitting registration
+2026-03-27 17:08:11.449 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 17:08:11.449 [main] INFO  registration_test - STEP 5: Validating registration
+2026-03-27 17:08:11.449 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 17:08:18.388 [main] INFO  registration_test - Employer credentials stored for profile completion test:
+2026-03-27 17:08:18.388 [main] INFO  registration_test - Employer Email: abhi721@yopmail.com
+2026-03-27 17:08:18.388 [main] INFO  registration_test - Employer Password: Test@123
+2026-03-27 17:08:18.388 [main] INFO  registration_test - Registration validation successful
+2026-03-27 17:08:18.388 [main] INFO  registration_test - STEP 6: Logging out registered user
+2026-03-27 17:08:18.389 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 17:08:18.525 [main] INFO  registration_test - User logged out successfully
+2026-03-27 17:08:18.526 [main] INFO  registration_test - ========== TEST PASSED ==========
+2026-03-27 17:08:18.532 [main] INFO  registration_test - Test PASSED: registration_test
+2026-03-27 17:08:35.040 [main] INFO  login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:08:35.040 [main] INFO  login_test - Browser: CHROME
+2026-03-27 17:08:35.040 [main] INFO  login_test - Environment: QA
+2026-03-27 17:08:35.042 [main] INFO  login_test - ========== LOGIN TEST STARTED ==========
+2026-03-27 17:08:35.042 [main] INFO  login_test - Fetching credentials from Storage...
+2026-03-27 17:08:35.042 [main] INFO  login_test - Email: abhi721@yopmail.com
+2026-03-27 17:08:35.048 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-03-27 17:08:56.535 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-03-27 17:09:06.050 [main] INFO  login_test - Login success status: true
+2026-03-27 17:09:06.052 [main] INFO  login_test - Test PASSED: login_test
+2026-03-27 17:09:27.147 [main] INFO  employee_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:09:27.147 [main] INFO  employee_profile_completion_test - Browser: CHROME
+2026-03-27 17:09:27.147 [main] INFO  employee_profile_completion_test - Environment: QA
+2026-03-27 17:09:27.159 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 17:10:10.540 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:11.589 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:15.650 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:17.127 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:19.602 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:20.953 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:24.674 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:26.332 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:32.683 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:33.727 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:34.689 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/passportSample.jpg
+2026-03-27 17:10:35.952 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:37.005 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:39.980 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/aadhar.jpg
+2026-03-27 17:10:43.229 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:48.574 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:10:51.190 [main] INFO  employee_profile_completion_test - ========== EMPLOYEE PROFILE TEST PASSED ==========
+2026-03-27 17:10:51.201 [main] INFO  employee_profile_completion_test - Employee profile submission success status: true
+2026-03-27 17:10:52.758 [main] ERROR employee_profile_completion_test - Employee Profile Completion test exception
+org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [87651b7ec643d3ae049344a55e2b0849, clickElement {id=f.14521C9354A5497F88EB7183DC8C98F3.d.A1EC010E759291B0E3E25E535640AD0E.e.762}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\DUK\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63330}, goog:processID: 6924, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63330/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (87651b7ec643d3ae049344a55e2b0849)] -> xpath: //p[contains(text(),'Hi')]//following::img[@alt='Profile'][2]]
+Session ID: 87651b7ec643d3ae049344a55e2b0849
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+	at PageObjects.BasePage.click(BasePage.java:26)
+	at PageObjects.ProfileCompletionPage.getUserLkoId(ProfileCompletionPage.java:453)
+	at Tests.ProfileCompletionTest003.employee_profile_completion_test(ProfileCompletionTest003.java:107)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+2026-03-27 17:10:52.772 [main] ERROR employee_profile_completion_test - Test FAILED: employee_profile_completion_test
+2026-03-27 17:11:10.451 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-03-27 17:11:10.452 [main] INFO  admin_login_test - Browser: CHROME
+2026-03-27 17:11:10.452 [main] INFO  admin_login_test - Environment: QA
+2026-03-27 17:11:13.304 [main] INFO  PageObjects.AdminLoginPage - Clicked login button
+2026-03-27 17:11:15.081 [main] INFO  PageObjects.AdminLoginPage - Login successful, navigated to: https://qa.lokakeralamonline.kerala.gov.in/ApproverDashboard
+2026-03-27 17:11:15.899 [main] INFO  PageObjects.AdminLoginPage - Clicked View button of first row
+2026-03-27 17:11:16.179 [main] INFO  PageObjects.AdminLoginPage - Clicked Approve button
+2026-03-27 17:11:18.638 [main] INFO  PageObjects.AdminLoginPage - Fetched LKO ID: 000000000000471
+2026-03-27 17:11:18.639 [main] INFO  admin_login_test - Test PASSED: admin_login_test
+2026-03-27 17:11:32.372 [main] INFO  verifyIdenticalLKOId - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:11:32.372 [main] INFO  verifyIdenticalLKOId - Browser: CHROME
+2026-03-27 17:11:32.372 [main] INFO  verifyIdenticalLKOId - Environment: QA
+2026-03-27 17:11:32.381 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 17:11:53.986 [main] INFO  verifyIdenticalLKOId - Test PASSED: verifyIdenticalLKOId
+2026-03-27 17:12:10.987 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:12:10.988 [main] INFO  employer_signup_test - Browser: CHROME
+2026-03-27 17:12:10.988 [main] INFO  employer_signup_test - Environment: QA
+2026-03-27 17:12:10.993 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 17:12:14.422 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 17:12:14.563 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 17:12:14.883 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 17:12:15.010 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 17:12:15.197 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 17:12:15.328 [main] INFO  PageObjects.RegistrationPage - Entering email: asp723@***
+2026-03-27 17:12:15.549 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 17:12:40.658 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 17:12:40.658 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 17:12:40.756 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 17:12:46.984 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 17:12:49.987 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 17:13:05.519 [main] INFO  employer_signup_test - ✓ EMPLOYER CREDENTIALS STORED:
+2026-03-27 17:13:05.521 [main] INFO  employer_signup_test -   Email: asp723@yopmail.com
+2026-03-27 17:13:05.522 [main] INFO  employer_signup_test -   Password: Test@123
+2026-03-27 17:13:05.522 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 17:13:05.634 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-03-27 17:13:20.791 [main] INFO  employer_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:13:20.792 [main] INFO  employer_profile_completion_test - Browser: CHROME
+2026-03-27 17:13:20.792 [main] INFO  employer_profile_completion_test - Environment: QA
+2026-03-27 17:13:20.796 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 17:14:02.040 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:03.078 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:07.429 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:08.876 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:11.415 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:12.877 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:16.298 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:17.698 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:18.850 [main] INFO  PageObjects.ProfileCompletionPage - Pressed Escape key
+2026-03-27 17:14:25.151 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:26.195 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:27.063 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/passportSample.jpg
+2026-03-27 17:14:28.277 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:29.325 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:32.177 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/aadhar.jpg
+2026-03-27 17:14:35.388 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:40.307 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:14:42.937 [main] INFO  employer_profile_completion_test - Test PASSED: employer_profile_completion_test
+2026-03-27 17:14:43.428 [main] INFO  employer_profile_completion_test - Test suite execution completed
+2026-03-27 17:22:30.184 [main] INFO  registration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:22:30.187 [main] INFO  registration_test - Browser: CHROME
+2026-03-27 17:22:30.187 [main] INFO  registration_test - Environment: QA
+2026-03-27 17:22:30.197 [main] INFO  registration_test - ========== TEST STARTED ==========
+2026-03-27 17:22:30.197 [main] INFO  registration_test - User: Akhil Satheesh
+2026-03-27 17:22:30.197 [main] INFO  registration_test - Yopmail Username: abhi725
+2026-03-27 17:22:30.198 [main] INFO  registration_test - Phone: 2147483647
+2026-03-27 17:22:30.227 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 17:22:30.227 [main] INFO  registration_test - STEP 1: Closing popup and exploring
+2026-03-27 17:22:30.227 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 17:22:30.430 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 17:22:30.732 [main] INFO  registration_test - STEP 2: Registering with Yopmail: abhi725
+2026-03-27 17:22:30.732 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 17:22:30.892 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 17:22:31.086 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 17:22:31.222 [main] INFO  PageObjects.RegistrationPage - Entering email: abhi725@***
+2026-03-27 17:22:31.521 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 17:22:53.209 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 17:22:53.209 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 17:22:53.314 [main] INFO  registration_test - STEP 3: Selecting country and city
+2026-03-27 17:22:53.314 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 17:22:56.356 [main] INFO  registration_test - STEP 4: Filling personal details
+2026-03-27 17:22:58.314 [main] INFO  registration_test - STEP 4.5: Selecting user description as Employer
+2026-03-27 17:22:58.520 [main] INFO  registration_test - STEP 4.6: Setting experience and submitting registration
+2026-03-27 17:22:59.779 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 17:22:59.779 [main] INFO  registration_test - STEP 5: Validating registration
+2026-03-27 17:22:59.780 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 17:23:14.190 [main] INFO  registration_test - Employer credentials stored for profile completion test:
+2026-03-27 17:23:14.192 [main] INFO  registration_test - Employer Email: abhi725@yopmail.com
+2026-03-27 17:23:14.192 [main] INFO  registration_test - Employer Password: Test@123
+2026-03-27 17:23:14.192 [main] INFO  registration_test - Registration validation successful
+2026-03-27 17:23:14.193 [main] INFO  registration_test - STEP 6: Logging out registered user
+2026-03-27 17:23:14.193 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 17:23:14.344 [main] INFO  registration_test - User logged out successfully
+2026-03-27 17:23:14.344 [main] INFO  registration_test - ========== TEST PASSED ==========
+2026-03-27 17:23:14.349 [main] INFO  registration_test - Test PASSED: registration_test
+2026-03-27 17:23:29.415 [main] INFO  login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:23:29.416 [main] INFO  login_test - Browser: CHROME
+2026-03-27 17:23:29.416 [main] INFO  login_test - Environment: QA
+2026-03-27 17:23:29.418 [main] INFO  login_test - ========== LOGIN TEST STARTED ==========
+2026-03-27 17:23:29.418 [main] INFO  login_test - Fetching credentials from Storage...
+2026-03-27 17:23:29.418 [main] INFO  login_test - Email: abhi725@yopmail.com
+2026-03-27 17:23:29.422 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-03-27 17:23:51.112 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-03-27 17:23:58.845 [main] INFO  login_test - Login success status: true
+2026-03-27 17:23:58.847 [main] INFO  login_test - Test PASSED: login_test
+2026-03-27 17:24:10.199 [main] INFO  employee_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:24:10.200 [main] INFO  employee_profile_completion_test - Browser: CHROME
+2026-03-27 17:24:10.200 [main] INFO  employee_profile_completion_test - Environment: QA
+2026-03-27 17:24:10.230 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 17:25:30.326 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:31.359 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:35.671 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:37.388 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:39.888 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:41.296 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:45.340 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:46.938 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:53.718 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:54.754 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:55.937 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/passportSample.jpg
+2026-03-27 17:25:57.247 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:25:58.283 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:26:01.536 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/aadhar.jpg
+2026-03-27 17:26:04.872 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:26:10.704 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-03-27 17:26:13.479 [main] INFO  employee_profile_completion_test - ========== EMPLOYEE PROFILE TEST PASSED ==========
+2026-03-27 17:26:13.489 [main] INFO  employee_profile_completion_test - Employee profile submission success status: true
+2026-03-27 17:26:34.211 [main] ERROR PageObjects.ProfileCompletionPage - Failed to get LKO ID: Expected condition failed: waiting for presence of element located by: By.xpath: //p[contains(text(),'LKO ID')] (tried for 20 second(s) with 500 milliseconds interval)
+2026-03-27 17:26:34.211 [main] ERROR employee_profile_completion_test - Employee Profile Completion test exception
+java.lang.RuntimeException: Could not retrieve LKO ID after profile completion
+	at PageObjects.ProfileCompletionPage.getUserLkoId(ProfileCompletionPage.java:478)
+	at Tests.ProfileCompletionTest003.employee_profile_completion_test(ProfileCompletionTest003.java:107)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //p[contains(text(),'LKO ID')] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at PageObjects.ProfileCompletionPage.getUserLkoId(ProfileCompletionPage.java:471)
+	... 26 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[contains(text(),'LKO ID')]"}
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1ceb1750a6de24d9a40c200e3f9a385d, findElement {value=//p[contains(text(),'LKO ID')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\DUK\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52452}, goog:processID: 23188, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52452/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1ceb1750a6de24d9a40c200e3f9a385d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:174)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+2026-03-27 17:26:34.224 [main] ERROR employee_profile_completion_test - Test FAILED: employee_profile_completion_test
+2026-03-27 17:26:44.327 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-03-27 17:26:44.327 [main] INFO  admin_login_test - Browser: CHROME
+2026-03-27 17:26:44.327 [main] INFO  admin_login_test - Environment: QA
+2026-03-27 17:32:11.969 [main] INFO  registration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:32:11.973 [main] INFO  registration_test - Browser: CHROME
+2026-03-27 17:32:11.973 [main] INFO  registration_test - Environment: QA
+2026-03-27 17:32:11.981 [main] INFO  registration_test - ========== TEST STARTED ==========
+2026-03-27 17:32:11.981 [main] INFO  registration_test - User: Akhil Satheesh
+2026-03-27 17:32:11.982 [main] INFO  registration_test - Yopmail Username: abhi729
+2026-03-27 17:32:11.982 [main] INFO  registration_test - Phone: 2147483647
+2026-03-27 17:32:12.017 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-03-27 17:32:12.017 [main] INFO  registration_test - STEP 1: Closing popup and exploring
+2026-03-27 17:32:12.017 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-03-27 17:32:12.218 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-03-27 17:32:12.553 [main] INFO  registration_test - STEP 2: Registering with Yopmail: abhi729
+2026-03-27 17:32:12.554 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-03-27 17:32:12.708 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-03-27 17:32:12.941 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-03-27 17:32:13.201 [main] INFO  PageObjects.RegistrationPage - Entering email: abhi729@***
+2026-03-27 17:32:13.426 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-03-27 17:32:45.651 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-03-27 17:32:45.651 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-03-27 17:32:45.782 [main] INFO  registration_test - STEP 3: Selecting country and city
+2026-03-27 17:32:45.782 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-03-27 17:32:48.432 [main] INFO  registration_test - STEP 4: Filling personal details
+2026-03-27 17:32:50.613 [main] INFO  registration_test - STEP 4.5: Selecting user description as Employer
+2026-03-27 17:32:50.810 [main] INFO  registration_test - STEP 4.6: Setting experience and submitting registration
+2026-03-27 17:32:52.035 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-03-27 17:32:52.036 [main] INFO  registration_test - STEP 5: Validating registration
+2026-03-27 17:32:52.036 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-03-27 17:32:58.187 [main] INFO  registration_test - Employer credentials stored for profile completion test:
+2026-03-27 17:32:58.188 [main] INFO  registration_test - Employer Email: abhi729@yopmail.com
+2026-03-27 17:32:58.188 [main] INFO  registration_test - Employer Password: Test@123
+2026-03-27 17:32:58.188 [main] INFO  registration_test - Registration validation successful
+2026-03-27 17:32:58.188 [main] INFO  registration_test - STEP 6: Logging out registered user
+2026-03-27 17:32:58.188 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-03-27 17:32:58.321 [main] INFO  registration_test - User logged out successfully
+2026-03-27 17:32:58.322 [main] INFO  registration_test - ========== TEST PASSED ==========
+2026-03-27 17:32:58.327 [main] INFO  registration_test - Test PASSED: registration_test
+2026-03-27 17:33:10.067 [main] INFO  login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:33:10.069 [main] INFO  login_test - Browser: CHROME
+2026-03-27 17:33:10.069 [main] INFO  login_test - Environment: QA
+2026-03-27 17:33:10.070 [main] INFO  login_test - ========== LOGIN TEST STARTED ==========
+2026-03-27 17:33:10.071 [main] INFO  login_test - Fetching credentials from Storage...
+2026-03-27 17:33:10.072 [main] INFO  login_test - Email: abhi729@yopmail.com
+2026-03-27 17:33:10.075 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-03-27 17:33:31.684 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-03-27 17:33:37.635 [main] INFO  login_test - Login success status: true
+2026-03-27 17:33:37.637 [main] INFO  login_test - Test PASSED: login_test
+2026-03-27 17:33:50.503 [main] INFO  employee_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-03-27 17:33:50.503 [main] INFO  employee_profile_completion_test - Browser: CHROME
+2026-03-27 17:33:50.503 [main] INFO  employee_profile_completion_test - Environment: QA
+2026-03-27 17:33:50.514 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-03-27 17:35:17.556 [main] ERROR employee_profile_completion_test - Test Failed: 
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //button[contains(normalize-space(), 'Complete Profile')]' (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at PageObjects.ProfileCompletionPage.navigateToProfile(ProfileCompletionPage.java:189)
+	at Tests.ProfileCompletionTest003.employee_profile_completion_test(ProfileCompletionTest003.java:59)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains(normalize-space(), 'Complete Profile')]"}
+  (Session info: chrome=146.0.7680.165)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c565a50c1c8c80ff48a8e9dd72f9021b, findElement {value=//button[contains(normalize-space(), 'Complete Profile')], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.165, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\DUK\AppData\Local\...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62825}, goog:processID: 22596, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62825/devtoo..., se:cdpVersion: 146.0.7680.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c565a50c1c8c80ff48a8e9dd72f9021b
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:308)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:294)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:291)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:662)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:658)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+2026-03-27 17:35:17.583 [main] ERROR employee_profile_completion_test - Test FAILED: employee_profile_completion_test
+2026-03-27 17:35:21.173 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-03-27 17:35:21.174 [main] INFO  admin_login_test - Browser: CHROME
+2026-03-27 17:35:21.174 [main] INFO  admin_login_test - Environment: QA

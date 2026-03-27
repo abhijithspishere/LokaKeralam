@@ -1,8 +1,5 @@
 package PageObjects;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -79,12 +76,22 @@ public class ProfileCompletionPage extends BasePage {
     @FindBy(xpath = "(//button[normalize-space()='Update'])[4]")
     private WebElement btnUpdate04;
 
+
+    /// //////////////////////////Employer Business Info///////////////////
+    @FindBy(xpath = "//div[@id='mui-component-select-businessSegments']")
+    private WebElement dropDwnBusinessSegment;
+    @FindBy(xpath = "//li[normalize-space()='Health Care']")
+    private WebElement selectHealthCare;
+    @FindBy(xpath ="//textarea[@name='businessDescription']")
+    private WebElement txtBusinessDescription;
+    /// /////////////////////////////////////////////////////////////////
+
     // Passport
     @FindBy(xpath = "//input[@name='passportNo']")
     private WebElement txtPassportNo;
     @FindBy(xpath = "//span[text()='Passport Expiry Date']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input")
     private WebElement txtPassportExpiryDate;
-    @FindBy(xpath = "//div[contains(@class,'react-datepicker__day') and text()='30']")
+    @FindBy(xpath = "//div[contains(@class,'react-datepicker__day') and text()='11']")
     private WebElement datePickerFeb07_2026;
     @FindBy(xpath = "//input[@id='passport-file' and @type='file']")
     private WebElement passportFileInput;
@@ -297,6 +304,45 @@ public class ProfileCompletionPage extends BasePage {
         waitForPageReload(); // Added Reload Wait
     }
 
+    /// ///////////////////////////////////////Employer Business////////////////
+    /// ///////////////////////////////////////////////////////////////
+    public void updateBusinessinfo(String businessDesc) throws InterruptedException {
+        waitForPageReload();
+        wait.until(ExpectedConditions.elementToBeClickable(dropDwnBusinessSegment));
+        scrollToCenter(dropDwnBusinessSegment);
+        click(dropDwnBusinessSegment);
+
+        wait.until(ExpectedConditions.elementToBeClickable(selectHealthCare));
+        click(selectHealthCare);
+
+        // Press Escape key to close the dropdown
+        pressEscapeKey();
+
+        // Small wait to ensure dropdown is closed
+        Thread.sleep(500);
+
+        wait.until(ExpectedConditions.visibilityOf(txtBusinessDescription));
+        sendKeys(txtBusinessDescription, businessDesc);
+
+        Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(btnUpdate04));
+        click(btnUpdate04);
+        Thread.sleep(1000);
+        waitForPageReload();
+    }
+    private void pressEscapeKey() {
+        try {
+            driver.switchTo().activeElement().sendKeys(Keys.ESCAPE);
+            Thread.sleep(500);
+            logger.info("Pressed Escape key");
+        } catch (Exception e) {
+            logger.warn("Failed to press Escape key: " + e.getMessage());
+        }
+    }
+
+    ///   /////////////////////////////////////////////////////////
+    ///  /////////////////////////////////////////////////////////
+
     public void updatePassportDetails(String passportNo, String passportPath) {
 
         waitForPageReload();
@@ -402,7 +448,7 @@ public class ProfileCompletionPage extends BasePage {
 
     }
 
-    public String getUserLkoId(){
+   /* public String getUserLkoId(){
         wait.until(ExpectedConditions.visibilityOf(btnProfileLko));
         click(btnProfileLko);
         wait.until(ExpectedConditions.visibilityOf(btnMyProfile));
@@ -410,7 +456,28 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(lkoIdText));
         return getText(lkoIdText).replace("LKO ID: ", "").trim();
     }
+*/
 
+    public String getUserLkoId(){
+        try {
+            WebElement profileBtn = wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.xpath("//p[contains(text(),'Hi')]//following::img[@alt='Profile'][2]")
+            ));
+            jsClick(profileBtn);
+            WebElement myProfileBtn = wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.xpath("//span[normalize-space()='My Profile']")
+            ));
+            jsClick(myProfileBtn);
+            WebElement lkoIdElement = wait.until(ExpectedConditions.presenceOfElementLocated(
+                    By.xpath("//p[contains(text(),'LKO ID')]")
+            ));
+
+            return lkoIdElement.getText().replace("LKO ID: ", "").trim();
+        } catch (Exception e) {
+            logger.error("Failed to get LKO ID: " + e.getMessage());
+            throw new RuntimeException("Could not retrieve LKO ID after profile completion", e);
+        }
+    }
 
 
 

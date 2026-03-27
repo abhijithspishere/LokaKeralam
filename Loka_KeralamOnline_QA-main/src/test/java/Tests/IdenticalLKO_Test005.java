@@ -11,7 +11,7 @@ public class IdenticalLKO_Test005 extends Hook {
 
     @Test(
             priority = 5,
-            testName = "CLKOI-AT-GCCDW-03_Verify_Identical_LKO_ID",
+            testName = "CLKOI-AT-GCCDW-05_Verify_Identical_LKO_ID",
             description = "Verify Official LKO Id with User ID Identical"
     )
     public void verifyIdenticalLKOId() throws InterruptedException {

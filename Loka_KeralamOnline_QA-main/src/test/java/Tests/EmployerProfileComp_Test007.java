@@ -11,26 +11,26 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
-public class ProfileCompletionTest003 extends Hook {
+public class EmployerProfileComp_Test007 extends Hook {
 
     @DataProvider(name = "profileData")
     public Object[][] getProfileData() throws IOException {
         String filePath = "src/test/resources/testdata/RegistrationData.xlsx";
-        String sheetName = "Sheet2";
+        String sheetName = "Sheet4";
         return ExcelUtils.getTestData(filePath, sheetName);
     }
 
     @Test(
-            priority = 3,
-            testName = "CLKOI-AT-GCCDW-03_Employee_Profile_Completion",
-            description = "Verify employee profile completion with data from Excel",
+            priority = 7,
+            testName = "CLKOI-AT-GCCDW-07_Employer_Profile_Completion",
+            description = "Verify employer profile completion with data from Excel",
             dataProvider = "profileData"
     )
-    public void employee_profile_completion_test(
+    public void employer_profile_completion_test(
             String aboutMe,
             String address,
             String pincode, String houseNo, String district,
-            String companyName,
+            String businessDescription,
             String passportNo,
             String docNo,
             String fbUrl, String liUrl, String instaUrl
@@ -39,20 +39,20 @@ public class ProfileCompletionTest003 extends Hook {
 
         ProfileCompletionPage profilePage = new ProfileCompletionPage(driver);
 
-        // Get EMPLOYEE credentials specifically
-        String email = CredentialsStorage.getRegisteredEmail();
-        String password = CredentialsStorage.getRegisteredPassword();
+        // Get EMPLOYER credentials specifically
+        String email = CredentialsStorage.getEmployerEmail();
+        String password = CredentialsStorage.getEmployerPassword();
 
         if (email == null || password == null) {
-            logger.warn("Employee credentials not found in memory. Using fallback test credentials.");
-            email = "asp472@yopmail.com";
+            System.out.println("Employer credentials not found in memory. Using fallback test credentials.");
+            email = "employer_test@yopmail.com";
             password = "Test@123";
-            test.log(Status.WARNING, "Using fallback employee credentials");
+            test.log(Status.WARNING, "Using fallback employer credentials");
         } else {
-            test.log(Status.INFO, "Using stored employee credentials from registration");
+            test.log(Status.INFO, "Using stored employer credentials from registration");
         }
 
-        test.log(Status.INFO, "Test Employee: " + email);
+        test.log(Status.INFO, "Test Employer: " + email);
         profilePage.loginWithCredentials(email, password);
 
         try {
@@ -65,7 +65,8 @@ public class ProfileCompletionTest003 extends Hook {
             profilePage.updateNRKAddress(address);
             profilePage.updateKeralaAddress(pincode, houseNo, district);
 
-            profilePage.updateProfessionalInfo(companyName);
+            // Using updateBusinessInfo for employer
+            profilePage.updateBusinessinfo(businessDescription);
 
             profilePage.updatePassportDetails(
                     passportNo,
@@ -78,12 +79,12 @@ public class ProfileCompletionTest003 extends Hook {
             );
 
             profilePage.updateSocialLinks(fbUrl, liUrl, instaUrl);
-            test.log(Status.PASS, "Employee profile completed successfully");
+            test.log(Status.PASS, "Employer profile completed successfully");
 
-            logger.info("========== EMPLOYEE PROFILE TEST PASSED ==========");
+            System.out.println("========== EMPLOYER PROFILE TEST PASSED ==========");
 
         } catch (Exception e) {
-            logger.error("Test Failed: ", e);
+            System.out.println("Test Failed: " + e.getMessage());
             test.log(Status.FAIL, e.getMessage());
             Assert.fail(e.getMessage());
         }
@@ -91,39 +92,20 @@ public class ProfileCompletionTest003 extends Hook {
         try {
             boolean isSuccess = profilePage.isProfileCompletionSuccessful();
 
-            logger.info("Employee profile submission success status: " + isSuccess);
+            System.out.println("Employer profile submission success status: " + isSuccess);
             test.log(Status.INFO, "Verifying dashboard redirection after login");
 
             Assert.assertTrue(
                     isSuccess,
-                    "Employee Profile Completion Failed - Profile URL did not load."
+                    "Employer Profile Completion Failed - Profile URL did not load."
             );
 
-            test.log(Status.PASS, "Employee Profile Completion successful");
-
-            // COMMENT OUT OR REMOVE THIS SECTION - LKO ID is not available immediately
-            // Only available after admin approval
-            /*
-            // Optional: Store the LKO ID
-            String lkoId = profilePage.getUserLkoId();
-            CredentialsStorage.storeLKOId(lkoId);
-            test.log(Status.INFO, "Employee LKO ID: " + lkoId);
-            */
+            test.log(Status.PASS, "Employer Profile Completion successful");
 
         } catch (Exception e) {
-            logger.error("Employee Profile Completion test exception", e);
+            System.out.println("Employer Profile Completion test exception: " + e.getMessage());
             test.log(Status.FAIL, "Exception during profile completion: " + e.getMessage());
             Assert.fail("Exception occurred during profile completion: " + e.getMessage());
         }
     }
-
-   /* public void fetchApprovedLKOID() throws InterruptedException {
-        ProfileCompletionPage profilePage = new ProfileCompletionPage(driver);
-
-        String email = CredentialsStorage.getRegisteredEmail();
-        String password = CredentialsStorage.getRegisteredPassword();
-
-        test.log(Status.INFO, "Test User: " + email);
-        profilePage.loginWithCredentials(email, password);
-    }*/
 }

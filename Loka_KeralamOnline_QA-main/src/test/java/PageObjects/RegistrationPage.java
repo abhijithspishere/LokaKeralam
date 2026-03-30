@@ -123,6 +123,9 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath = "//button[normalize-space()='Register']")
     private WebElement btnRegister;
 
+    @FindBy(xpath = "//span[normalize-space()='Student']")
+    private WebElement btnStudent;
+
 ///////////Selection of Employer/Entrepreneur/Businnes
     @FindBy(xpath="//span[normalize-space()='Employer / Entrepreneur / Business']")
     private WebElement selectEmployer;
@@ -275,6 +278,12 @@ public class RegistrationPage extends BasePage {
         click(selectEmployer);
     }
 /// //////////////////////////////////////
+///
+///     //Student///////////////
+public void selectStudent(){
+       click(btnStudent);
+     }
+/// /// //////////////////////////////////////
 
     public void setExperienceAndSubmit(String password, int experienceYears){
         setExperienceSlider(experienceYears);

@@ -35,6 +35,15 @@ public class AdminLoginPage extends BasePage {
     @FindBy(xpath = "//p[contains(text(),'LKO ID')]")
     private WebElement lkoIdText;
 
+    @FindBy(xpath = "//button[normalize-space()='Resubmit']")
+    private WebElement btnResubmit;
+
+    @FindBy(xpath = "//textarea[@id='modal-description']")
+    private WebElement txtRemarks;
+
+    @FindBy(xpath="(//button[normalize-space()='Resubmit'])[2]")
+    private WebElement btnResubmit2;
+
     public AdminLoginPage(WebDriver driver) {
         super(driver);
     }
@@ -99,6 +108,20 @@ public class AdminLoginPage extends BasePage {
         btnApprove.click();
         logger.info("Clicked Approve button");
     }
+
+    public void ResubmitUser() {
+        wait.until(ExpectedConditions.elementToBeClickable(btnResubmit));
+        btnResubmit.click();
+        logger.info("Clicked initial Resubmit button");
+        wait.until(ExpectedConditions.visibilityOf(txtRemarks));
+        txtRemarks.clear();
+        txtRemarks.sendKeys("Please add valid documents");
+        logger.info("Entered remarks for resubmission");
+        wait.until(ExpectedConditions.elementToBeClickable(btnResubmit2));
+        btnResubmit2.click();
+        logger.info("Clicked final Resubmit button");
+    }
+
     public String fetchLKO_ID() {
         wait.until(ExpectedConditions.visibilityOf(lkoIdText));
         String LKO_ID = getText(lkoIdText).replace("LKO ID: ", "").trim();

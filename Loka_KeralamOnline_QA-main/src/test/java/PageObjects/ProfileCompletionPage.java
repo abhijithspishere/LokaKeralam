@@ -86,12 +86,25 @@ public class ProfileCompletionPage extends BasePage {
     private WebElement txtBusinessDescription;
     /// /////////////////////////////////////////////////////////////////
 
+    /// //////////////////////////STUDENT INFO//////////////////////////
+    @FindBy(xpath = "//input[@id='studentInfo-input']")
+    private WebElement studentInstName;
+    @FindBy(xpath="//li[normalize-space()='Dubai College - Dubai - United Arab Emirates']")
+    private WebElement selectDubaiCollege;
+    @FindBy(xpath = "//input[@name='courseName']")
+    private WebElement txtCourseName;
+    @FindBy(xpath = "(//div[contains(@class,'react-datepicker__day') and text()='9'])[1]")
+    private WebElement selectCourseStartDate;
+    /// /////////////////////////////////////////////////////////////////
+
+
+
     // Passport
     @FindBy(xpath = "//input[@name='passportNo']")
     private WebElement txtPassportNo;
     @FindBy(xpath = "//span[text()='Passport Expiry Date']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input")
     private WebElement txtPassportExpiryDate;
-    @FindBy(xpath = "//div[contains(@class,'react-datepicker__day') and text()='11']")
+    @FindBy(xpath = "(//div[contains(@class,'react-datepicker__day') and text()='2'])[2]")
     private WebElement datePickerFeb07_2026;
     @FindBy(xpath = "//input[@id='passport-file' and @type='file']")
     private WebElement passportFileInput;
@@ -111,7 +124,7 @@ public class ProfileCompletionPage extends BasePage {
     private WebElement txtDocumentNo;
     @FindBy(xpath = "//span[text()='Date of Issue']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input")
     private WebElement txtDateOfIssue;
-    @FindBy(xpath = "//div[contains(@class,'react-datepicker__day') and text()='28']")
+    @FindBy(xpath = "(//div[contains(@class,'react-datepicker__day') and text()='2'])[2]")
     private WebElement datePickerJan01_2026;
     @FindBy(xpath = "//input[@id='proof-of-residence-file' and @type='file']")
     private WebElement residenceFileInput;
@@ -304,6 +317,8 @@ public class ProfileCompletionPage extends BasePage {
         waitForPageReload(); // Added Reload Wait
     }
 
+
+
     /// ///////////////////////////////////////Employer Business////////////////
     /// ///////////////////////////////////////////////////////////////
     public void updateBusinessinfo(String businessDesc) throws InterruptedException {
@@ -343,12 +358,41 @@ public class ProfileCompletionPage extends BasePage {
     ///   /////////////////////////////////////////////////////////
     ///  /////////////////////////////////////////////////////////
 
+
+    //////////////////////////////////STUDENT METHOD//////////////////////////
+    public void studentInfo(String InstituteName, String courseName) throws InterruptedException {
+        waitForPageReload();
+        wait.until(ExpectedConditions.elementToBeClickable(studentInstName));
+        scrollToCenter(studentInstName);
+        click(studentInstName);
+
+
+        wait.until(ExpectedConditions.visibilityOf(studentInstName));
+        sendKeys(studentInstName, InstituteName);
+
+        try {
+            wait.until(ExpectedConditions.elementToBeClickable(selectDubaiCollege));
+            click(selectDubaiCollege);
+        } catch (Exception e) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", selectDubaiCollege);
+        }
+        wait.until(ExpectedConditions.visibilityOf(txtCourseName));
+        sendKeys(txtCourseName, courseName);
+
+        Thread.sleep(2000);
+        wait.until(ExpectedConditions.elementToBeClickable(btnUpdate04));
+        click(btnUpdate04);
+        Thread.sleep(1000);
+        waitForPageReload(); // Added Reload Wait
+    }
+
+    /////////////////////////////////////////////////////////////////////////////////////
+
     public void updatePassportDetails(String passportNo, String passportPath) {
 
         waitForPageReload();
         wait.until(ExpectedConditions.visibilityOf(txtPassportNo));
         scrollToCenter(txtPassportNo);
-        txtPassportNo.clear();
         txtPassportNo.sendKeys(passportNo);
 
         wait.until(ExpectedConditions.elementToBeClickable(txtPassportExpiryDate));

@@ -11,19 +11,19 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
-public class EmployerProfileComp_Test007 extends Hook {
+public class StudentProfCompletion_Test010 extends Hook {
 
     @DataProvider(name = "profileData")
     public Object[][] getProfileData() throws IOException {
         String filePath = "src/test/resources/testdata/RegistrationData.xlsx";
-        String sheetName = "Sheet4";
+        String sheetName = "Sheet6";
         return ExcelUtils.getTestData(filePath, sheetName);
     }
 
     @Test(
-            priority = 7,
-            testName = "CLKOI-AT-GCCDW-07_Employer_Profile_Completion",
-            description = "Verify employer profile completion with data from Excel",
+            priority = 9,
+            testName = "CLKOI-AT-GCCDW-Student_Profile_Completion",
+            description = "Verify student profile completion with data from Excel",
             dataProvider = "profileData"
     )
     public void employer_profile_completion_test(
@@ -32,7 +32,8 @@ public class EmployerProfileComp_Test007 extends Hook {
             String pincode,
             String houseNo,
             String district,
-            String businessDescription,
+            String instituteName,
+            String courseName,
             String passportNo,
             String docNo,
             String fbUrl,
@@ -49,7 +50,7 @@ public class EmployerProfileComp_Test007 extends Hook {
 
         if (email == null || password == null) {
             System.out.println("Employer credentials not found in memory. Using fallback test credentials.");
-            email = "employer_test@yopmail.com";
+            email = "asp819@yopmail.com";
             password = "Test@123";
             test.log(Status.WARNING, "Using fallback employer credentials");
         } else {
@@ -70,7 +71,7 @@ public class EmployerProfileComp_Test007 extends Hook {
             profilePage.updateKeralaAddress(pincode, houseNo, district);
 
             // Using updateBusinessInfo for employer
-            profilePage.updateBusinessinfo(businessDescription);
+            profilePage.studentInfo(instituteName, courseName);
 
             profilePage.updatePassportDetails(
                     passportNo,
@@ -83,9 +84,9 @@ public class EmployerProfileComp_Test007 extends Hook {
             );
 
             profilePage.updateSocialLinks(fbUrl, liUrl, instaUrl);
-            test.log(Status.PASS, "Employer profile completed successfully");
+            test.log(Status.PASS, "Student profile completed successfully");
 
-            System.out.println("========== EMPLOYER PROFILE TEST PASSED ==========");
+            System.out.println("========== STUDENT PROFILE TEST PASSED ==========");
 
         } catch (Exception e) {
             System.out.println("Test Failed: " + e.getMessage());
@@ -96,12 +97,12 @@ public class EmployerProfileComp_Test007 extends Hook {
         try {
             boolean isSuccess = profilePage.isProfileCompletionSuccessful();
 
-            System.out.println("Employer profile submission success status: " + isSuccess);
+            System.out.println("Student profile submission success status: " + isSuccess);
             test.log(Status.INFO, "Verifying dashboard redirection after login");
 
             Assert.assertTrue(
                     isSuccess,
-                    "Employer Profile Completion Failed - Profile URL did not load."
+                    "Student Profile Completion Failed - Profile URL did not load."
             );
 
             test.log(Status.PASS, "Employer Profile Completion successful");

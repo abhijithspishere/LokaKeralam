@@ -44,6 +44,12 @@ public class AdminLoginPage extends BasePage {
     @FindBy(xpath="(//button[normalize-space()='Resubmit'])[2]")
     private WebElement btnResubmit2;
 
+    @FindBy(xpath = "//button[normalize-space()='Reject']")
+    private WebElement btnReject;
+
+    @FindBy(xpath = "(//button[normalize-space()='Reject'])[2]")
+    private WebElement btnReject2;
+
     public AdminLoginPage(WebDriver driver) {
         super(driver);
     }
@@ -119,6 +125,19 @@ public class AdminLoginPage extends BasePage {
         logger.info("Entered remarks for resubmission");
         wait.until(ExpectedConditions.elementToBeClickable(btnResubmit2));
         btnResubmit2.click();
+        logger.info("Clicked final Resubmit button");
+    }
+
+    public void RejectUser() {
+        wait.until(ExpectedConditions.elementToBeClickable(btnReject));
+        btnReject.click();
+        logger.info("Clicked Reject button");
+        wait.until(ExpectedConditions.visibilityOf(txtRemarks));
+        txtRemarks.clear();
+        txtRemarks.sendKeys("Please add valid documents");
+        logger.info("Entered remarks for resubmission");
+        wait.until(ExpectedConditions.elementToBeClickable(btnReject2));
+        btnReject2.click();
         logger.info("Clicked final Resubmit button");
     }
 

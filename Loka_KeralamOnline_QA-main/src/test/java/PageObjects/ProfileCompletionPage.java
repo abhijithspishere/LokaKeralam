@@ -1,5 +1,6 @@
 package PageObjects;
 import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -59,8 +60,8 @@ public class ProfileCompletionPage extends BasePage {
     private WebElement dropDwnKaudiarSquare;
     @FindBy(xpath = "//input[@name='houseNo']")
     private WebElement dropDwnHouseNo;
-    @FindBy(name = "district")
-    private WebElement districtInput;
+    /*@FindBy(name = "district")
+    private WebElement districtInput;*/
     @FindBy(xpath = "(//button[normalize-space()='Update'])[3]")
     private WebElement btnUpdate03;
 
@@ -93,7 +94,9 @@ public class ProfileCompletionPage extends BasePage {
     private WebElement selectDubaiCollege;
     @FindBy(xpath = "//input[@name='courseName']")
     private WebElement txtCourseName;
-    @FindBy(xpath = "(//div[contains(@class,'react-datepicker__day') and text()='9'])[1]")
+    @FindBy(xpath = "//span[text()='Course Start Date']/ancestor::fieldset/preceding-sibling::input")
+    private WebElement clickCourseStartDate;
+    @FindBy(xpath = "//div[@aria-label='Choose Tuesday, March 24th, 2026']")
     private WebElement selectCourseStartDate;
     /// /////////////////////////////////////////////////////////////////
 
@@ -124,7 +127,7 @@ public class ProfileCompletionPage extends BasePage {
     private WebElement txtDocumentNo;
     @FindBy(xpath = "//span[text()='Date of Issue']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input")
     private WebElement txtDateOfIssue;
-    @FindBy(xpath = "(//div[contains(@class,'react-datepicker__day') and text()='2'])[2]")
+    @FindBy(xpath = "//div[@aria-label='Choose Tuesday, March 24th, 2026']")
     private WebElement datePickerJan01_2026;
     @FindBy(xpath = "//input[@id='proof-of-residence-file' and @type='file']")
     private WebElement residenceFileInput;
@@ -167,7 +170,7 @@ public class ProfileCompletionPage extends BasePage {
     // --- CRITICAL FIX: Wait for Page Reload ---
     private void waitForPageReload() {
         try {
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             wait.until(ExpectedConditions.visibilityOf(editIcon));
             logger.info("Page reload completed.");
         } catch (Exception e) {
@@ -282,8 +285,8 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(dropDwnHouseNo));
         sendKeys(dropDwnHouseNo, houseNo);
 
-        wait.until(ExpectedConditions.visibilityOf(districtInput));
-        sendKeys(districtInput, district);
+      /*  wait.until(ExpectedConditions.visibilityOf(districtInput));
+        sendKeys(districtInput, district);*/
 
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate03));
         click(btnUpdate03);
@@ -370,20 +373,48 @@ public class ProfileCompletionPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOf(studentInstName));
         sendKeys(studentInstName, InstituteName);
 
-        try {
             wait.until(ExpectedConditions.elementToBeClickable(selectDubaiCollege));
-            click(selectDubaiCollege);
-        } catch (Exception e) {
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", selectDubaiCollege);
-        }
+           /* click(selectDubaiCollege);*/
+            studentInstName.sendKeys(Keys.ARROW_DOWN);
+            studentInstName.sendKeys(Keys.ENTER);
+
         wait.until(ExpectedConditions.visibilityOf(txtCourseName));
         sendKeys(txtCourseName, courseName);
 
-        Thread.sleep(2000);
-        wait.until(ExpectedConditions.elementToBeClickable(btnUpdate04));
-        click(btnUpdate04);
+        wait.until(ExpectedConditions.elementToBeClickable(clickCourseStartDate));
+        scrollToCenter(clickCourseStartDate);
+        click(clickCourseStartDate);
         Thread.sleep(1000);
-        waitForPageReload(); // Added Reload Wait
+
+        wait.until(ExpectedConditions.elementToBeClickable(selectCourseStartDate));
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", selectCourseStartDate);
+        js.executeScript("arguments[0].click();", selectCourseStartDate);
+
+        moveSliderAccurate(By.xpath("(//span[contains(@class,'MuiSlider-thumb')])[2]"), 50); // move to 50%
+
+        WebElement updateBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("(//button[normalize-space()='Update'])[4]")
+        ));
+
+        scrollToCenter(updateBtn);
+        js.executeScript("arguments[0].click();", updateBtn);
+
+        waitForPageReload();
+
+    }
+
+    public void moveSliderAccurate(By sliderLocator, int percentage) {
+        WebElement slider = wait.until(ExpectedConditions.visibilityOfElementLocated(sliderLocator));
+
+        int width = slider.getSize().width;
+        int xOffset = (width * percentage) / 100;
+
+        Actions actions = new Actions(driver);
+        actions.clickAndHold(slider)
+                .moveByOffset(xOffset, 0)
+                .release()
+                .perform();
     }
 
     /////////////////////////////////////////////////////////////////////////////////////

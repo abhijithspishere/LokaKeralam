@@ -80,4 +80,13 @@
         </classes>
     </test>
 
+    <test name="AdminPortalTests">
+        <parameter name="portal" value="admin"/>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="environment" value="qa"/>
+        <classes>
+            <class name="Tests.AdminReject_Test011"/>
+        </classes>
+    </test>
+
 </suite>

@@ -50,7 +50,7 @@ public class StudentProfCompletion_Test010 extends Hook {
 
         if (email == null || password == null) {
             System.out.println("Employer credentials not found in memory. Using fallback test credentials.");
-            email = "asp819@yopmail.com";
+            email = "asp826@yopmail.com";
             password = "Test@123";
             test.log(Status.WARNING, "Using fallback employer credentials");
         } else {

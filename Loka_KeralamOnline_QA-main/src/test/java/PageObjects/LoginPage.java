@@ -32,6 +32,15 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//button[normalize-space()='Sign In']")
     private WebElement btnSignIn;
 
+    @FindBy(xpath = "//p[text()='Passwords not match! Authentication failed.']")
+    private WebElement errorMessageInvalidPassword;
+
+    @FindBy(xpath = "(//div[contains(@class,'MuiAvatar-root') and normalize-space()='AS'])[2]")
+    private WebElement profileIcon;
+
+    @FindBy(xpath = "//span[normalize-space()='Logout']")
+    private WebElement btnLogout;
+
     public LoginPage(WebDriver driver) {
         super(driver);
         logger.info("LoginPage initialized");
@@ -51,10 +60,48 @@ public class LoginPage extends BasePage {
         txtPassword.clear();
         txtPassword.sendKeys(password);
 
+        handleNetworkError();
+        click(btnSignIn);
+    }
 
+    public void logout() {
+        // Wait until profile icon is clickable
+        wait.until(ExpectedConditions.elementToBeClickable(profileIcon));
+
+        // Scroll to element (important for top-right icons)
+        ((org.openqa.selenium.JavascriptExecutor) driver)
+                .executeScript("arguments[0].scrollIntoView(true);", profileIcon);
+
+        // Small wait for UI stability
+        try { Thread.sleep(500); } catch (InterruptedException e) {}
+
+        // Click using JS (bypass overlay issue)
+        ((org.openqa.selenium.JavascriptExecutor) driver)
+                .executeScript("arguments[0].click();", profileIcon);
+
+        // Wait and click logout
+        wait.until(ExpectedConditions.elementToBeClickable(btnLogout));
+        click(btnLogout);
+    }
+
+    public String loginWithErrorPassword(String email) {
+        click(btnWelcomeClose);
+        click(btnExplore);
+
+        wait.until(ExpectedConditions.visibilityOf(txtEmail));
+        txtEmail.clear();
+        txtEmail.sendKeys(email);
+
+        wait.until(ExpectedConditions.visibilityOf(txtPassword));
+        txtPassword.clear();
+        txtPassword.sendKeys("IncorrectPassword123!");
 
         handleNetworkError();
         click(btnSignIn);
+
+        return wait.until(ExpectedConditions
+                        .visibilityOf(errorMessageInvalidPassword))
+                .getText();
     }
 
     public void handleNetworkError() {

@@ -1,92 +1,72 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="EndToEndSuite">
 
-    <!-- USER PORTAL TESTS -->
-  <!--  <test name="UserPortalTests">
-        <parameter name="portal" value="user"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="environment" value="qa"/>
+    <test name="UserPortalTests">
         <classes>
             <class name="Tests.RegistrationPage_Test001"/>
-            <class name="Tests.LoginPage_Test002"/>
-            <class name="Tests.ProfileCompletionTest003"/>
+         <!--   <class name="Tests.LoginPage_Test002"/>
+            <class name="Tests.ProfileCompletionTest003"/>-->
+            <class name="Tests.Logout_Test014"/>
         </classes>
     </test>
-
-    &lt;!&ndash; ADMIN PORTAL TESTS &ndash;&gt;
-    <test name="AdminPortalTests">
-        <parameter name="portal" value="admin"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="environment" value="qa"/>
+<!--
+    <test name="AdminLoginTests">
         <classes>
             <class name="Tests.AdminLogin_Test004"/>
         </classes>
     </test>
 
-    &lt;!&ndash; LKO ID VERIFICATION TEST &ndash;&gt;
     <test name="LKOIdVerificationTest">
-        <parameter name="portal" value="verification"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="environment" value="qa"/>
         <classes>
             <class name="Tests.IdenticalLKO_Test005"/>
         </classes>
     </test>
 
-    &lt;!&ndash; EMPLOYER SIGNUP TEST &ndash;&gt;
     <test name="EmployerSignupTest">
-        <parameter name="portal" value="employer"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="environment" value="qa"/>
         <classes>
             <class name="Tests.Employer_Signup_Test006"/>
         </classes>
     </test>
 
-    &lt;!&ndash; EMPLOYER PROFILE COMPLETION TEST &ndash;&gt;
     <test name="EmployerProfileCompletionTest">
-        <parameter name="portal" value="employer"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="environment" value="qa"/>
         <classes>
             <class name="Tests.EmployerProfileComp_Test007"/>
         </classes>
     </test>
 
-    &lt;!&ndash; ADMIN PORTAL TESTS &ndash;&gt;
-    <test name="AdminPortalTests">
-        <parameter name="portal" value="admin"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="environment" value="qa"/>
+    <test name="AdminResubmitTests">
         <classes>
             <class name="Tests.AdminResubmit_Test008"/>
         </classes>
-    </test>-->
+    </test>
 
     <test name="StudentSignupTest">
-        <parameter name="portal" value="student"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="environment" value="qa"/>
         <classes>
             <class name="Tests.StudentSignup_Test009"/>
         </classes>
     </test>
+
     <test name="StudentProfileCompletionTest">
-        <parameter name="portal" value="student"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="environment" value="qa"/>
         <classes>
             <class name="Tests.StudentProfCompletion_Test010"/>
         </classes>
     </test>
 
-    <test name="AdminPortalTests">
-        <parameter name="portal" value="admin"/>
-        <parameter name="browser" value="chrome"/>
-        <parameter name="environment" value="qa"/>
+    <test name="AdminRejectTests">
         <classes>
             <class name="Tests.AdminReject_Test011"/>
         </classes>
     </test>
+
+    <test name="DuplicateRegistrationTest">
+        <classes>
+            <class name="Tests.DuplicateEmail_Test012"/>
+        </classes>
+    </test>
+    <test name="InvalidPasswordTest">
+        <classes>
+            <class name="Tests.InvalidPassword_Test013"/>
+        </classes>
+    </test>-->
 
 </suite>

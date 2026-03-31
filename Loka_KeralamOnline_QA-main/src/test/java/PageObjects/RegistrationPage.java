@@ -158,8 +158,29 @@ public class RegistrationPage extends BasePage {
         js.executeScript("arguments[0].scrollIntoView({block:'center'});", checkbox);
         js.executeScript("arguments[0].click();", checkbox);
     }
+    protected void clickCheck(){
+        By locator = By.xpath("//input[@type='checkbox']");
 
+        WebElement checkbox = wait.until(
+                ExpectedConditions.presenceOfElementLocated(locator)
+        );
 
+        js.executeScript("arguments[0].scrollIntoView({block:'center'});", checkbox);
+        js.executeScript("arguments[0].click();", checkbox);
+    }
+
+    public void duplicateRegister() throws InterruptedException {
+        logger.info("Attempting duplicate registration to test error handling");
+        click(btnJoinNow);
+        click(btnSignUpWithEmail);
+        Thread.sleep(2000);
+        clickCheck();
+        click(btnProceed);
+
+        String duplicateEmail = "asp829@yopmail.com";
+        enterEmail(duplicateEmail);
+        click(btnSendOtp);
+    }
     public void registerWithYopmail(String yopmailUsername) throws InterruptedException {
         logger.info("Clicking Join Now button");
         click(btnJoinNow);

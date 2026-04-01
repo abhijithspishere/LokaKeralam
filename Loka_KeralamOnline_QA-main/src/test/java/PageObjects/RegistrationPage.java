@@ -130,7 +130,21 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath="//span[normalize-space()='Employer / Entrepreneur / Business']")
     private WebElement selectEmployer;
 /////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+    @FindBy(xpath = "//a[normalize-space()='Forgot Password?']")
+    private WebElement linkForgotPassword;
+
+    @FindBy(xpath = "//input[@id='email']")
+    private WebElement txtForgotEmail;
+
+    @FindBy(xpath = "//button[normalize-space()='Send Email OTP']")
+    private WebElement btnsendEmailotp;
+     /// //////////////////////////
+
+
     private final YopmailOTPFetcher otpFetcher;
+
+
 
     public RegistrationPage(WebDriver driver) {
         super(driver);
@@ -168,6 +182,15 @@ public class RegistrationPage extends BasePage {
         js.executeScript("arguments[0].scrollIntoView({block:'center'});", checkbox);
         js.executeScript("arguments[0].click();", checkbox);
     }
+
+    public void forgotPassword(String email) {
+        click(linkForgotPassword);
+        wait.until(ExpectedConditions.visibilityOf(txtForgotEmail));
+        txtForgotEmail.clear();
+        txtForgotEmail.sendKeys(email);
+        click(btnsendEmailotp);
+    }
+
 
     public void duplicateRegister() throws InterruptedException {
         logger.info("Attempting duplicate registration to test error handling");

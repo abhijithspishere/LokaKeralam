@@ -127,7 +127,7 @@ public class ProfileCompletionPage extends BasePage {
     private WebElement txtDocumentNo;
     @FindBy(xpath = "//span[text()='Date of Issue']/ancestor::div[contains(@class, 'MuiInputBase-root')]//input")
     private WebElement txtDateOfIssue;
-    @FindBy(xpath = "//div[@aria-label='Choose Tuesday, March 24th, 2026']")
+    @FindBy(xpath = "//div[@aria-label='Choose Wednesday, April 1st, 2026']")
     private WebElement datePickerJan01_2026;
     @FindBy(xpath = "//input[@id='proof-of-residence-file' and @type='file']")
     private WebElement residenceFileInput;
@@ -247,7 +247,7 @@ public class ProfileCompletionPage extends BasePage {
         waitForPageReload();
     }
 
-    public void updateNRKAddress(String address) {
+    public void updateNRKAddress(String address) throws InterruptedException {
         waitForPageReload();
         By addressLocator = By.xpath("//textarea[@name='addressLine1']");
 
@@ -258,6 +258,7 @@ public class ProfileCompletionPage extends BasePage {
         );
         scrollToCenter(addressField);
         addressField.clear();
+        Thread.sleep(1000);
         addressField.sendKeys(address);
 
         wait.until(ExpectedConditions.elementToBeClickable(btnUpdate02));

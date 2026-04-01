@@ -94,9 +94,9 @@ public class Hook {
         initializeDriver(browser);
 
         // Navigate to application
-        String url = portal.equals("admin")
-                ? ConfigReader.getProperty("admin.url")
-                : ConfigReader.getProperty("app.url");
+        String url = portal.equalsIgnoreCase("admin")
+                ? ConfigReader.getProperty(env + ".admin.url")
+                : ConfigReader.getProperty(env + ".app.url");
 
         driver.get(url);
 

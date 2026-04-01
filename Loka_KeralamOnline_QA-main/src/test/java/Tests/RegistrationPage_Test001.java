@@ -83,14 +83,17 @@ public class RegistrationPage_Test001 extends Hook {
                     "Registration failed for user: " + firstName + " " + lastName
             );
 
+            // Create the full email
             String email = yopmailUsername + "@yopmail.com";
 
-            // Store as EMPLOYER credentials instead of employee
+            // Store credentials in CredentialsStorage
+            // This will now also store the yopmail username internally
             CredentialsStorage.storeCredentials(email, password);
 
             logger.info("Employer credentials stored for profile completion test:");
             logger.info("Employer Email: " + email);
             logger.info("Employer Password: " + password);
+            logger.info("Yopmail Username: " + yopmailUsername);
 
             logger.info("Registration validation successful");
             test.log(Status.PASS, "Registration verified successfully");

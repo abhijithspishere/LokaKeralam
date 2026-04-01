@@ -4,6 +4,7 @@ public class CredentialsStorage {
     private static String registeredEmail;
     private static String registeredPassword;
     private static String generatedLKOId;
+    private static String yopmailUsername; // Add this
 
     // Separate storage for employer credentials
     private static String employerEmail;
@@ -13,7 +14,17 @@ public class CredentialsStorage {
     public static void storeCredentials(String email, String password) {
         registeredEmail = email;
         registeredPassword = password;
+        // Extract and store yopmail username if email is from yopmail
+        if (email.contains("@yopmail.com")) {
+            yopmailUsername = email.split("@")[0];
+        }
         System.out.println("Employee credentials stored - Email: " + email + ", Password: " + password);
+        System.out.println("Yopmail username: " + yopmailUsername);
+    }
+
+    // Add getter for yopmail username
+    public static String getYopmailUsername() {
+        return yopmailUsername;
     }
 
     public static String getRegisteredEmail() {
@@ -45,7 +56,7 @@ public class CredentialsStorage {
         generatedLKOId = null;
         employerEmail = null;
         employerPassword = null;
-
+        yopmailUsername = null;
     }
 
     // LKO ID methods for employee

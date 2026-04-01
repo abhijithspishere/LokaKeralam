@@ -2,15 +2,30 @@
 <suite name="EndToEndSuite">
 
     <test name="UserPortalTests">
+        <parameter name="yopmailUsername" value="testuser123"/>
+
         <classes>
+            <!-- First register a user -->
             <class name="Tests.RegistrationPage_Test001"/>
-         <!--   <class name="Tests.LoginPage_Test002"/>
-            <class name="Tests.ProfileCompletionTest003"/>-->
-            <class name="Tests.Logout_Test014"/>
+            <!-- Then test forgot password -->
+            <class name="Tests.ForgotPassword_Test015"/>
         </classes>
     </test>
-<!--
-    <test name="AdminLoginTests">
+
+ <!--   <test name="UserPortalTests">
+        <classes>
+            <class name="Tests.RegistrationPage_Test001"/>
+            <class name="Tests.ForgotPassword_Test015"/>
+
+           &lt;!&ndash; <class name="Tests.LoginPage_Test002"/>
+            <class name="Tests.Logout_Test014"/>
+            <class name="Tests.ProfileCompletionTest003"/>&ndash;&gt;
+
+        </classes>
+    </test>
+-->
+ <!--   <test name="AdminLoginTests">
+        <parameter name="portal" value="admin"/>
         <classes>
             <class name="Tests.AdminLogin_Test004"/>
         </classes>
@@ -35,6 +50,7 @@
     </test>
 
     <test name="AdminResubmitTests">
+        <parameter name="portal" value="admin"/>
         <classes>
             <class name="Tests.AdminResubmit_Test008"/>
         </classes>
@@ -53,6 +69,7 @@
     </test>
 
     <test name="AdminRejectTests">
+        <parameter name="portal" value="admin"/>
         <classes>
             <class name="Tests.AdminReject_Test011"/>
         </classes>
@@ -67,6 +84,6 @@
         <classes>
             <class name="Tests.InvalidPassword_Test013"/>
         </classes>
-    </test>-->
-
+    </test>
+-->
 </suite>

@@ -14,8 +14,16 @@ public class Logs {
         logger.info(message);
     }
 
+    public void info(String message, Object... params) {
+        logger.info(message, params);
+    }
+
     public void error(String message) {
         logger.error(message);
+    }
+
+    public void error(String message, Object... params) {
+        logger.error(message, params);
     }
 
     public void error(String message, Throwable throwable) {
@@ -26,7 +34,15 @@ public class Logs {
         logger.warn(message);
     }
 
+    public void warn(String message, Object... params) {
+        logger.warn(message, params);
+    }
+
     public void debug(String message) {
         logger.debug(message);
+    }
+
+    public void debug(String message, Object... params) {
+        logger.debug(message, params);
     }
 }

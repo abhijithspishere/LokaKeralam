@@ -139,8 +139,8 @@ public class Hook {
                 throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
+        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
     }
 

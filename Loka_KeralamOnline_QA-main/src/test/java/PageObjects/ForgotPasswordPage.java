@@ -207,36 +207,27 @@ public class ForgotPasswordPage extends BasePage {
     public void completeForgotPasswordFlow(String yopmailUsername, String email, String newPassword) throws InterruptedException {
         logger.info("Starting forgot password flow for email: {}", email);
 
-        // Step 1: Request OTP
         requestPasswordResetOTP(email);
 
-        // Step 2: Reduced wait time for OTP email
         logger.info("Waiting for OTP email to arrive...");
-        Thread.sleep(5000); // Reduced from 10000ms
+        Thread.sleep(2000);
 
-        // Step 3: Fetch OTP from Yopmail (reduced retries)
-        String otp = otpFetcher.fetchOTPWithRetry(yopmailUsername, 3, 3); // Reduced from (5,5) to (3,3)
+
+        String otp = otpFetcher.fetchOTPWithRetry(yopmailUsername, 3, 3);
         logger.info("OTP fetched successfully: {}", otp);
 
-        // Step 4: Enter OTP
         enterOTP(otp);
-
-        // Step 5: Validate OTP
         clickValidateOTP();
 
-        // Step 6: Reduced wait for password reset form
         logger.info("Waiting for password reset form...");
-        Thread.sleep(2000); // Reduced from 5000ms
+        Thread.sleep(2000);
 
-        if (!waitForPasswordResetForm(10)) { // Reduced from 15 seconds
+        if (!waitForPasswordResetForm(5)) {
             throw new RuntimeException("Password reset form did not appear after OTP validation");
         }
-
-        // Step 7: Set new password
         setNewPassword(newPassword);
 
-        // Step 8: Click reset button
-        Thread.sleep(500); // Reduced from 1000ms
+        Thread.sleep(500);
         clickResetPassword();
 
         logger.info("Forgot password flow completed");

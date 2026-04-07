@@ -23,27 +23,9 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//button[normalize-space()='Click to Explore']")
     private WebElement btnExplore;
 
-    // Better selectors for email and password fields - multiple options for reliability
-    @FindBy(xpath = "//input[@type='email']")
-    private WebElement txtEmailByType;
-
-    @FindBy(xpath = "//input[@name='email']")
-    private WebElement txtEmailByName;
-
-    @FindBy(xpath = "//input[@id='email']")
-    private WebElement txtEmailById;
-
+    // Direct XPATHs for email and password fields (same as ProfileCompletionPage)
     @FindBy(xpath = "//fieldset[.//span[text()='Email']]/preceding-sibling::input")
     private WebElement txtEmail;
-
-    @FindBy(xpath = "//input[@type='password']")
-    private WebElement txtPasswordByType;
-
-    @FindBy(xpath = "//input[@name='password']")
-    private WebElement txtPasswordByName;
-
-    @FindBy(xpath = "//input[@id='password']")
-    private WebElement txtPasswordById;
 
     @FindBy(xpath = "//fieldset[.//span[text()='Password']]/preceding-sibling::input")
     private WebElement txtPassword;
@@ -65,57 +47,19 @@ public class LoginPage extends BasePage {
         logger.info("LoginPage initialized");
     }
 
-    /**
-     * Get email field with fallback selectors
-     */
-    private WebElement getEmailField() {
-        try {
-            return wait.until(ExpectedConditions.visibilityOf(txtEmailByType));
-        } catch (Exception e1) {
-            try {
-                return wait.until(ExpectedConditions.visibilityOf(txtEmailByName));
-            } catch (Exception e2) {
-                try {
-                    return wait.until(ExpectedConditions.visibilityOf(txtEmailById));
-                } catch (Exception e3) {
-                    return wait.until(ExpectedConditions.visibilityOf(txtEmail));
-                }
-            }
-        }
-    }
-
-    /**
-     * Get password field with fallback selectors
-     */
-    private WebElement getPasswordField() {
-        try {
-            return wait.until(ExpectedConditions.visibilityOf(txtPasswordByType));
-        } catch (Exception e1) {
-            try {
-                return wait.until(ExpectedConditions.visibilityOf(txtPasswordByName));
-            } catch (Exception e2) {
-                try {
-                    return wait.until(ExpectedConditions.visibilityOf(txtPasswordById));
-                } catch (Exception e3) {
-                    return wait.until(ExpectedConditions.visibilityOf(txtPassword));
-                }
-            }
-        }
-    }
-
     public void loginWithCredentials(String email, String password) {
         // Handle initial welcome popups
         click(btnWelcomeClose);
         click(btnExplore);
 
-        // Enter Credentials using robust methods
-        WebElement emailField = getEmailField();
-        emailField.clear();
-        emailField.sendKeys(email);
+        // Enter Credentials using direct XPATHs
+        wait.until(ExpectedConditions.visibilityOf(txtEmail));
+        txtEmail.clear();
+        txtEmail.sendKeys(email);
 
-        WebElement passwordField = getPasswordField();
-        passwordField.clear();
-        passwordField.sendKeys(password);
+        wait.until(ExpectedConditions.visibilityOf(txtPassword));
+        txtPassword.clear();
+        txtPassword.sendKeys(password);
 
         handleNetworkError();
         click(btnSignIn);
@@ -169,9 +113,9 @@ public class LoginPage extends BasePage {
      */
     public void enterEmail(String email) {
         try {
-            WebElement emailField = getEmailField();
-            emailField.clear();
-            emailField.sendKeys(email);
+            wait.until(ExpectedConditions.visibilityOf(txtEmail));
+            txtEmail.clear();
+            txtEmail.sendKeys(email);
             logger.info("Entered email: {}", email);
         } catch (Exception e) {
             logger.error("Failed to enter email: {}", e.getMessage());
@@ -184,9 +128,9 @@ public class LoginPage extends BasePage {
      */
     public void enterPassword(String password) {
         try {
-            WebElement passwordField = getPasswordField();
-            passwordField.clear();
-            passwordField.sendKeys(password);
+            wait.until(ExpectedConditions.visibilityOf(txtPassword));
+            txtPassword.clear();
+            txtPassword.sendKeys(password);
             logger.info("Entered password");
         } catch (Exception e) {
             logger.error("Failed to enter password: {}", e.getMessage());
@@ -229,14 +173,14 @@ public class LoginPage extends BasePage {
             click(btnWelcomeClose);
             click(btnExplore);
 
-            // Enter credentials using robust methods
-            WebElement emailField = getEmailField();
-            emailField.clear();
-            emailField.sendKeys(email);
+            // Enter credentials using direct XPATHs
+            wait.until(ExpectedConditions.visibilityOf(txtEmail));
+            txtEmail.clear();
+            txtEmail.sendKeys(email);
 
-            WebElement passwordField = getPasswordField();
-            passwordField.clear();
-            passwordField.sendKeys(password);
+            wait.until(ExpectedConditions.visibilityOf(txtPassword));
+            txtPassword.clear();
+            txtPassword.sendKeys(password);
 
             handleNetworkError();
             click(btnSignIn);
@@ -276,13 +220,13 @@ public class LoginPage extends BasePage {
         click(btnWelcomeClose);
         click(btnExplore);
 
-        WebElement emailField = getEmailField();
-        emailField.clear();
-        emailField.sendKeys(email);
+        wait.until(ExpectedConditions.visibilityOf(txtEmail));
+        txtEmail.clear();
+        txtEmail.sendKeys(email);
 
-        WebElement passwordField = getPasswordField();
-        passwordField.clear();
-        passwordField.sendKeys("IncorrectPassword123!");
+        wait.until(ExpectedConditions.visibilityOf(txtPassword));
+        txtPassword.clear();
+        txtPassword.sendKeys("IncorrectPassword123!");
 
         handleNetworkError();
         click(btnSignIn);

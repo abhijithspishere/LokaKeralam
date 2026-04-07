@@ -7,24 +7,14 @@
         <classes>
             <!-- First register a user -->
             <class name="Tests.RegistrationPage_Test001"/>
-            <!-- Then test forgot password -->
-            <class name="Tests.ForgotPassword_Test015"/>
-        </classes>
-    </test>
-
- <!--   <test name="UserPortalTests">
-        <classes>
-            <class name="Tests.RegistrationPage_Test001"/>
-            <class name="Tests.ForgotPassword_Test015"/>
-
-           &lt;!&ndash; <class name="Tests.LoginPage_Test002"/>
+            <class name="Tests.LoginPage_Test002"/>
             <class name="Tests.Logout_Test014"/>
-            <class name="Tests.ProfileCompletionTest003"/>&ndash;&gt;
-
+            <class name="Tests.ProfileCompletionTest003"/>
+            <class name="Tests.ForgotPassword_Test015"/>
         </classes>
     </test>
--->
- <!--   <test name="AdminLoginTests">
+
+    <test name="AdminLoginTests">
         <parameter name="portal" value="admin"/>
         <classes>
             <class name="Tests.AdminLogin_Test004"/>
@@ -80,10 +70,11 @@
             <class name="Tests.DuplicateEmail_Test012"/>
         </classes>
     </test>
+
     <test name="InvalidPasswordTest">
         <classes>
             <class name="Tests.InvalidPassword_Test013"/>
         </classes>
     </test>
--->
+
 </suite>

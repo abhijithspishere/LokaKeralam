@@ -61,8 +61,8 @@ public class AdminLoginPage extends BasePage {
     wait.until(ExpectedConditions.elementToBeClickable(btnAdminLogin));
 
     int attempts = 0;
-    Thread .sleep(2000); // Brief pause to allow any potential UI changes
-    while (attempts < 2) {
+    Thread .sleep(3000); // Brief pause to allow any potential UI changes
+    while (attempts < 5) {
         try {
             btnAdminLogin.click();
             logger.info("Clicked login button");

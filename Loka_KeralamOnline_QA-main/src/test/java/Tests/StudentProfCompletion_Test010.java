@@ -16,7 +16,7 @@ public class StudentProfCompletion_Test010 extends Hook {
     @DataProvider(name = "profileData")
     public Object[][] getProfileData() throws IOException {
         String filePath = "src/test/resources/testdata/RegistrationData.xlsx";
-        String sheetName = "Sheet6";
+        String sheetName = "StudentProfile";
         return ExcelUtils.getTestData(filePath, sheetName);
     }
 

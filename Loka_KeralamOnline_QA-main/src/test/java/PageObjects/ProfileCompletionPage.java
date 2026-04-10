@@ -96,7 +96,7 @@ public class ProfileCompletionPage extends BasePage {
     private WebElement txtCourseName;
     @FindBy(xpath = "//span[text()='Course Start Date']/ancestor::fieldset/preceding-sibling::input")
     private WebElement clickCourseStartDate;
-    @FindBy(xpath = "//div[@aria-label='Choose Tuesday, March 24th, 2026']")
+    @FindBy(xpath = "//div[@aria-label='Choose Wednesday, April 1st, 2026']")
     private WebElement selectCourseStartDate;
     /// /////////////////////////////////////////////////////////////////
 
@@ -370,14 +370,13 @@ public class ProfileCompletionPage extends BasePage {
         scrollToCenter(studentInstName);
         click(studentInstName);
 
-
         wait.until(ExpectedConditions.visibilityOf(studentInstName));
         sendKeys(studentInstName, InstituteName);
 
-            wait.until(ExpectedConditions.elementToBeClickable(selectDubaiCollege));
-           /* click(selectDubaiCollege);*/
-            studentInstName.sendKeys(Keys.ARROW_DOWN);
-            studentInstName.sendKeys(Keys.ENTER);
+        wait.until(ExpectedConditions.elementToBeClickable(selectDubaiCollege));
+
+        studentInstName.sendKeys(Keys.ARROW_DOWN);
+        studentInstName.sendKeys(Keys.ENTER);
 
         wait.until(ExpectedConditions.visibilityOf(txtCourseName));
         sendKeys(txtCourseName, courseName);
@@ -392,12 +391,11 @@ public class ProfileCompletionPage extends BasePage {
         js.executeScript("arguments[0].scrollIntoView(true);", selectCourseStartDate);
         js.executeScript("arguments[0].click();", selectCourseStartDate);
 
-        moveSliderAccurate(By.xpath("(//span[contains(@class,'MuiSlider-thumb')])[2]"), 50); // move to 50%
+        moveSliderAccurate(By.xpath("(//span[contains(@class,'MuiSlider-thumb')])[2]"), 150);
 
         WebElement updateBtn = wait.until(ExpectedConditions.visibilityOfElementLocated(
-                By.xpath("(//button[normalize-space()='Update'])[4]")
+                By.xpath("(//input[@name='courseName']/ancestor::div[contains(@class,'MuiGrid')]//button[normalize-space()='Update'])")
         ));
-
         scrollToCenter(updateBtn);
         js.executeScript("arguments[0].click();", updateBtn);
 
@@ -408,6 +406,26 @@ public class ProfileCompletionPage extends BasePage {
     public void moveSliderAccurate(By sliderLocator, int percentage) {
         WebElement slider = wait.until(ExpectedConditions.visibilityOfElementLocated(sliderLocator));
 
+        scrollToCenter(slider);
+
+        int width = slider.getSize().width;
+
+        // Move relative to center
+        int xOffset = (width * percentage / 100) - (width / 2);
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(slider)
+                .clickAndHold()
+                .pause(Duration.ofMillis(300))
+                .moveByOffset(xOffset, 0)
+                .pause(Duration.ofMillis(300))
+                .release()
+                .perform();
+    }
+
+    /*public void moveSliderAccurate(By sliderLocator, int percentage) {
+        WebElement slider = wait.until(ExpectedConditions.visibilityOfElementLocated(sliderLocator));
+
         int width = slider.getSize().width;
         int xOffset = (width * percentage) / 100;
 
@@ -416,7 +434,7 @@ public class ProfileCompletionPage extends BasePage {
                 .moveByOffset(xOffset, 0)
                 .release()
                 .perform();
-    }
+    }*/
 
     /////////////////////////////////////////////////////////////////////////////////////
 

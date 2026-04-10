@@ -15,7 +15,7 @@ public class RegistrationPage_Test001 extends Hook {
     @DataProvider(name = "registrationData")
     public Object[][] getRegistrationData() throws IOException {
         String filePath = "src/test/resources/testdata/RegistrationData.xlsx";
-        String sheetName = "Sheet1";
+        String sheetName = "Employee";
         return ExcelUtils.getTestData(filePath, sheetName);
     }
 

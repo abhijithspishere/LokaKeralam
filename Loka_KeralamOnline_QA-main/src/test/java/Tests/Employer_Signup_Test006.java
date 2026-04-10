@@ -13,7 +13,7 @@ public class Employer_Signup_Test006 extends Hook {
 
     @DataProvider(name = "registrationData")
     public Object[][] getRegistrationData() throws IOException {
-        return ExcelUtils.getTestData("src/test/resources/testdata/RegistrationData.xlsx", "Sheet3");
+        return ExcelUtils.getTestData("src/test/resources/testdata/RegistrationData.xlsx", "Employer");
     }
 
     @Test(priority = 6, dataProvider = "registrationData")

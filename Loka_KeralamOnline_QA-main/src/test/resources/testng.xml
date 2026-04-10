@@ -27,14 +27,10 @@
         </classes>
     </test>
 
-    <test name="EmployerSignupTest">
-        <classes>
-            <class name="Tests.Employer_Signup_Test006"/>
-        </classes>
-    </test>
 
     <test name="EmployerProfileCompletionTest">
         <classes>
+            <class name="Tests.Employer_Signup_Test006"/>        <!-- priority=1 -->
             <class name="Tests.EmployerProfileComp_Test007"/>
         </classes>
     </test>
@@ -46,14 +42,12 @@
         </classes>
     </test>
 
-    <test name="StudentSignupTest">
-        <classes>
-            <class name="Tests.StudentSignup_Test009"/>
-        </classes>
-    </test>
+
+
 
     <test name="StudentProfileCompletionTest">
         <classes>
+            <class name="Tests.StudentSignup_Test009"/>        <!-- priority=1 -->
             <class name="Tests.StudentProfCompletion_Test010"/>
         </classes>
     </test>
@@ -65,16 +59,17 @@
         </classes>
     </test>
 
-    <test name="DuplicateRegistrationTest">
-        <classes>
-            <class name="Tests.DuplicateEmail_Test012"/>
-        </classes>
-    </test>
 
-    <test name="InvalidPasswordTest">
-        <classes>
-            <class name="Tests.InvalidPassword_Test013"/>
-        </classes>
-    </test>
+        <test name="DuplicateRegistrationTest">
+            <classes>
+                <class name="Tests.DuplicateEmail_Test012"/>
+            </classes>
+        </test>
+
+        <test name="InvalidPasswordTest">
+            <classes>
+                <class name="Tests.InvalidPassword_Test013"/>
+            </classes>
+        </test>
 
 </suite>

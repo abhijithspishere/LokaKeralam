@@ -230,6 +230,8 @@ public class RegistrationPage extends BasePage {
         enterOTP(otp);
         logger.info("Clicking Validate OTP button");
         click(btnValidateOtp);
+
+
     }
     private void enterEmail(String email) {
         logger.info("Entering email: {}", email.replaceAll("@.*", "@***"));
@@ -409,6 +411,7 @@ public void selectStudent(){
                 .perform();
     }
     private int calculateSliderOffset(int years) {
+
 
         int maxYears = 50;
         int sliderWidth = 200;

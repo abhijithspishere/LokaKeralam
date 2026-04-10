@@ -16,7 +16,7 @@ public class EmployerProfileComp_Test007 extends Hook {
     @DataProvider(name = "profileData")
     public Object[][] getProfileData() throws IOException {
         String filePath = "src/test/resources/testdata/RegistrationData.xlsx";
-        String sheetName = "Sheet4";
+        String sheetName = "EmployerProfile";
         return ExcelUtils.getTestData(filePath, sheetName);
     }
 

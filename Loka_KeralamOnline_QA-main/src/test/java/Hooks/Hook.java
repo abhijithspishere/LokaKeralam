@@ -44,8 +44,8 @@ public class Hook {
 
     @BeforeSuite
     public void setupSuite() {
-        // Delete old reports before creating new ones
-        deleteOldReports("test-output/reports");
+        //Delete old reports before creating new ones
+        //deleteOldReports("test-output/reports");
 
         // Create required directories
         createDirectory("test-output/reports");
@@ -138,7 +138,6 @@ public class Hook {
             default:
                 throw new IllegalArgumentException("Unsupported browser: " + browser);
         }
-
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(40));
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
@@ -160,7 +159,7 @@ public class Hook {
         }
 
         if (driver != null) {
-           // driver.quit();
+           driver.quit();
         }
     }
 

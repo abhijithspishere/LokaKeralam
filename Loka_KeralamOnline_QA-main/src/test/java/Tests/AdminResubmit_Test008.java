@@ -2,8 +2,12 @@ package Tests;
 
 import Hooks.Hook;
 import PageObjects.AdminLoginPage;
+import PageObjects.LoginPage;
 import Utils.ConfigReader;
+import Utils.CredentialsStorage;
+import com.aventstack.extentreports.Status;
 import org.testng.Assert;
+import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 public class AdminResubmit_Test008 extends Hook {
@@ -17,6 +21,27 @@ public class AdminResubmit_Test008 extends Hook {
 
         System.out.println("========== ADMIN RESUBMIT TEST STARTED ==========");
 
+
+        // 🔍 DEBUG: Check what credentials are actually stored
+        System.out.println("\n=== DEBUG: Current CredentialsStorage Content ===");
+        System.out.println("Employer Email: " + CredentialsStorage.getEmployerEmail());
+        System.out.println("Employer Password: " + CredentialsStorage.getEmployerPassword());
+        System.out.println("================================================\n");
+
+
+
+        String registeredEmail = CredentialsStorage.getEmployerEmail();    // CHANGED
+        String registeredPassword = CredentialsStorage.getEmployerPassword();
+
+        if (registeredEmail == null || registeredPassword == null) {
+            String errorMsg = "Credentials not found! Ensure Registration Test (priority=1) runs successfully before this test.";
+            logger.error(errorMsg);
+            test.log(Status.SKIP, errorMsg);
+            throw new SkipException(errorMsg);
+        }
+        logger.info("Fetching credentials from Storage...");
+        logger.info("Email: " + registeredEmail);
+
         AdminLoginPage adminPage = new AdminLoginPage(driver);
 
         // Login
@@ -28,12 +53,17 @@ public class AdminResubmit_Test008 extends Hook {
         Assert.assertTrue(adminPage.isDashboardDisplayed(),
                 "Admin login failed - Dashboard not displayed");
 
-        // Navigate to user
         adminPage.clickFirstRowViewButton();
-
-        // Resubmit user with remarks
         adminPage.ResubmitUser();
 
         System.out.println("========== ADMIN RESUBMIT TEST COMPLETED ==========");
+
+        driver.get(ConfigReader.getProperty("qa.app.url"));
+
+        test.log(Status.INFO, "Attempting login with registered email: " + registeredEmail);
+
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.loginWithCredentials(registeredEmail, registeredPassword);
+        loginPage.verifyResubmitProfileVisible(driver);
     }
 }

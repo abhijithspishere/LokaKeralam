@@ -16,7 +16,7 @@ public class ProfileCompletionTest003 extends Hook {
     @DataProvider(name = "profileData")
     public Object[][] getProfileData() throws IOException {
         String filePath = "src/test/resources/testdata/RegistrationData.xlsx";
-        String sheetName = "Sheet2";
+        String sheetName = "EmployeeProfile";
         return ExcelUtils.getTestData(filePath, sheetName);
     }
 
@@ -101,14 +101,6 @@ public class ProfileCompletionTest003 extends Hook {
 
             test.log(Status.PASS, "Employee Profile Completion successful");
 
-            // COMMENT OUT OR REMOVE THIS SECTION - LKO ID is not available immediately
-            // Only available after admin approval
-            /*
-            // Optional: Store the LKO ID
-            String lkoId = profilePage.getUserLkoId();
-            CredentialsStorage.storeLKOId(lkoId);
-            test.log(Status.INFO, "Employee LKO ID: " + lkoId);
-            */
 
         } catch (Exception e) {
             logger.error("Employee Profile Completion test exception", e);
@@ -117,13 +109,4 @@ public class ProfileCompletionTest003 extends Hook {
         }
     }
 
-   /* public void fetchApprovedLKOID() throws InterruptedException {
-        ProfileCompletionPage profilePage = new ProfileCompletionPage(driver);
-
-        String email = CredentialsStorage.getRegisteredEmail();
-        String password = CredentialsStorage.getRegisteredPassword();
-
-        test.log(Status.INFO, "Test User: " + email);
-        profilePage.loginWithCredentials(email, password);
-    }*/
 }

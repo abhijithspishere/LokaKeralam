@@ -13,7 +13,7 @@ public class StudentSignup_Test009 extends Hook {
 
     @DataProvider(name = "registrationData")
     public Object[][] getRegistrationData() throws IOException {
-        return ExcelUtils.getTestData("src/test/resources/testdata/RegistrationData.xlsx", "Sheet5");
+        return ExcelUtils.getTestData("src/test/resources/testdata/RegistrationData.xlsx", "Student");
     }
 
     @Test(priority = 6, dataProvider = "registrationData")
@@ -25,7 +25,8 @@ public class StudentSignup_Test009 extends Hook {
             String phoneNumber,
             String password
     ) throws InterruptedException {
-        CredentialsStorage.clearCredentials();
+       // CredentialsStorage.clearCredentials();
+
         RegistrationPage regPage = new RegistrationPage(driver);
         String appUrl = ConfigReader.getAppUrl();
         driver.get(appUrl);

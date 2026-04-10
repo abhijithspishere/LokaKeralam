@@ -1,5 +1,7 @@
 package PageObjects;
 
+import Utils.CredentialsStorage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,6 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+
 import java.time.Duration;
 
 public class LoginPage extends BasePage {
@@ -42,6 +46,9 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//span[normalize-space()='Logout']")
     private WebElement btnLogout;
 
+    @FindBy(xpath = "//button[normalize-space()='Resubmit Profile']")
+    private WebElement btnResubmitProfile;
+
     public LoginPage(WebDriver driver) {
         super(driver);
         logger.info("LoginPage initialized");
@@ -63,6 +70,7 @@ public class LoginPage extends BasePage {
 
         handleNetworkError();
         click(btnSignIn);
+
     }
 
     /**
@@ -234,6 +242,50 @@ public class LoginPage extends BasePage {
         return wait.until(ExpectedConditions
                         .visibilityOf(errorMessageInvalidPassword))
                 .getText();
+    }
+
+
+
+    public void verifyRejectedUserLogin(WebDriver driver) {
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+        try {
+            String errorMsg = wait.until(
+                    ExpectedConditions.visibilityOfElementLocated(
+                            By.xpath("//p[contains(text(),'Login failed') and contains(text(),'profile has been rejected')]")
+                    )
+            ).getText();
+
+            Assert.assertTrue(errorMsg.contains("profile has been rejected"),
+                    "Expected rejection message not displayed");
+
+            System.out.println("TEST PASSED: Rejected user cannot login");
+
+        } catch (Exception e) {
+            Assert.fail("TEST FAILED: Rejection message not found, user might have logged in");
+        }
+    }
+
+    public void verifyResubmitProfileVisible(WebDriver driver) {
+
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+            WebElement resubmitBtn = wait.until(
+                    ExpectedConditions.visibilityOf(btnResubmitProfile)
+            );
+
+            String btnText = resubmitBtn.getText();
+
+            Assert.assertTrue(btnText.contains("Resubmit"),
+                    "Expected 'Resubmit Profile' button not found");
+
+            System.out.println("TEST PASSED: Resubmit Profile button is visible");
+
+        } catch (Exception e) {
+            Assert.fail("TEST FAILED: Resubmit Profile button not visible");
+        }
     }
 
     public void handleNetworkError() {

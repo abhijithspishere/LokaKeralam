@@ -35,14 +35,20 @@
         </classes>
     </test>
 
+     <test name="AdminResubmitDisabledTest">
+        <parameter name="portal" value="admin"/>
+        <classes>
+            <class name="Tests.AdminResubmitDisabled_Test018"/>
+        </classes>
+    </test>
+
+
     <test name="AdminResubmitTests">
         <parameter name="portal" value="admin"/>
         <classes>
             <class name="Tests.AdminResubmit_Test008"/>
         </classes>
     </test>
-
-
 
 
     <test name="StudentProfileCompletionTest">
@@ -71,5 +77,22 @@
                 <class name="Tests.InvalidPassword_Test013"/>
             </classes>
         </test>
+
+    <test name="AdminInvalidCredentialsTest">
+        <parameter name="portal" value="admin"/>
+        <classes>
+            <class name="Tests.AdminInvalidLogin_Test016"/>
+        </classes>
+    </test>
+
+    <test name="AdminInvalidPasswordTest">
+        <parameter name="portal" value="admin"/>
+        <classes>
+            <class name="Tests.AdminInvalidPassword_Test017"/>
+        </classes>
+    </test>
+
+
+
 
 </suite>

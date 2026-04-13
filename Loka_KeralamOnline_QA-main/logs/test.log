@@ -17802,3 +17802,388 @@ Session ID: 2870fda091f00591275d2133a3817057
 2026-04-10 13:05:01.920 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
 2026-04-10 13:05:11.787 [main] INFO  admin_resubmit_test - Test PASSED: admin_resubmit_test
 2026-04-10 13:05:12.364 [main] INFO  admin_resubmit_test - Test suite execution completed
+2026-04-10 14:12:41.412 [main] INFO  registration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:12:41.415 [main] INFO  registration_test - Browser: CHROME
+2026-04-10 14:12:41.416 [main] INFO  registration_test - Environment: QA
+2026-04-10 14:12:41.425 [main] INFO  registration_test - ========== TEST STARTED ==========
+2026-04-10 14:12:41.425 [main] INFO  registration_test - User: Akhil Satheesh
+2026-04-10 14:12:41.425 [main] INFO  registration_test - Yopmail Username: abhijith755
+2026-04-10 14:12:41.426 [main] INFO  registration_test - Phone: 2147483647
+2026-04-10 14:12:41.456 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-04-10 14:12:41.456 [main] INFO  registration_test - STEP 1: Closing popup and exploring
+2026-04-10 14:12:41.456 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-04-10 14:12:41.644 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-04-10 14:12:41.943 [main] INFO  registration_test - STEP 2: Registering with Yopmail: abhijith755
+2026-04-10 14:12:41.943 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-04-10 14:12:42.082 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-04-10 14:12:42.287 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-04-10 14:12:42.455 [main] INFO  PageObjects.RegistrationPage - Entering email: abhijith755@***
+2026-04-10 14:12:42.748 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-04-10 14:13:00.727 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-04-10 14:13:00.729 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-04-10 14:13:00.845 [main] INFO  registration_test - STEP 3: Selecting country and city
+2026-04-10 14:13:00.845 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-04-10 14:13:03.410 [main] INFO  registration_test - STEP 4: Filling personal details
+2026-04-10 14:13:05.178 [main] INFO  registration_test - STEP 4.5: Selecting user description as Employer
+2026-04-10 14:13:05.330 [main] INFO  registration_test - STEP 4.6: Setting experience and submitting registration
+2026-04-10 14:13:06.504 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-04-10 14:13:06.504 [main] INFO  registration_test - STEP 5: Validating registration
+2026-04-10 14:13:06.504 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-04-10 14:13:13.034 [main] INFO  registration_test - Employer credentials stored for profile completion test:
+2026-04-10 14:13:13.034 [main] INFO  registration_test - Employer Email: abhijith755@yopmail.com
+2026-04-10 14:13:13.035 [main] INFO  registration_test - Employer Password: Test@123
+2026-04-10 14:13:13.035 [main] INFO  registration_test - Yopmail Username: abhijith755
+2026-04-10 14:13:13.035 [main] INFO  registration_test - Registration validation successful
+2026-04-10 14:13:13.035 [main] INFO  registration_test - STEP 6: Logging out registered user
+2026-04-10 14:13:13.035 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-04-10 14:13:13.144 [main] INFO  registration_test - User logged out successfully
+2026-04-10 14:13:13.144 [main] INFO  registration_test - ========== TEST PASSED ==========
+2026-04-10 14:13:13.153 [main] INFO  registration_test - Test PASSED: registration_test
+2026-04-10 14:13:30.136 [main] INFO  login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:13:30.136 [main] INFO  login_test - Browser: CHROME
+2026-04-10 14:13:30.136 [main] INFO  login_test - Environment: QA
+2026-04-10 14:13:30.137 [main] INFO  login_test - ========== LOGIN TEST STARTED ==========
+2026-04-10 14:13:30.138 [main] INFO  login_test - Fetching credentials from Storage...
+2026-04-10 14:13:30.139 [main] INFO  login_test - Email: abhijith755@yopmail.com
+2026-04-10 14:13:30.142 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-04-10 14:13:45.753 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-04-10 14:14:00.400 [main] INFO  PageObjects.LoginPage - Login successful, redirected to dashboard
+2026-04-10 14:14:00.418 [main] INFO  PageObjects.LoginPage - Login successful, redirected to dashboard
+2026-04-10 14:14:00.418 [main] INFO  login_test - Login success status: true
+2026-04-10 14:14:00.425 [main] INFO  login_test - Test PASSED: login_test
+2026-04-10 14:14:19.074 [main] INFO  logout_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:14:19.074 [main] INFO  logout_test - Browser: CHROME
+2026-04-10 14:14:19.074 [main] INFO  logout_test - Environment: QA
+2026-04-10 14:14:19.076 [main] INFO  logout_test - ========== LOGOUT TEST STARTED ==========
+2026-04-10 14:14:19.077 [main] INFO  logout_test - Logging in before logout...
+2026-04-10 14:14:19.079 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-04-10 14:14:34.698 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-04-10 14:14:51.773 [main] INFO  PageObjects.LoginPage - Login successful, redirected to dashboard
+2026-04-10 14:14:51.773 [main] INFO  logout_test - Login successful. Proceeding to logout...
+2026-04-10 14:14:52.766 [main] INFO  PageObjects.LoginPage - Logged out successfully
+2026-04-10 14:14:52.817 [main] INFO  logout_test - Current URL after logout: https://qa.lokakeralamonline.kerala.gov.in/login-page
+2026-04-10 14:14:52.821 [main] INFO  logout_test - Test PASSED: logout_test
+2026-04-10 14:15:16.300 [main] INFO  employee_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:15:16.301 [main] INFO  employee_profile_completion_test - Browser: CHROME
+2026-04-10 14:15:16.301 [main] INFO  employee_profile_completion_test - Environment: QA
+2026-04-10 14:15:16.319 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-04-10 14:16:13.234 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:15.304 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:21.106 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:23.156 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:28.254 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:30.301 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:34.644 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:36.677 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:43.662 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:45.714 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:46.725 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/passportSample.jpg
+2026-04-10 14:16:49.982 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:52.020 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:16:55.184 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/aadhar.jpg
+2026-04-10 14:16:59.446 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:17:07.070 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:17:09.909 [main] INFO  employee_profile_completion_test - ========== EMPLOYEE PROFILE TEST PASSED ==========
+2026-04-10 14:17:09.920 [main] INFO  employee_profile_completion_test - Employee profile submission success status: true
+2026-04-10 14:17:09.922 [main] INFO  employee_profile_completion_test - Test PASSED: employee_profile_completion_test
+2026-04-10 14:17:28.619 [main] INFO  testForgotPasswordValidFlow - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:17:28.619 [main] INFO  testForgotPasswordValidFlow - Browser: CHROME
+2026-04-10 14:17:28.619 [main] INFO  testForgotPasswordValidFlow - Environment: QA
+2026-04-10 14:17:28.620 [main] INFO  testForgotPasswordValidFlow - === Test Parameters ===
+2026-04-10 14:17:28.621 [main] INFO  testForgotPasswordValidFlow - Stored registered email: abhijith755@yopmail.com
+2026-04-10 14:17:28.621 [main] INFO  testForgotPasswordValidFlow - Stored yopmail username: abhijith755
+2026-04-10 14:17:28.621 [main] INFO  testForgotPasswordValidFlow - New password to set: NewPass@123
+2026-04-10 14:17:28.621 [main] INFO  testForgotPasswordValidFlow - Step 1: Verifying old password works before password reset
+2026-04-10 14:17:28.623 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-04-10 14:17:44.312 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-04-10 14:17:59.261 [main] INFO  PageObjects.LoginPage - Login successful, redirected to dashboard
+2026-04-10 14:17:59.261 [main] INFO  testForgotPasswordValidFlow - Old password verification successful
+2026-04-10 14:18:00.590 [main] INFO  PageObjects.LoginPage - Logged out successfully
+2026-04-10 14:18:00.590 [main] INFO  testForgotPasswordValidFlow - Logged out after verification
+2026-04-10 14:18:01.600 [main] INFO  testForgotPasswordValidFlow - Navigating to forgot password page...
+2026-04-10 14:18:05.526 [main] INFO  testForgotPasswordValidFlow - Successfully navigated to forgot password page
+2026-04-10 14:18:05.564 [main] INFO  PageObjects.ForgotPasswordPage - ForgotPasswordPage initialized
+2026-04-10 14:18:05.565 [main] INFO  PageObjects.ForgotPasswordPage - Starting forgot password flow for email: abhijith755@yopmail.com
+2026-04-10 14:18:05.565 [main] INFO  PageObjects.ForgotPasswordPage - Requesting password reset OTP for email: abhijith755@yopmail.com
+2026-04-10 14:18:06.395 [main] INFO  PageObjects.ForgotPasswordPage - OTP request sent successfully
+2026-04-10 14:18:06.395 [main] INFO  PageObjects.ForgotPasswordPage - Waiting for OTP email to arrive...
+2026-04-10 14:18:22.457 [main] INFO  PageObjects.ForgotPasswordPage - OTP fetched successfully: 535623
+2026-04-10 14:18:22.457 [main] INFO  PageObjects.ForgotPasswordPage - Entering OTP
+2026-04-10 14:18:23.544 [main] INFO  PageObjects.ForgotPasswordPage - Clicking Validate OTP button
+2026-04-10 14:18:23.672 [main] INFO  PageObjects.ForgotPasswordPage - Waiting for password reset form...
+2026-04-10 14:18:25.674 [main] INFO  PageObjects.ForgotPasswordPage - Waiting for password reset form
+2026-04-10 14:18:25.702 [main] INFO  PageObjects.ForgotPasswordPage - Password reset form is visible
+2026-04-10 14:18:25.702 [main] INFO  PageObjects.ForgotPasswordPage - Setting new password
+2026-04-10 14:18:26.031 [main] INFO  PageObjects.ForgotPasswordPage - New password entered successfully
+2026-04-10 14:18:26.542 [main] INFO  PageObjects.ForgotPasswordPage - Clicking Reset Password button
+2026-04-10 14:18:26.665 [main] INFO  PageObjects.ForgotPasswordPage - Reset Password button clicked
+2026-04-10 14:18:26.665 [main] INFO  PageObjects.ForgotPasswordPage - Forgot password flow completed
+2026-04-10 14:18:28.678 [main] INFO  PageObjects.ForgotPasswordPage - Verifying password reset success
+2026-04-10 14:18:30.779 [main] INFO  PageObjects.ForgotPasswordPage - Redirected to login page - password reset successful
+2026-04-10 14:18:30.779 [main] INFO  testForgotPasswordValidFlow - Password reset successful for: abhijith755@yopmail.com
+2026-04-10 14:18:30.780 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-04-10 14:18:47.058 [main] INFO  PageObjects.LoginPage - Entered email: abhijith755@yopmail.com
+2026-04-10 14:18:47.239 [main] INFO  PageObjects.LoginPage - Entered password
+2026-04-10 14:19:01.291 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-04-10 14:19:01.477 [main] INFO  PageObjects.LoginPage - Clicked Sign In button
+2026-04-10 14:19:23.791 [main] INFO  PageObjects.LoginPage - Login validation failed. Current URL: https://qa.lokakeralamonline.kerala.gov.in/login-page
+2026-04-10 14:19:23.791 [main] INFO  testForgotPasswordValidFlow - Old password verification successful - cannot login with old password
+2026-04-10 14:19:40.340 [main] INFO  PageObjects.LoginPage - Entered email: abhijith755@yopmail.com
+2026-04-10 14:19:40.508 [main] INFO  PageObjects.LoginPage - Entered password
+2026-04-10 14:19:54.566 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-04-10 14:19:54.719 [main] INFO  PageObjects.LoginPage - Clicked Sign In button
+2026-04-10 14:19:58.134 [main] INFO  PageObjects.LoginPage - Login successful, redirected to dashboard
+2026-04-10 14:19:58.134 [main] INFO  testForgotPasswordValidFlow - New password verification successful
+2026-04-10 14:19:59.880 [main] INFO  PageObjects.LoginPage - Logged out successfully
+2026-04-10 14:19:59.881 [main] INFO  testForgotPasswordValidFlow - Logged out after new password verification
+2026-04-10 14:19:59.881 [main] INFO  testForgotPasswordValidFlow - ========== FORGOT PASSWORD TEST COMPLETED SUCCESSFULLY ==========
+2026-04-10 14:19:59.885 [main] INFO  testForgotPasswordValidFlow - Test PASSED: testForgotPasswordValidFlow
+2026-04-10 14:20:18.102 [main] INFO  admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-04-10 14:20:18.104 [main] INFO  admin_login_test - Browser: CHROME
+2026-04-10 14:20:18.104 [main] INFO  admin_login_test - Environment: QA
+2026-04-10 14:20:21.780 [main] INFO  PageObjects.AdminLoginPage - Clicked login button
+2026-04-10 14:20:23.776 [main] INFO  PageObjects.AdminLoginPage - Login successful, navigated to: https://qa.lokakeralamonline.kerala.gov.in/ApproverDashboard
+2026-04-10 14:20:24.959 [main] INFO  PageObjects.AdminLoginPage - Clicked View button of first row
+2026-04-10 14:20:25.319 [main] INFO  PageObjects.AdminLoginPage - Clicked Approve button
+2026-04-10 14:20:27.563 [main] INFO  PageObjects.AdminLoginPage - Fetched LKO ID: 000000000000539
+2026-04-10 14:20:27.564 [main] INFO  admin_login_test - Test PASSED: admin_login_test
+2026-04-10 14:20:43.857 [main] INFO  verifyIdenticalLKOId - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:20:43.857 [main] INFO  verifyIdenticalLKOId - Browser: CHROME
+2026-04-10 14:20:43.857 [main] INFO  verifyIdenticalLKOId - Environment: QA
+2026-04-10 14:20:43.860 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-04-10 14:21:04.494 [main] INFO  verifyIdenticalLKOId - Test PASSED: verifyIdenticalLKOId
+2026-04-10 14:21:21.047 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:21:21.047 [main] INFO  employer_signup_test - Browser: CHROME
+2026-04-10 14:21:21.047 [main] INFO  employer_signup_test - Environment: QA
+2026-04-10 14:21:21.051 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-04-10 14:21:24.487 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-04-10 14:21:24.687 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-04-10 14:21:25.000 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-04-10 14:21:25.132 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-04-10 14:21:25.328 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-04-10 14:21:25.507 [main] INFO  PageObjects.RegistrationPage - Entering email: adithyan822@***
+2026-04-10 14:21:25.765 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-04-10 14:21:47.875 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-04-10 14:21:47.875 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-04-10 14:21:47.951 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-04-10 14:21:54.246 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-04-10 14:21:57.255 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-04-10 14:22:07.989 [main] INFO  employer_signup_test - ✓ EMPLOYER CREDENTIALS STORED:
+2026-04-10 14:22:07.990 [main] INFO  employer_signup_test -   Email: adithyan822@yopmail.com
+2026-04-10 14:22:07.990 [main] INFO  employer_signup_test -   Password: Test@123
+2026-04-10 14:22:07.990 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-04-10 14:22:08.105 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-04-10 14:22:25.145 [main] INFO  employer_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:22:25.145 [main] INFO  employer_profile_completion_test - Browser: CHROME
+2026-04-10 14:22:25.145 [main] INFO  employer_profile_completion_test - Environment: QA
+2026-04-10 14:22:25.147 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-04-10 14:23:03.910 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:05.951 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:11.581 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:13.618 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:18.200 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:20.240 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:24.725 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:26.760 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:27.946 [main] INFO  PageObjects.ProfileCompletionPage - Pressed Escape key
+2026-04-10 14:23:34.786 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:36.823 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:37.820 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/passportSample.jpg
+2026-04-10 14:23:40.031 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:42.077 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:45.239 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/aadhar.jpg
+2026-04-10 14:23:49.479 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:56.195 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:23:59.102 [main] INFO  employer_profile_completion_test - Test PASSED: employer_profile_completion_test
+2026-04-10 14:24:19.089 [main] INFO  admin_resubmit_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-04-10 14:24:19.090 [main] INFO  admin_resubmit_test - Browser: CHROME
+2026-04-10 14:24:19.090 [main] INFO  admin_resubmit_test - Environment: QA
+2026-04-10 14:24:19.092 [main] INFO  admin_resubmit_test - Fetching credentials from Storage...
+2026-04-10 14:24:19.092 [main] INFO  admin_resubmit_test - Email: adithyan822@yopmail.com
+2026-04-10 14:24:23.080 [main] INFO  PageObjects.AdminLoginPage - Clicked login button
+2026-04-10 14:24:26.850 [main] INFO  PageObjects.AdminLoginPage - Login successful, navigated to: https://qa.lokakeralamonline.kerala.gov.in/ApproverDashboard
+2026-04-10 14:24:28.698 [main] INFO  PageObjects.AdminLoginPage - Clicked View button of first row
+2026-04-10 14:24:29.071 [main] INFO  PageObjects.AdminLoginPage - Clicked initial Resubmit button
+2026-04-10 14:24:29.512 [main] INFO  PageObjects.AdminLoginPage - Entered remarks for resubmission
+2026-04-10 14:24:29.665 [main] INFO  PageObjects.AdminLoginPage - Clicked final Resubmit button
+2026-04-10 14:24:31.527 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-04-10 14:24:46.674 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-04-10 14:25:04.049 [main] INFO  admin_resubmit_test - Test PASSED: admin_resubmit_test
+2026-04-10 14:25:26.654 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:25:26.654 [main] INFO  employer_signup_test - Browser: CHROME
+2026-04-10 14:25:26.655 [main] INFO  employer_signup_test - Environment: QA
+2026-04-10 14:25:26.659 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-04-10 14:25:31.101 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-04-10 14:25:31.253 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-04-10 14:25:31.604 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-04-10 14:25:31.748 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-04-10 14:25:31.990 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-04-10 14:25:32.255 [main] INFO  PageObjects.RegistrationPage - Entering email: sam857@***
+2026-04-10 14:25:32.507 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-04-10 14:25:56.118 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-04-10 14:25:56.119 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-04-10 14:25:56.291 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-04-10 14:26:06.172 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-04-10 14:26:09.187 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-04-10 14:26:35.746 [main] INFO  employer_signup_test - ✓ EMPLOYER CREDENTIALS STORED:
+2026-04-10 14:26:35.747 [main] INFO  employer_signup_test -   Email: sam857@yopmail.com
+2026-04-10 14:26:35.747 [main] INFO  employer_signup_test -   Password: Test@123
+2026-04-10 14:26:35.747 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-04-10 14:26:36.164 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-04-10 14:26:48.713 [main] INFO  employer_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:26:48.713 [main] INFO  employer_profile_completion_test - Browser: CHROME
+2026-04-10 14:26:48.713 [main] INFO  employer_profile_completion_test - Environment: QA
+2026-04-10 14:26:48.719 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-04-10 14:27:43.798 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:27:45.830 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:27:52.562 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:27:54.603 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:01.681 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:03.731 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:10.449 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:12.487 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:22.615 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:24.660 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:26.729 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/passportSample.jpg
+2026-04-10 14:28:30.688 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:32.732 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:35.741 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/aadhar.jpg
+2026-04-10 14:28:40.035 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:47.392 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-10 14:28:50.351 [main] INFO  employer_profile_completion_test - Test PASSED: employer_profile_completion_test
+2026-04-10 14:29:07.405 [main] INFO  admin_reject_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-04-10 14:29:07.406 [main] INFO  admin_reject_test - Browser: CHROME
+2026-04-10 14:29:07.406 [main] INFO  admin_reject_test - Environment: QA
+2026-04-10 14:29:07.407 [main] INFO  admin_reject_test - Fetching credentials from Storage...
+2026-04-10 14:29:07.408 [main] INFO  admin_reject_test - Email: sam857@yopmail.com
+2026-04-10 14:29:11.028 [main] INFO  PageObjects.AdminLoginPage - Clicked login button
+2026-04-10 14:29:12.885 [main] INFO  PageObjects.AdminLoginPage - Login successful, navigated to: https://qa.lokakeralamonline.kerala.gov.in/ApproverDashboard
+2026-04-10 14:29:15.244 [main] INFO  PageObjects.AdminLoginPage - Clicked View button of first row
+2026-04-10 14:29:15.650 [main] INFO  PageObjects.AdminLoginPage - Clicked Reject button
+2026-04-10 14:29:16.067 [main] INFO  PageObjects.AdminLoginPage - Entered remarks for resubmission
+2026-04-10 14:29:16.187 [main] INFO  PageObjects.AdminLoginPage - Clicked final Resubmit button
+2026-04-10 14:29:17.583 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-04-10 14:29:32.639 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-04-10 14:29:33.621 [main] INFO  admin_reject_test - Test PASSED: admin_reject_test
+2026-04-10 14:29:46.560 [main] INFO  duplicateRegistration_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:29:46.561 [main] INFO  duplicateRegistration_test - Browser: CHROME
+2026-04-10 14:29:46.561 [main] INFO  duplicateRegistration_test - Environment: QA
+2026-04-10 14:29:46.563 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-04-10 14:29:46.564 [main] INFO  duplicateRegistration_test - Starting duplicate email registration test
+2026-04-10 14:29:46.564 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-04-10 14:29:47.281 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-04-10 14:29:47.596 [main] INFO  PageObjects.RegistrationPage - Attempting duplicate registration to test error handling
+2026-04-10 14:29:50.088 [main] INFO  PageObjects.RegistrationPage - Entering email: asp829@***
+2026-04-10 14:29:52.000 [main] INFO  duplicateRegistration_test - Duplicate email validation successful
+2026-04-10 14:29:52.002 [main] INFO  duplicateRegistration_test - Test PASSED: duplicateRegistration_test
+2026-04-10 14:30:03.361 [main] INFO  loginWithInvalidPassword_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-10 14:30:03.362 [main] INFO  loginWithInvalidPassword_test - Browser: CHROME
+2026-04-10 14:30:03.362 [main] INFO  loginWithInvalidPassword_test - Environment: QA
+2026-04-10 14:30:03.364 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-04-10 14:30:18.876 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-04-10 14:30:20.202 [main] INFO  loginWithInvalidPassword_test - Captured Error Message: Passwords not match! Authentication failed.
+2026-04-10 14:30:20.203 [main] INFO  loginWithInvalidPassword_test - Test PASSED: loginWithInvalidPassword_test
+2026-04-10 14:30:20.704 [main] INFO  loginWithInvalidPassword_test - Test suite execution completed
+2026-04-13 12:24:41.410 [main] INFO  invalid_admin_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-04-13 12:24:41.413 [main] INFO  invalid_admin_login_test - Browser: CHROME
+2026-04-13 12:24:41.414 [main] INFO  invalid_admin_login_test - Environment: QA
+2026-04-13 12:24:45.209 [main] INFO  PageObjects.AdminLoginPage - Clicked login button with invalid credentials
+2026-04-13 12:24:47.315 [main] INFO  PageObjects.AdminLoginPage - Error message: No account found with this email. Please sign up.
+2026-04-13 12:24:47.334 [main] INFO  PageObjects.AdminLoginPage - Current URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-04-13 12:24:47.339 [main] INFO  invalid_admin_login_test - Test PASSED: invalid_admin_login_test
+2026-04-13 12:24:47.919 [main] INFO  invalid_admin_login_test - Test suite execution completed
+2026-04-13 12:35:10.572 [main] INFO  wrong_password_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-04-13 12:35:10.577 [main] INFO  wrong_password_login_test - Browser: CHROME
+2026-04-13 12:35:10.577 [main] INFO  wrong_password_login_test - Environment: QA
+2026-04-13 12:35:14.245 [main] INFO  PageObjects.AdminLoginPage - Clicked login button with wrong password
+2026-04-13 12:35:16.335 [main] INFO  PageObjects.AdminLoginPage - Error message: Passwords not match! Authentication failed.
+2026-04-13 12:35:16.352 [main] ERROR wrong_password_login_test - Test FAILED: wrong_password_login_test
+2026-04-13 12:35:16.825 [main] INFO  wrong_password_login_test - Test suite execution completed
+2026-04-13 12:36:23.154 [main] INFO  wrong_password_login_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-04-13 12:36:23.157 [main] INFO  wrong_password_login_test - Browser: CHROME
+2026-04-13 12:36:23.157 [main] INFO  wrong_password_login_test - Environment: QA
+2026-04-13 12:36:26.868 [main] INFO  PageObjects.AdminLoginPage - Clicked login button with wrong password
+2026-04-13 12:36:28.953 [main] INFO  PageObjects.AdminLoginPage - Error message: Passwords not match! Authentication failed.
+2026-04-13 12:36:28.968 [main] INFO  PageObjects.AdminLoginPage - Current URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-04-13 12:36:28.977 [main] INFO  wrong_password_login_test - Test PASSED: wrong_password_login_test
+2026-04-13 12:36:29.462 [main] INFO  wrong_password_login_test - Test suite execution completed
+2026-04-13 12:48:24.511 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-13 12:48:24.515 [main] INFO  employer_signup_test - Browser: CHROME
+2026-04-13 12:48:24.515 [main] INFO  employer_signup_test - Environment: QA
+2026-04-13 12:48:24.596 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-04-13 12:48:28.104 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-04-13 12:48:28.348 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-04-13 12:48:28.638 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-04-13 12:48:28.767 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-04-13 12:48:29.006 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-04-13 12:48:29.209 [main] INFO  PageObjects.RegistrationPage - Entering email: adithyan822@***
+2026-04-13 12:48:29.472 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-04-13 12:48:38.673 [main] ERROR employer_signup_test - Test FAILED: employer_signup_test
+2026-04-13 12:50:44.046 [main] INFO  employer_signup_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-13 12:50:44.049 [main] INFO  employer_signup_test - Browser: CHROME
+2026-04-13 12:50:44.049 [main] INFO  employer_signup_test - Environment: QA
+2026-04-13 12:50:44.082 [main] INFO  PageObjects.RegistrationPage - RegistrationPage initialized
+2026-04-13 12:50:47.246 [main] INFO  PageObjects.RegistrationPage - Clicking Close button
+2026-04-13 12:50:47.408 [main] INFO  PageObjects.RegistrationPage - Clicking Explore button
+2026-04-13 12:50:47.739 [main] INFO  PageObjects.RegistrationPage - Clicking Join Now button
+2026-04-13 12:50:47.917 [main] INFO  PageObjects.RegistrationPage - Clicking Sign Up with Email button
+2026-04-13 12:50:48.134 [main] INFO  PageObjects.RegistrationPage - Clicking Proceed button
+2026-04-13 12:50:48.276 [main] INFO  PageObjects.RegistrationPage - Entering email: adithyan823@***
+2026-04-13 12:50:48.528 [main] INFO  PageObjects.RegistrationPage - Clicking Send OTP button
+2026-04-13 12:51:11.293 [main] INFO  PageObjects.RegistrationPage - OTP entered successfully
+2026-04-13 12:51:11.295 [main] INFO  PageObjects.RegistrationPage - Clicking Validate OTP button
+2026-04-13 12:51:11.392 [main] INFO  PageObjects.RegistrationPage - Selecting country and city
+2026-04-13 12:51:17.209 [main] INFO  PageObjects.RegistrationPage - Complete registration process finished
+2026-04-13 12:51:20.220 [main] INFO  PageObjects.RegistrationPage - Verifying registration success by checking Logout button visibility
+2026-04-13 12:51:26.384 [main] INFO  employer_signup_test - ✓ EMPLOYER CREDENTIALS STORED:
+2026-04-13 12:51:26.385 [main] INFO  employer_signup_test -   Email: adithyan823@yopmail.com
+2026-04-13 12:51:26.385 [main] INFO  employer_signup_test -   Password: Test@123
+2026-04-13 12:51:26.385 [main] INFO  PageObjects.RegistrationPage - Logging out registered user
+2026-04-13 12:51:26.504 [main] INFO  employer_signup_test - Test PASSED: employer_signup_test
+2026-04-13 12:51:43.452 [main] INFO  employer_profile_completion_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/
+2026-04-13 12:51:43.452 [main] INFO  employer_profile_completion_test - Browser: CHROME
+2026-04-13 12:51:43.453 [main] INFO  employer_profile_completion_test - Environment: QA
+2026-04-13 12:51:43.486 [main] INFO  PageObjects.ProfileCompletionPage - ProfileCompletionPage initialized
+2026-04-13 12:52:40.011 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:52:42.058 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:52:47.843 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:52:49.890 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:52:54.770 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:52:56.817 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:53:00.976 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:53:03.019 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:53:04.105 [main] INFO  PageObjects.ProfileCompletionPage - Pressed Escape key
+2026-04-13 12:53:10.823 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:53:12.880 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:53:13.840 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/passportSample.jpg
+2026-04-13 12:53:16.830 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:53:18.874 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:53:21.731 [main] INFO  PageObjects.ProfileCompletionPage - File uploaded successfully: C:\Users\DUK\Downloads\Loka_KeralamOnline_QA-main\Loka_KeralamOnline_QA-main/src/test/resources/testdata/uploads/aadhar.jpg
+2026-04-13 12:53:25.979 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:53:32.465 [main] INFO  PageObjects.ProfileCompletionPage - Page reload completed.
+2026-04-13 12:53:35.326 [main] INFO  employer_profile_completion_test - Test PASSED: employer_profile_completion_test
+2026-04-13 12:53:47.440 [main] INFO  verify_resubmission_blocked_empty_remarks - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-04-13 12:53:47.440 [main] INFO  verify_resubmission_blocked_empty_remarks - Browser: CHROME
+2026-04-13 12:53:47.440 [main] INFO  verify_resubmission_blocked_empty_remarks - Environment: QA
+2026-04-13 12:53:51.038 [main] INFO  PageObjects.AdminLoginPage - Clicked login button
+2026-04-13 12:53:53.259 [main] INFO  PageObjects.AdminLoginPage - Login successful, navigated to: https://qa.lokakeralamonline.kerala.gov.in/ApproverDashboard
+2026-04-13 12:53:56.595 [main] INFO  PageObjects.AdminLoginPage - Clicked View button of first row
+2026-04-13 12:53:57.251 [main] INFO  PageObjects.AdminLoginPage - Clicked initial Resubmit button
+2026-04-13 12:53:57.273 [main] INFO  PageObjects.AdminLoginPage - Remarks field appeared
+2026-04-13 12:53:58.308 [main] INFO  PageObjects.AdminLoginPage - Resubmit button is DISABLED as expected
+2026-04-13 12:53:58.311 [main] INFO  verify_resubmission_blocked_empty_remarks - Test PASSED: verify_resubmission_blocked_empty_remarks
+2026-04-13 12:54:10.129 [main] INFO  admin_resubmit_test - Navigated to URL: https://qa.lokakeralamonline.kerala.gov.in/OfficialLogin
+2026-04-13 12:54:10.130 [main] INFO  admin_resubmit_test - Browser: CHROME
+2026-04-13 12:54:10.130 [main] INFO  admin_resubmit_test - Environment: QA
+2026-04-13 12:54:10.133 [main] INFO  admin_resubmit_test - Fetching credentials from Storage...
+2026-04-13 12:54:10.133 [main] INFO  admin_resubmit_test - Email: adithyan823@yopmail.com
+2026-04-13 12:54:13.706 [main] INFO  PageObjects.AdminLoginPage - Clicked login button
+2026-04-13 12:54:17.449 [main] INFO  PageObjects.AdminLoginPage - Login successful, navigated to: https://qa.lokakeralamonline.kerala.gov.in/ApproverDashboard
+2026-04-13 12:54:21.835 [main] INFO  PageObjects.AdminLoginPage - Clicked View button of first row
+2026-04-13 12:54:23.592 [main] INFO  PageObjects.AdminLoginPage - Clicked initial Resubmit button
+2026-04-13 12:54:24.049 [main] INFO  PageObjects.AdminLoginPage - Entered remarks for resubmission
+2026-04-13 12:54:24.226 [main] INFO  PageObjects.AdminLoginPage - Clicked final Resubmit button
+2026-04-13 12:54:25.198 [main] INFO  PageObjects.LoginPage - LoginPage initialized
+2026-04-13 12:54:40.326 [main] INFO  PageObjects.LoginPage - No network error popup appeared. Proceeding...
+2026-04-13 12:54:51.067 [main] INFO  admin_resubmit_test - Test PASSED: admin_resubmit_test
+2026-04-13 12:54:51.619 [main] INFO  admin_resubmit_test - Test suite execution completed

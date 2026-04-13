@@ -50,6 +50,9 @@ public class AdminLoginPage extends BasePage {
     @FindBy(xpath = "(//button[normalize-space()='Reject'])[2]")
     private WebElement btnReject2;
 
+    @FindBy(xpath = "//div[contains(text(),'No account found with this email')]")
+    private WebElement TextNoAccountFound;
+
     public AdminLoginPage(WebDriver driver) {
         super(driver);
     }
@@ -139,6 +142,135 @@ public class AdminLoginPage extends BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(btnReject2));
         btnReject2.click();
         logger.info("Clicked final Resubmit button");
+    }
+
+    ///  //////////////////////////////////////////////////////////////////////////
+
+    public void loginWithInvalidCredentials() throws InterruptedException {
+
+        String invalidEmail = "wrongadmin@test.com";
+        String invalidPassword = "WrongPass123";
+
+        sendKeys(txtAdminEmail, invalidEmail);
+        sendKeys(txtAdminPassword, invalidPassword);
+
+        wait.until(ExpectedConditions.elementToBeClickable(btnAdminLogin));
+        Thread.sleep(3000);
+
+        // Click login button with retry logic
+        int attempts = 0;
+        while (attempts < 5) {
+            try {
+                btnAdminLogin.click();
+                logger.info("Clicked login button with invalid credentials");
+                break;
+            } catch (Exception e) {
+                logger.warn("Normal click failed, retrying with JS click...");
+                try {
+                    ((JavascriptExecutor) driver)
+                            .executeScript("arguments[0].click();", btnAdminLogin);
+                    logger.info("Clicked login button with JS click");
+                    break;
+                } catch (Exception ex) {
+                    attempts++;
+                }
+            }
+        }
+
+        Thread.sleep(2000);
+    }
+
+    // Method to verify error message
+    public String getNoAccountErrorMessage() {
+        wait.until(ExpectedConditions.visibilityOf(TextNoAccountFound));
+        String errorMessage = getText(TextNoAccountFound);
+        logger.info("Error message: " + errorMessage);
+        return errorMessage;
+    }
+
+    // Method to verify current URL
+    public String getCurrentPageUrl() {
+        String currentUrl = driver.getCurrentUrl();
+        logger.info("Current URL: " + currentUrl);
+        return currentUrl;
+    }
+
+    ///  ///////////////////////////////////////////////////
+    public void loginWithWrongPassword() throws InterruptedException {
+        // Get valid email from config but use wrong password
+        String validEmail = "mp1.norka@kerala.gov.in";
+        String wrongPassword = "WrongPassword123";
+
+        sendKeys(txtAdminEmail, validEmail);
+        sendKeys(txtAdminPassword, wrongPassword);
+
+        wait.until(ExpectedConditions.elementToBeClickable(btnAdminLogin));
+        Thread.sleep(3000);
+
+        // Click login button with retry logic
+        int attempts = 0;
+        while (attempts < 5) {
+            try {
+                btnAdminLogin.click();
+                logger.info("Clicked login button with wrong password");
+                break;
+            } catch (Exception e) {
+                logger.warn("Normal click failed, retrying with JS click...");
+                try {
+                    ((JavascriptExecutor) driver)
+                            .executeScript("arguments[0].click();", btnAdminLogin);
+                    logger.info("Clicked login button with JS click");
+                    break;
+                } catch (Exception ex) {
+                    attempts++;
+                }
+            }
+        }
+
+        Thread.sleep(2000);
+    }
+
+    public String getPasswordNotMatchErrorMessage() {
+        By errorSelector = By.xpath("//div[@role='alert']//div[contains(text(),'Passwords not match')]");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(errorSelector));
+        WebElement errorElement = driver.findElement(errorSelector);
+        String errorMessage = getText(errorElement);
+        logger.info("Error message: " + errorMessage);
+        return errorMessage;
+    }
+
+    /// ////////////////////////////////////////////////////////////////////////////////
+    // Method to click Resubmit and keep remarks empty
+    public void clickResubmitWithEmptyRemarks() throws InterruptedException {
+        // Click the initial Resubmit button
+        wait.until(ExpectedConditions.elementToBeClickable(btnResubmit));
+        btnResubmit.click();
+        logger.info("Clicked initial Resubmit button");
+
+        // Wait for remarks textarea to appear
+        wait.until(ExpectedConditions.visibilityOf(txtRemarks));
+        logger.info("Remarks field appeared");
+
+        // Keep remarks field empty - do not enter any text
+        Thread.sleep(1000);
+    }
+
+    // Method to verify Resubmit button is disabled
+    public boolean isResubmitButtonDisabled() {
+        try {
+            String disabledAttr = btnResubmit2.getAttribute("disabled");
+            boolean isDisabled = disabledAttr != null && disabledAttr.equals("true");
+
+            if (isDisabled) {
+                logger.info("Resubmit button is DISABLED as expected");
+            } else {
+                logger.warn("Resubmit button is ENABLED - should be disabled when remarks empty");
+            }
+            return isDisabled;
+        } catch (Exception e) {
+            logger.error("Failed to check if Resubmit button is disabled: " + e.getMessage());
+            return false;
+        }
     }
 
     public String fetchLKO_ID() {
